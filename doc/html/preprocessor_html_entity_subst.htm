@@ -1,0 +1,58 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>Замена HTML сущностей</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <style type="text/css">
+     body { margin: 0px; background: #FFFFFF; }
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "preprocessor_html_entity_subst.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+
+<!-- Placeholder for topic body. -->
+<table style="width:100%;border:none;border-spacing:0px"><tr style="vertical-align:top"><td style="text-align:left;padding:5px">
+<p class="p_Underlined_red" style="border-top: none; border-right: none; border-left: none;"><span class="f_Underlined_red">Замена HTML сущностей</span></p>
+<p>&nbsp;</p>
+<p>Препроцессор позволяет помещать в XML для последующего преобразования в HTML сущности, такие как непечатные символы, пробелы, переносы и т.д.</p>
+<p>&nbsp;</p>
+<p>Для указания препроцессору на необходимость вставки такой сущности используется следующий синтаксис.</p>
+<p>&nbsp;</p>
+<p><span style="width:48px">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold;">%ENTITY%</span></p>
+<p style="margin: 0px 0px 0px 24px;">&nbsp;</p>
+<p>Где ENTITY - это имя HTML сущности.</p>
+<p>&nbsp;</p>
+<p>Препроцессор заменит данную последовательность на последовательность вида</p>
+<p><span style="width:48px">&nbsp;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">&amp;entity;</span></p>
+<p>&nbsp;</p>
+<p>Со всеми экранировками, не нарушающими валидацию XML, но позволяющими корректную трансляцию в HTML.</p>
+<p>&nbsp;</p>
+<p><span style="text-decoration: underline;">Пример.</span></p>
+<p>&nbsp;</p>
+<p><span style="width:48px">&nbsp;</span>Тестовая фр<span class="f_CodeExample" style="font-weight: bold;">%NBSP%</span>аза</p>
+<p>&nbsp;</p>
+<p style="margin: 0px 0px 0px 24px;"><span style="width:24px">&nbsp;</span>После преобразования в HTML будет выглядеть как </p>
+<p style="margin: 0px 0px 0px 24px;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 24px;"><span style="width:24px">&nbsp;</span>Тестовая фр<span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">&amp;nbsp;</span>аза .</p>
+
+</td></tr></table>
+
+</body>
+</html>

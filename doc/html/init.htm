@@ -1,0 +1,179 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>form_init. Инициализация модуля создания форм</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <style type="text/css">
+     body { margin: 0px; background: #FFFFFF; }
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "init.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+
+<!-- Placeholder for topic body. -->
+<table style="width:100%;border:none;border-spacing:0px"><tr style="vertical-align:top"><td style="text-align:left;padding:5px">
+<p class="p_Underlined_red" style="border-top: none; border-right: none; border-left: none;"><span class="f_Underlined_red">init. Инициализация модуля создания форм</span></p>
+<p>&nbsp;</p>
+<p>При инициализации модуля необходимо передать следующие опции.</p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold;">^</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">xcontrols</span><span class="f_CodeExample" style="font-weight: bold;">:</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">form_init</span><span class="f_CodeExample" style="font-weight: bold;">[</span><br />
+<span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample" style="font-weight: bold;">$.</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">user_xml_folder_path</span><span class="f_CodeExample" style="font-weight: bold;">[/</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">project_root</span><span class="f_CodeExample" style="font-weight: bold;">/.</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">xcontrols_forms</span><span class="f_CodeExample" style="font-weight: bold;">/]</span><br />
+<span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample" style="font-weight: bold;">$.</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">form_target</span><span class="f_CodeExample" style="font-weight: bold;">[/</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">redirect_page</span><span class="f_CodeExample" style="font-weight: bold;">/]</span><br />
+<span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample" style="font-weight: bold;">$.</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">project_nick</span><span class="f_CodeExample" style="font-weight: bold;">[</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">project</span><span class="f_CodeExample" style="font-weight: bold;">]</span><br />
+<span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample" style="font-weight: bold;">$.</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">is_save_xml</span><span class="f_CodeExample" style="font-weight: bold;">(</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">false</span><span class="f_CodeExample" style="font-weight: bold;">)</span><br />
+<span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample" style="font-weight: bold;">$.</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">binary_path</span><span class="f_CodeExample" style="font-weight: bold;">[/</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">folder_to_save_files</span><span class="f_CodeExample" style="font-weight: bold;">/&nbsp;or&nbsp;hash]</span><br />
+<span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample" style="font-weight: bold;">$.</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">temp_path</span><span class="f_CodeExample" style="font-weight: bold;">[/</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">folder_to_save_temp_files</span><span class="f_CodeExample" style="font-weight: bold;">/]</span><br />
+<span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample" style="font-weight: bold;">$.</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">uri_show_form</span><span class="f_CodeExample" style="font-weight: bold;">[/</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">page_to_handle_form_show</span><span class="f_CodeExample" style="font-weight: bold;">/]</span><br />
+<span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample" style="font-weight: bold;">$.</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">uri_save_data</span><span class="f_CodeExample" style="font-weight: bold;">[/</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">page_to_handle_data_storage</span><span class="f_CodeExample" style="font-weight: bold;">/]</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;$.</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">enable_initfile</span><span class="f_CodeExample" style="font-weight: bold;">(</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">true</span><span class="f_CodeExample" style="font-weight: bold;">)</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;$.</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">is_static_form</span><span class="f_CodeExample" style="font-weight: bold;">(</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">true</span><span class="f_CodeExample" style="font-weight: bold;">)</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample" style="font-weight: bold;">$.</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">is_debug_form_xml</span><span class="f_CodeExample" style="font-weight: bold;">(</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">true</span><span class="f_CodeExample" style="font-weight: bold;">)</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample" style="font-weight: bold;">$.</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">BP</span><span class="f_CodeExample" style="font-weight: bold;">[/</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">base_web_path</span><span class="f_CodeExample" style="font-weight: bold;">/]</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample" style="font-weight: bold;">$.</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">table_charset</span><span class="f_CodeExample" style="font-weight: bold;">[</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample" style="font-weight: bold;">$.charset[]</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample" style="font-weight: bold;">$.collate[]</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample" style="font-weight: bold;">]</span><br />
+<span style="width:48px">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold;">]</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-family: Arial;">Где:</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 24px;"><table style="border:solid 2px #000000; border-spacing:0px; border-collapse:collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:223px; padding:3px; border:solid 1px #000000;"><p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">$.</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">user_xml_folder_path</span></p>
+</td>
+<td style="vertical-align:top; width:642px; padding:3px; border:solid 1px #000000;"><p> - путь к директории с описательным XML. </p>
+<p><span style="font-style: italic; text-decoration: underline;">Важно:</span><span style="font-style: italic;"> каждый описательный XML также должен находиться в своем каталоге.</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:223px; padding:3px; border:solid 1px #000000;"><p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">$.</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">form_target</span></p>
+</td>
+<td style="vertical-align:top; width:642px; padding:3px; border:solid 1px #000000;"><p> - путь перенаправления после завершения работы с формой.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:223px; padding:3px; border:solid 1px #000000;"><p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">$.</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">project_nick</span></p>
+</td>
+<td style="vertical-align:top; width:642px; padding:3px; border:solid 1px #000000;"><p> - имя проекта (должно совпадать с директорией расположения описательного файла <span style="font-weight: bold;">form.xml</span> ).</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:223px; padding:3px; border:solid 1px #000000;"><p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">$.</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">is_save_xml</span></p>
+</td>
+<td style="vertical-align:top; width:642px; padding:3px; border:solid 1px #000000;"><p> - <span class="f_CodeExample" style="font-family: Arial;">если выставлено </span><span class="f_CodeExample" style="font-family: Arial; font-weight: bold;">true </span><span class="f_CodeExample" style="font-family: Arial;">- будет сохранен XML документ после отработки </span><span class="f_CodeExample" style="font-family: Arial; text-decoration: underline;">препроцессора</span><span class="f_CodeExample" style="font-family: Arial;"> т.е. после всех обработок и исполнения макросов.</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:223px; padding:3px; border:solid 1px #000000;"><p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">$.</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">binary_path</span></p>
+</td>
+<td style="vertical-align:top; width:642px; padding:3px; border:solid 1px #000000;"><p> - <span class="f_CodeExample" style="font-family: Arial;">путь сохранения файлов переданных через элемент </span><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">file</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><span class="f_CodeExample" style="font-family: Arial;">. Возможно задание в виде строки или хеша.</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:223px; padding:3px; border:solid 1px #000000;"><p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">$.</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">temp_path</span></p>
+</td>
+<td style="vertical-align:top; width:642px; padding:3px; border:solid 1px #000000;"><p> - <span class="f_CodeExample" style="font-family: Arial;">путь сохранения временных файлов модуля. По умолчанию </span><span class="f_CodeExample" style="font-family: Arial; font-weight: bold;">/temp/.</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:223px; padding:3px; border:solid 1px #000000;"><p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">$.</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">uri_show_form</span></p>
+</td>
+<td style="vertical-align:top; width:642px; padding:3px; border:solid 1px #000000;"><p> - <span class="f_CodeExample" style="font-family: Arial;">адрес документа, отвечающего за показ формы</span><span class="f_CodeExample" style="font-family: Arial; font-weight: bold;">. </span><span class="f_CodeExample" style="font-family: Arial;">Если не указан - перенаправления на этот документ при ошибке не произойдет,</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:223px; padding:3px; border:solid 1px #000000;"><p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">$.</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">uri_save_data</span></p>
+</td>
+<td style="vertical-align:top; width:642px; padding:3px; border:solid 1px #000000;"><p> - <span class="f_CodeExample" style="font-family: Arial;">адрес документа, отвечающего за сохранение или обновление данных в базе. По умолчанию </span><span class="f_CodeExample" style="font-family: Arial; font-weight: bold;">store.html.</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:223px; padding:3px; border:solid 1px #000000;"><p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">$.</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">enable_initfile</span></p>
+</td>
+<td style="vertical-align:top; width:642px; padding:3px; border:solid 1px #000000;"><p> - при передаче <span style="font-weight: bold;">true</span> будет выведена дополнительная форма для загрузки инициализирующего файла. (см. <a href="initfile.htm" class="topiclink">Инициализирующий файл</a>). По умолчанию <span style="font-weight: bold;">false</span>.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:223px; padding:3px; border:solid 1px #000000;"><p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">$.</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">is_static_form</span></p>
+</td>
+<td style="vertical-align:top; width:642px; padding:3px; border:solid 1px #000000;"><p> - при передаче <span style="font-weight: bold;">true</span> будет скомпилирован файл <span style="font-weight: bold;">form_static.htm</span>, содержащий статический html формы. Данный файл будет <span style="text-decoration: underline;">сохранен рядом с описательным XML проекта</span>. При последующем вызове модуля с данным параметром, будет выведен он. По умолчанию <span style="font-weight: bold;">false</span>. </p>
+<p>В случае, когда файл <span style="font-weight: bold;">form_static.htm</span> отсутствует, будет произведена обычная, динамическая генерация формы, а файл будет пересобран и вновь сохранен. <span style="font-weight: bold;">[2.4]</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:223px; padding:3px; border:solid 1px #000000;"><p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">$.</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">is_debug_form_xml</span></p>
+</td>
+<td style="vertical-align:top; width:642px; padding:3px; border:solid 1px #000000;"><p> - при передаче <span style="font-weight: bold;">true</span> включает вывод отладочной информации по <span style="font-weight: bold;">xml</span> - на данный момент показывает имена элементов управления в форме. По умолчанию <span style="font-weight: bold;">false</span>.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:223px; padding:3px; border:solid 1px #000000;"><p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">$.</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">BP</span></p>
+</td>
+<td style="vertical-align:top; width:642px; padding:3px; border:solid 1px #000000;"><p> - веб-путь до проекта. По умолчанию <span style="font-weight: bold;">/</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:223px; padding:3px; border:solid 1px #000000;"><p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">$.</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">table_charset</span></p>
+</td>
+<td style="vertical-align:top; width:642px; padding:3px; border:solid 1px #000000;"><p> - данные по кодировкам и сравнениям для создания основной и архивной таблиц.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:223px; padding:3px; border:solid 1px #000000;"><p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">&nbsp;&nbsp;&nbsp;&nbsp;$.</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">charset</span></p>
+</td>
+<td style="vertical-align:top; width:642px; padding:3px; border:solid 1px #000000;"><p> - данные по кодировке. По умолчанию <span style="font-weight: bold;">utf8</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:223px; padding:3px; border:solid 1px #000000;"><p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">&nbsp;&nbsp;&nbsp;&nbsp;$.</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">collate</span></p>
+</td>
+<td style="vertical-align:top; width:642px; padding:3px; border:solid 1px #000000;"><p> - данные по сравнению. По умолчанию <span style="font-weight: bold;">utf8_unicode_ci</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-family: Arial; font-style: italic; text-decoration: underline;">Важно:</span><span class="f_CodeExample" style="font-family: Arial; font-weight: bold;">&nbsp;</span><span class="f_CodeExample" style="font-family: Arial;">Все&nbsp;пути&nbsp;передаются&nbsp;с&nbsp;закрывающим&nbsp;&quot;&nbsp;/&nbsp;&quot;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-family: Arial; font-style: italic; text-decoration: underline;">Важно:</span><span class="f_CodeExample" style="font-family: Arial; font-weight: bold;">&nbsp;</span><span class="f_CodeExample" style="font-family: Arial;">Все&nbsp;ключи&nbsp;хеша&nbsp;имеют&nbsp;именно&nbsp;такие&nbsp;имена.</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;</span></p>
+<p>Тип возвращаемого значения: &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">void.</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;</span></p>
+<p><span class="f_CodeExample" style="font-family: Arial; text-decoration: underline;">Параметр</span><span class="f_CodeExample" style="font-family: Arial;"> </span><span class="f_CodeExample" style="font-weight: bold;">$b</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">inary_path</span><span class="f_CodeExample" style="font-weight: bold;">[]</span><span class="f_CodeExample" style="font-family: Arial;"> :</span></p>
+<p><span style="width:48px">&nbsp;</span></p>
+<p><span style="width:48px">&nbsp;</span><span class="f_CodeExample" style="font-family: Arial;">Начиная с версии </span><span class="f_CodeExample" style="font-family: Arial; font-weight: bold;">[2.6]</span><span class="f_CodeExample" style="font-family: Arial;"> система поддерживает назначение имен путям до директорий для сохранения файлов. Эти директории называются хранилищами данных (</span><span class="f_CodeExample" style="font-family: Arial; font-weight: bold;">data_storage</span><span class="f_CodeExample" style="font-family: Arial;">).</span></p>
+<p><span style="width:48px">&nbsp;</span><span class="f_CodeExample" style="font-family: Arial;">Для того, чтобы создать именованное хранилище необходимо в параметре </span><span class="f_CodeExample" style="font-weight: bold;">$b</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">inary_path</span><span class="f_CodeExample" style="font-weight: bold;">[]</span><span class="f_CodeExample" style="font-family: Arial;"> передать хеш вида: </span><span class="f_CodeExample" style="font-weight: bold;">$.&lt;имя</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">_</span><span class="f_CodeExample" style="font-weight: bold;">хранилища&gt;[&lt;путь&gt;]</span><span class="f_CodeExample" style="font-family: Arial;">.</span></p>
+<p><span style="width:48px">&nbsp;</span><span class="f_CodeExample" style="font-family: Arial;">Если такой функционал не требуется а также в целях обратной совместимости с предыдущими версиями, допускается указание строки в параметре </span><span class="f_CodeExample" style="font-weight: bold;">$b</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">inary_path</span><span class="f_CodeExample" style="font-weight: bold;">[].</span><span class="f_CodeExample" style="font-family: Arial;"> </span></p>
+<p><span style="width:48px">&nbsp;</span><span class="f_CodeExample" style="font-family: Arial;">В таком случае будет создано единственное хранилище с именем </span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">default</span><span class="f_CodeExample" style="font-family: Arial;">.</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;</span></p>
+<p><span class="f_CodeExample" style="font-family: Arial; text-decoration: underline;">Параметр</span><span class="f_CodeExample" style="font-family: Arial;"> </span><span class="f_CodeExample" style="font-weight: bold;">$</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">table_charset</span><span class="f_CodeExample" style="font-weight: bold;">[]</span><span class="f_CodeExample" style="font-family: Arial;"> :</span></p>
+<p><span style="width:48px">&nbsp;</span></p>
+<p><span style="width:48px">&nbsp;</span><span class="f_CodeExample" style="font-family: Arial;">Начиная с версии </span><span class="f_CodeExample" style="font-family: Arial; font-weight: bold;">[2.6]</span><span class="f_CodeExample" style="font-family: Arial;"> система поддерживает указание кодировки и сравнений для создания основной и архивной таблиц. По умолчанию это - utf8.</span></p>
+<p>&nbsp;</p>
+<p><span style="width:48px">&nbsp;</span><span class="f_CodeExample" style="font-family: Arial; text-decoration: underline;">Пример указания кодировок cp1251</span><span class="f_CodeExample" style="font-family: Arial;">:</span></p>
+<p>&nbsp;</p>
+<p class="p_CodeExample" style="margin: 0px 0px 0px 72px;"><span class="f_CodeExample" style="font-weight: bold;">$.</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">table_charset</span><span class="f_CodeExample" style="font-weight: bold;">[</span><br />
+<span class="f_CodeExample" style="font-weight: bold;">&nbsp;&nbsp;&nbsp;$.</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">charset</span><span class="f_CodeExample" style="font-weight: bold;">[cp1251]</span><br />
+<span class="f_CodeExample" style="font-weight: bold;">&nbsp;&nbsp;&nbsp;$.</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">collate</span><span class="f_CodeExample" style="font-weight: bold;">[cp1251_general_ci]</span><br />
+<span class="f_CodeExample" style="font-weight: bold;">]</span></p>
+<p>&nbsp;</p>
+
+</td></tr></table>
+
+</body>
+</html>

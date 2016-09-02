@@ -1,0 +1,98 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>xfile. Загрузка файла</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <style type="text/css">
+     body { margin: 0px; background: #FFFFFF; }
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "xfile___.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+
+<!-- Placeholder for topic body. -->
+<table style="width:100%;border:none;border-spacing:0px"><tr style="vertical-align:top"><td style="text-align:left;padding:5px">
+<p class="p_Underlined_red" style="border-top: none; border-right: none; border-left: none;"><span class="f_Underlined_red">xfile. Загрузка файла</span></p>
+<p>&nbsp;</p>
+<p>Поле для присоединения и отправки файла. Допускается множественное присоединение файлов.</p>
+<p>&nbsp;</p>
+<p><span style="font-style: italic; font-weight: bold;">Корректность введенного значения (совпадение с типом или расширением) проверяется на сервере. В случае ошибки форма возвращается пользователю для исправления.</span></p>
+<p>&nbsp;</p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">control_group</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><span class="f_CodeExample" style="font-weight: bold;">xfile</span><span class="f_CodeExample" style="color: #0000ff;">&lt;/</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">control_group</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span></p>
+<p style="margin: 14px 0px 0px 0px;"><span style="text-decoration: underline;">Пример.</span><br />
+<span style="text-decoration: underline;">&nbsp;</span></p>
+<p class="p_CodeExample" style="margin: 0px 0px 0px 24px;"><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">control</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><br />
+<span class="f_CodeExample" style="font-weight: bold;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">control_group&nbsp;multy=&quot;true&quot;</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><span class="f_CodeExample" style="font-weight: bold;">xfile</span><span class="f_CodeExample" style="color: #0000ff;">&lt;/</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">control_group</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><br />
+<span class="f_CodeExample" style="font-weight: bold;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">control_name</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><span class="f_CodeExample" style="font-weight: bold;">tst_xfile</span><span class="f_CodeExample" style="color: #0000ff;">&lt;/</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">control_name</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><br />
+<span class="f_CodeExample" style="font-weight: bold;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">control_id</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><span class="f_CodeExample" style="font-weight: bold;">xfile_id</span><span class="f_CodeExample" style="color: #0000ff;">&lt;/</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">control_id</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span></p>
+<p class="p_CodeExample" style="margin: 0px 0px 0px 24px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">filter_mime</span><span class="f_CodeExample" style="color: #0000ff;">&gt;&lt;/</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">filter_mime</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span></p>
+<p class="p_CodeExample" style="margin: 0px 0px 0px 24px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">data_storage</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><span class="f_CodeExample" style="font-weight: bold;">store</span><span class="f_CodeExample" style="color: #0000ff;">&lt;/</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">data_storage</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span></p>
+<p class="p_CodeExample" style="margin: 0px 0px 0px 24px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">allow_multy</span><span class="f_CodeExample" style="color: #0000ff;">/&gt;</span><br />
+<span class="f_CodeExample" style="font-weight: bold;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">file_ext</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><span class="f_CodeExample" style="font-weight: bold;">xfile,extensions,comma,separated</span><span class="f_CodeExample" style="color: #0000ff;">&lt;/</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">file_ext</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><br />
+<span class="f_CodeExample" style="font-weight: bold;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">control_classes</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><span class="f_CodeExample" style="font-weight: bold;">foo</span><span class="f_CodeExample" style="color: #0000ff;">&lt;/</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">control_classes</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><br />
+<span class="f_CodeExample" style="color: #0000ff;">&lt;/</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">control</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span></p>
+<p style="margin: 14px 0px 14px 0px;">Элементы<span style="font-family: Batang; font-weight: bold;"> </span><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">control_id</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><span class="f_CodeExample" style="font-weight: bold;"> и </span><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">control_classes</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><span style="font-family: Batang; font-weight: bold;"> </span>являются необязательными.</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 14px 0px 14px 0px;"><table style="width:70%; border:solid 2px #000000; border-spacing:0px; border-collapse:collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:136px; padding:3px; border:solid 1px #000000;"><p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">&nbsp;multy</span></p>
+</td>
+<td style="vertical-align:top; width:807px; padding:3px; border:solid 1px #000000;"><p>Атрибут показывает, возможна ли множественная загрузка файлов. По умолчанию - <span style="font-weight: bold;">false</span>. Возможные значения : <span style="font-weight: bold;">true</span>, <span style="font-weight: bold;">false</span>, <span style="font-weight: bold;">&lt;число файлов для загрузки&gt;</span>. В случае, когда переданы <span style="font-weight: bold;">false</span> или <span style="font-weight: bold;">1</span> - атрибут multy для файла не ставится.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:136px; padding:3px; border:solid 1px #000000;"><p> <span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">filter_mime</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:807px; padding:3px; border:solid 1px #000000;"><p>Фильтр, который применяется для окна открытия файла для загрузки. <span style="background-color: #ffff00;">Пока не поддерживается.</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:136px; padding:3px; border:solid 1px #000000;"><p> <span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">data_storage</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:807px; padding:3px; border:solid 1px #000000;"><p>Имя хранилища данных (см. <a href="init.htm" class="topiclink">Инициализация модуля создания форм</a>).</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:136px; padding:3px; border:solid 1px #000000;"><p> <span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">allow_multy</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:807px; padding:3px; border:solid 1px #000000;"><p>Допускается ли мультипликация (размножение при помощи кнопки +) поля ввода. <span style="background-color: #ffff00;">Пока не поддерживается.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p style="margin: 14px 0px 14px 0px;">Контроль файла на соответствие указанному типу осуществляется на стороне сервера. В случае несовпадения расширения файла с указанным в  <span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">file_ext</span><span class="f_CodeExample" style="color: #0000ff;">&gt; </span>форма возвращается пользователю для исправления. </p>
+<p style="margin: 14px 0px 14px 0px;">Поддерживаемые расширения а также максимально допустимый размер файла (соответствующий максимальному размеру POST-запроса) выводятся под соответствующей полю с файлом поясняющей надписью. </p>
+<p style="margin: 14px 0px 14px 0px;">Сохранение загруженного файла происходит в хранилище данных после прохождения форматно-логического контроля. </p>
+<p style="margin: 14px 0px 14px 0px;">Хранилище данных определяется именем из элемента <span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">data_storage</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span>, а его местоположение, в свою очередь, полем инициализации  <span class="f_CodeExample" style="font-weight: bold;">$.</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">binary_path</span><span class="f_CodeExample" style="font-weight: bold;">[] </span>(См. <a href="init.htm" class="topiclink">Инициализация модуля создания форм</a>).</p>
+<p style="margin: 14px 0px 14px 0px;">Каталог хранилища данных создается автоматически и имеет следующую структуру.</p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">$.</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">data_storage__path</span><span class="f_CodeExample" style="font-weight: bold;">/</span><br />
+<span class="f_CodeExample" style="font-weight: bold;">|__&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">control_name</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><span class="f_CodeExample" style="font-weight: bold;">/</span><span style="font-size: 12pt; font-family: 'Times New Roman';">&nbsp;</span><br />
+<span class="f_CodeExample" style="font-weight: bold;">&nbsp;&nbsp;|___index.cfg&nbsp;</span><br />
+<span class="f_CodeExample" style="font-weight: bold;">&nbsp;&nbsp;|___год/&nbsp;</span><br />
+<span class="f_CodeExample" style="font-weight: bold;">&nbsp;&nbsp;&nbsp;&nbsp;|______месяц/&nbsp;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;|_______день/</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|_______&lt;UUID&gt;.xcfile.&lt;original_file_extension&gt;</span></p>
+<p style="margin: 14px 0px 14px 0px;">Поля ввода типа file имеют встроенный контроль максимального размера. В случае, если суммарный размер всех загруженных файлов превышаем максимальный размер POST, система выдает ошибку и соответствующее сообщение.<br />
+&nbsp;<br />
+<span style="font-weight: bold; text-decoration: underline;">Важно!</span><br />
+Размер поля в базе данных (<span style="text-decoration: underline;">по умолчанию VARCHAR(255)</span>) следует переопределить вручную, исходя из того, что на один файл необходимо <span style="font-weight: bold;">350</span> символов.</p>
+
+</td></tr></table>
+
+</body>
+</html>

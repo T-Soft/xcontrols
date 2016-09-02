@@ -1,0 +1,38 @@
+.scroller {
+	text-align:center;
+	margin:10px 0 5px 0;
+}
+.scroller b {
+	color:#333;
+}
+.scroller span.group,.scroller span.item, .scroller span.level1,.scroller span.level2,.scroller span.level3,.scroller span.level4 {
+	margin:0;
+	padding:0;
+}
+.scroller {
+	line-height:1.6em
+}
+.level1 b {
+	font-weight:bold
+}
+.scroller span.level1 {
+	padding:5px;
+}
+.scroller .separator {
+	padding-right:1px !important;
+	padding-left:1px !important;
+}
+.scroller .first_last {
+	color:		#999;
+}
+.scroller a,
+.scroller .fake_a {
+	padding:2px 6px !important;
+	margin:0 !important;
+}
+span.level1 {
+	background:#eee
+}
+span.level2 {
+	background:#fff
+}

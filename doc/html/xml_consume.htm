@@ -1,0 +1,85 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>&lt;include_xml&gt; Включение XML из внешнего файла</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <style type="text/css">
+     body { margin: 0px; background: #FFFFFF; }
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "xml_consume.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+
+<!-- Placeholder for topic body. -->
+<table style="width:100%;border:none;border-spacing:0px"><tr style="vertical-align:top"><td style="text-align:left;padding:5px">
+<p class="p_Underlined_red" style="border-top: none; border-right: none; border-left: none;"><span class="f_Underlined_red">&lt;include_xml&gt; Включение XML из внешнего файла</span></p>
+<p>&nbsp;</p>
+<p class="p_CodeExample">Начиная&nbsp;с&nbsp;версии&nbsp;<span style="font-weight: bold;">2.1</span>&nbsp;поддерживается&nbsp;возможность&nbsp;включать&nbsp;в&nbsp;главный&nbsp;описательный&nbsp;файл&nbsp;<span style="font-weight: bold;">form.xml</span>&nbsp;содержимое&nbsp;других&nbsp;(дополнительных)&nbsp;xml&nbsp;документов&nbsp;при&nbsp;условии&nbsp;совпадения&nbsp;структуры&nbsp;элементов.</p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_CodeExample">Структура&nbsp;элемента&nbsp;описания&nbsp;поглощаемого&nbsp;файла:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">include_xml</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><br />
+<span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">prefix</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><span class="f_CodeExample" style="font-weight: bold;">префикс&nbsp;имен&nbsp;элементов&nbsp;дополнительного&nbsp;XML</span><span class="f_CodeExample" style="color: #0000ff;">&lt;/</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">prefix</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">file</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><span class="f_CodeExample" style="font-weight: bold;">путь&nbsp;к&nbsp;дополнительному&nbsp;XML</span><span class="f_CodeExample" style="color: #0000ff;">&lt;/</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">file</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">readonly</span><span class="f_CodeExample" style="color: #0000ff;">/&gt;</span><br />
+<span class="f_CodeExample" style="font-weight: bold;">&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">&lt;/</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">include_xml</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span></p>
+<p style="margin: 14px 0px 0px 0px;">Тэг используется столько раз, сколько файлов необходимо поглотить.</p>
+<p style="margin: 14px 0px 0px 0px;"><span style="text-decoration: underline;">Составляющие:</span><br />
+<span style="text-decoration: underline;">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 2px;"><table style="width:75%; background-color:#ffffff; border:solid 2px #000000; border-spacing:0px; border-collapse:collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:135px; background-color:#c0c0c0; padding:3px; border:solid 1px #000000;"><p><span style="font-weight: bold;">Элемент</span></p>
+</td>
+<td style="vertical-align:top; width:781px; background-color:#c0c0c0; padding:3px; border:solid 1px #000000;"><p><span style="font-weight: bold;">Описание</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:middle; width:135px; padding:3px; border:solid 1px #000000;"><p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">prefix</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span></p>
+</td>
+<td style="vertical-align:middle; width:781px; padding:3px; border:solid 1px #000000;"><p> Префикс, который будет прибавлен к содержимому элемента <span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">control_name</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span> каждого описанного в дополнительном <span style="font-weight: bold;">xml</span> элемента управления. </p>
+<p> <span style="text-decoration: underline;">Например:</span> <span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">control_name</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><span class="f_CodeExample" style="font-weight: bold;">foo</span><span class="f_CodeExample" style="color: #0000ff;">&lt;/</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">control_name</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span> <span style="font-weight: bold;">+</span> <span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">prefix</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><span class="f_CodeExample" style="font-weight: bold;">bar</span><span class="f_CodeExample" style="color: #0000ff;">&lt;/</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">prefix</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span> <span style="font-weight: bold;">=</span> <span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">control_name</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><span class="f_CodeExample" style="font-weight: bold;">foo_bar</span><span class="f_CodeExample" style="color: #0000ff;">&lt;/</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">control_name</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:middle; width:135px; padding:3px; border:solid 1px #000000;"><p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">file</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span></p>
+</td>
+<td style="vertical-align:middle; width:781px; padding:3px; border:solid 1px #000000;"><p> Путь к дополнительному <span style="font-weight: bold;">xml</span> относительно главного <span style="font-weight: bold;">form.xml</span>. <span style="text-decoration: underline;">Например:</span>  <span style="font-style: italic; font-weight: bold;">foo.xml</span> или <span style="font-style: italic; font-weight: bold;">../bar.xml</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:middle; width:135px; padding:3px; border:solid 1px #000000;"><p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">readonly</span><span class="f_CodeExample" style="color: #0000ff;">/&gt;</span></p>
+</td>
+<td style="vertical-align:middle; width:781px; padding:3px; border:solid 1px #000000;"><p> Все добавленные элементы управления будут помечены тэгом <span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">readonly</span><span class="f_CodeExample" style="color: #0000ff;">/&gt;</span> как &quot;только для чтения&quot;.</p>
+</td>
+</tr>
+</table>
+</div>
+<p style="margin: 0px 0px 0px 2px;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 2px;"><span style="font-weight: bold;">Важно (!):</span></p>
+<p style="margin: 0px 0px 0px 2px;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 2px;"><span style="width:46px">&nbsp;</span>Поглощаемый XML должен включать <span style="font-weight: bold;">только</span> описание элементов управления <span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">control</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span>. Контроль правильности не осуществляется, заголовки не игнорируются. </p>
+<p style="margin: 0px 0px 0px 2px;"><span style="width:46px">&nbsp;</span>Весь текст переносится <span style="font-weight: bold;">как есть</span> с заменой имен на иена с префиксом.</p>
+<p style="margin: 0px 0px 0px 2px;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 2px;">Содержимое поглощаемого файла будет перенесено в то место основного XML , где был указан элемент <span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">include_xml</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span>. </p>
+<p style="margin: 14px 0px 0px 0px;">&nbsp;</p>
+
+</td></tr></table>
+
+</body>
+</html>

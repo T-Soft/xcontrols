@@ -1,0 +1,54 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>Контроль БД и данных</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <style type="text/css">
+     body { margin: 0px; background: #FFFFFF; }
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "automatic_db_control.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+
+<!-- Placeholder for topic body. -->
+<table style="width:100%;border:none;border-spacing:0px"><tr style="vertical-align:top"><td style="text-align:left;padding:5px">
+<p class="p_Underlined_red" style="border-top: none; border-right: none; border-left: none;"><span class="f_Underlined_red">Контроль БД и данных</span></p>
+<p>&nbsp;</p>
+<p>xС осуществляет автоматический контроль таблиы базы данных, с которой связан описательный XML.</p>
+<p style="margin: 14px 0px 0px 0px;">Система контроля запускается при обнаружении любых обновлений файла описательного XML</p>
+<p style="margin: 14px 0px 0px 0px;">Стадии контроля.</p>
+<p style="text-align: left; padding: 0px 0px 0px 13px; margin: 0px 0px 0px 22px;"><span style="font-size:11pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>автоматическое &nbsp;создание таблиц</p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 0px 0px 0px 22px;"><span style="font-size:11pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>контроль обновления количества / имен полей</p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 0px 0px 0px 22px;"><span style="font-size:11pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>отчет системы контроля</p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 0px 0px 0px 22px;"><span style="font-size:11pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>контроль на стороне пользователя</p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 0px 0px 0px 22px;"><span style="font-size:11pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>контроль на стороне сервера</p><p style="margin: 14px 0px 0px 0px;"><span style="text-decoration: underline;">Автоматическое создание таблиц.</span></p>
+<p style="margin: 14px 0px 0px 0px;">В случае отсутствия таблицы, в которую производится запись введенных пользователем значений происходит ее автоматическое создание на основе имен полей описательного XML.</p>
+<p style="margin: 14px 0px 0px 0px;">Также создается таблица <span style="font-weight: bold;">$имя_таблицы$$архивный_постфикс$ </span>в которую вносятся предыдущие значения измененных записей основной таблицы БД.</p>
+<p style="margin: 14px 0px 0px 0px;"><span style="text-decoration: underline;">Контроль обновления количества / имен полей.</span></p>
+<p style="margin: 14px 0px 0px 0px;">В случае несовпадения количества и/или имени описанных в XML полей с полями базы данных, в которую производится запись введенных пользователем значений, БД будет дополнена полями, сгенерированными на основе имени отсутствующего поля XML. Также будут созданы поля базы для переданных методам скрытых полей (см.<a href="static_methods.htm" class="topiclink"> Статические методы</a> )</p>
+<p style="margin: 14px 0px 0px 0px;">При создании, все поля имеют тип <span style="font-weight: bold;">VARCHAR (255)</span>.</p>
+<p style="margin: 14px 0px 0px 0px;"><span style="text-decoration: underline;">Отчет системы контроля.</span></p>
+<p style="margin: 14px 0px 0px 0px;">Вспомогательным элементом контроля является автоматически создаваемый файл <span style="font-weight: bold;">*.flag</span> , генерируемый рядом с описательным XML имеющим аналогичное имя. В данный файл заносятся результаты контроля структуры БД.</p>
+<p style="margin: 14px 0px 0px 0px;">Удаление данного файла приведет к запуску системы контроля и созданию нового пустого файла *.flag содержащего результат последнего контроля.</p>
+<p style="margin: 14px 0px 0px 0px;"><span style="text-decoration: underline;">Также </span><span style="font-weight: bold; text-decoration: underline;">xС</span><span style="text-decoration: underline;"> осуществляет автоматический контроль введенных данных на стороне пользователя.</span></p>
+<p style="margin: 14px 0px 14px 0px;">На основе типа элемента управления <span style="font-weight: bold;">xC </span>осуществляет автоматический контроль введенных данных (средствами javascript на стороне клиента) и в случае некорректности ввода сообщает об этом пользователю. (см. <a href="client_control.htm" class="topiclink">Контроль : клиент</a>)</p>
+<p style="margin: 14px 0px 14px 0px;"><span style="text-decoration: underline;">Финальная стадия контроля - контроль на стороне сервера.</span></p>
+<p style="margin: 14px 0px 14px 0px;">Контроль на стороне сервера - необязательная операция, реализуемая каждым модулем системы для своего типа данных. (см. <a href="server_control.htm" class="topiclink">Контроль : сервер</a>)</p>
+<p style="margin: 14px 0px 14px 0px;">&nbsp;</p>
+
+</td></tr></table>
+
+</body>
+</html>

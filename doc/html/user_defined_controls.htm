@@ -1,0 +1,181 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>Пользовательские элементы</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <style type="text/css">
+     body { margin: 0px; background: #FFFFFF; }
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "user_defined_controls.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+
+<!-- Placeholder for topic body. -->
+<table style="width:100%;border:none;border-spacing:0px"><tr style="vertical-align:top"><td style="text-align:left;padding:5px">
+<p class="p_Underlined_red" style="border-top: none; border-right: none; border-left: none;"><span class="f_Underlined_red">Пользовательские элементы</span></p>
+<p>&nbsp;</p>
+<p>Класс-обработчик может быть дополнен модулями новых элементов управления. </p>
+<p>&nbsp;</p>
+<p>Для использования в качестве обработчика модуль должен иметь то же имя, что и группа, к которой относится элемент управления.  </p>
+<p style="margin: 14px 0px 0px 0px;">При вызове модуля обработки, ему передается хеш со значениями параметров соответствующего элемента управления. Все значения полей хеша - строки.<br />
+&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table style="width:85%; border:solid 2px #000000; border-spacing:0px; border-collapse:collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:132px; background-color:#c0c0c0; padding:3px; border:solid 1px #000000;"><p><span style="font-weight: bold;">Имя поля</span></p>
+</td>
+<td style="vertical-align:top; width:196px; background-color:#c0c0c0; padding:3px; border:solid 1px #000000;"><p><span style="font-weight: bold;">Обязательное поле</span></p>
+</td>
+<td style="vertical-align:top; width:762px; background-color:#c0c0c0; padding:3px; border:solid 1px #000000;"><p><span style="font-weight: bold;">Описание</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:middle; width:132px; padding:3px; border:solid 1px #000000;"><p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">$.</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">group</span><span class="f_CodeExample" style="font-weight: bold;">[]</span></p>
+</td>
+<td style="vertical-align:middle; width:196px; background-color:#ffffff; padding:3px; border:solid 1px #000000;"><p>да</p>
+</td>
+<td style="vertical-align:middle; width:762px; padding:3px; border:solid 1px #000000;"><p> Группа элементов. Совпадает с именем модуля обработчика.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:middle; width:132px; padding:3px; border:solid 1px #000000;"><p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">$.</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">type</span><span class="f_CodeExample" style="font-weight: bold;">[]</span></p>
+</td>
+<td style="vertical-align:middle; width:196px; background-color:#ffffff; padding:3px; border:solid 1px #000000;"><p>нет</p>
+</td>
+<td style="vertical-align:middle; width:762px; padding:3px; border:solid 1px #000000;"><p> Тип элемента в группе.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:middle; width:132px; padding:3px; border:solid 1px #000000;"><p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">$.</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">name</span><span class="f_CodeExample" style="font-weight: bold;">[]</span></p>
+</td>
+<td style="vertical-align:middle; width:196px; background-color:#ffffff; padding:3px; border:solid 1px #000000;"><p>да</p>
+</td>
+<td style="vertical-align:middle; width:762px; padding:3px; border:solid 1px #000000;"><p> Имя элемента для обращения. Совпадает с соответствующим полем базы данных.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:middle; width:132px; padding:3px; border:solid 1px #000000;"><p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">$.</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">id</span><span class="f_CodeExample" style="font-weight: bold;">[]</span></p>
+</td>
+<td style="vertical-align:middle; width:196px; background-color:#ffffff; padding:3px; border:solid 1px #000000;"><p>нет</p>
+</td>
+<td style="vertical-align:middle; width:762px; padding:3px; border:solid 1px #000000;"><p> Идентификатор элемента для привязки скриптов.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:middle; width:132px; padding:3px; border:solid 1px #000000;"><p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">$.</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">label</span><span class="f_CodeExample" style="font-weight: bold;">[]</span></p>
+</td>
+<td style="vertical-align:middle; width:196px; background-color:#ffffff; padding:3px; border:solid 1px #000000;"><p>да (кроме элементов hr,br)</p>
+</td>
+<td style="vertical-align:middle; width:762px; padding:3px; border:solid 1px #000000;"><p> Текстовое описание элемента для отображения.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:middle; width:132px; padding:3px; border:solid 1px #000000;"><p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">$.</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">value</span><span class="f_CodeExample" style="font-weight: bold;">[]</span></p>
+</td>
+<td style="vertical-align:middle; width:196px; background-color:#ffffff; padding:3px; border:solid 1px #000000;"><p>нет</p>
+</td>
+<td style="vertical-align:middle; width:762px; padding:3px; border:solid 1px #000000;"><p> Начальное значение элемента.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:middle; width:132px; padding:3px; border:solid 1px #000000;"><p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">$.</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">properties</span><span class="f_CodeExample" style="font-weight: bold;">[]</span></p>
+</td>
+<td style="vertical-align:middle; width:196px; background-color:#ffffff; padding:3px; border:solid 1px #000000;"><p>нет</p>
+</td>
+<td style="vertical-align:middle; width:762px; padding:3px; border:solid 1px #000000;"><p> Пользовательские свойства элемента для HTML верстки.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:middle; width:132px; padding:3px; border:solid 1px #000000;"><p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">$.</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">classes</span><span class="f_CodeExample" style="font-weight: bold;">[]</span></p>
+</td>
+<td style="vertical-align:middle; width:196px; background-color:#ffffff; padding:3px; border:solid 1px #000000;"><p>нет</p>
+</td>
+<td style="vertical-align:middle; width:762px; padding:3px; border:solid 1px #000000;"><p> Пользовательские классы элемента для HTML верстки.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:middle; width:132px; padding:3px; border:solid 1px #000000;"><p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">$.</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">sql_query</span><span class="f_CodeExample" style="font-weight: bold;">[]</span></p>
+</td>
+<td style="vertical-align:middle; width:196px; background-color:#ffffff; padding:3px; border:solid 1px #000000;"><p>нет</p>
+</td>
+<td style="vertical-align:middle; width:762px; padding:3px; border:solid 1px #000000;"><p> SQL запрос для выборки значений поля из базы данных.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:middle; width:132px; padding:3px; border:solid 1px #000000;"><p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">$.</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">required</span><span class="f_CodeExample" style="font-weight: bold;">[]</span></p>
+</td>
+<td style="vertical-align:middle; width:196px; background-color:#ffffff; padding:3px; border:solid 1px #000000;"><p>нет</p>
+</td>
+<td style="vertical-align:middle; width:762px; padding:3px; border:solid 1px #000000;"><p> Выставляется в true в случае обязательности поля. В ином случае отсутствует. </p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:middle; width:132px; padding:3px; border:solid 1px #000000;"><p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">$.</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">bounds</span><span class="f_CodeExample" style="font-weight: bold;">[]</span></p>
+</td>
+<td style="vertical-align:middle; width:196px; background-color:#ffffff; padding:3px; border:solid 1px #000000;"><p>нет</p>
+</td>
+<td style="vertical-align:middle; width:762px; padding:3px; border:solid 1px #000000;"><p> Границы диапазона вводимого значения. Представляет из себя откомпилированный атрибут <span class="f_CodeExample" style="font-weight: bold;">data-</span><span style="font-weight: bold;">.</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:middle; width:132px; padding:3px; border:solid 1px #000000;"><p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">$.</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">file_type</span><span class="f_CodeExample" style="font-weight: bold;">[]</span></p>
+</td>
+<td style="vertical-align:middle; width:196px; background-color:#ffffff; padding:3px; border:solid 1px #000000;"><p>только для элемента <span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">file</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span></p>
+</td>
+<td style="vertical-align:middle; width:762px; padding:3px; border:solid 1px #000000;"><p> Тип файла для проверки передаваемых данных через элемент <span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">file</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><span style="font-family: Batang; font-weight: bold;">.</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:middle; width:132px; padding:3px; border:solid 1px #000000;"><p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">$.</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">file_ext</span><span class="f_CodeExample" style="font-weight: bold;">[]</span></p>
+</td>
+<td style="vertical-align:middle; width:196px; background-color:#ffffff; padding:3px; border:solid 1px #000000;"><p>только для элемента <span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">file</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span></p>
+</td>
+<td style="vertical-align:middle; width:762px; padding:3px; border:solid 1px #000000;"><p> Расширение файлов для проверки передаваемых данных через элемент <span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">file</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><span style="font-family: Batang; font-weight: bold;">.</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:middle; width:132px; padding:3px; border:solid 1px #000000;"><p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">$.</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">form_id</span><span class="f_CodeExample" style="font-weight: bold;">[]</span></p>
+</td>
+<td style="vertical-align:middle; width:196px; padding:3px; border:solid 1px #000000;"><p>да</p>
+</td>
+<td style="vertical-align:middle; width:762px; padding:3px; border:solid 1px #000000;"><p> Идентификатор формы, на которой располагается элемент. Совпадает с директорией размещения описательного XML.</p>
+</td>
+</tr>
+</table>
+</div>
+<p style="margin: 14px 0px 0px 0px;"><span style="text-decoration: underline;">(!)</span>В модуле-обработчике с именем <span style="font-weight: bold;">$name$</span> обязательно &nbsp;должны быть реализованы методы со следующими именами и назначениями.</p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">@</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">create_</span><span class="f_CodeExample" style="font-weight: bold;">$</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">name</span><span class="f_CodeExample" style="font-weight: bold;">$[</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">hData</span><span class="f_CodeExample" style="font-weight: bold;">]</span></p>
+<p style="margin: 14px 0px 0px 0px;"> &nbsp; &nbsp; &nbsp; &nbsp;&quot;конструктор&quot; &nbsp;элемента управления. Описывает создание самого компонента.</p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">@</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">fieldnames_table_</span><span class="f_CodeExample" style="font-weight: bold;">$</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">name</span><span class="f_CodeExample" style="font-weight: bold;">$[</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">name</span><span class="f_CodeExample" style="font-weight: bold;">]</span></p>
+<p style="margin: 14px 0px 0px 0px;"> &nbsp; &nbsp; &nbsp; &nbsp; Получение имен полей элемента управления для внесения информации в базу данных. Тип возвращаемого значения - <span style="font-weight: bold;">таблица.</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">@</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">db_preprocess_</span><span class="f_CodeExample" style="font-weight: bold;">$</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">name</span><span class="f_CodeExample" style="font-weight: bold;">$[</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">value</span><span class="f_CodeExample" style="font-weight: bold;">]</span></p>
+<p style="margin: 14px 0px 0px 0px;"> &nbsp; &nbsp; &nbsp; &nbsp; Контроль содержимого поля и преобразование для внесения его в базу данных. Тип возвращаемого значения - <span style="font-weight: bold;">хеш.</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">@</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">edit_preprocess_</span><span class="f_CodeExample" style="font-weight: bold;">$</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">name</span><span class="f_CodeExample" style="font-weight: bold;">$[</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">init</span><span class="f_CodeExample" style="font-weight: bold;">;</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">hParsed_xml</span><span class="f_CodeExample" style="font-weight: bold;">]</span></p>
+<p style="margin: 14px 0px 14px 0px;"> &nbsp; &nbsp; &nbsp; &nbsp; Преобразование хранящегося в базе данных содержимого для отображения в качестве значения элемента управления. Тип возвращаемого значения - <span style="font-weight: bold;">строка.</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">@</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">ErrorList_</span><span class="f_CodeExample" style="font-weight: bold;">$</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">name</span><span class="f_CodeExample" style="font-weight: bold;">$[</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">invoke</span><span class="f_CodeExample" style="font-weight: bold;">]</span></p>
+<p style="margin: 14px 0px 14px 0px;"> &nbsp; &nbsp; &nbsp; &nbsp; Список ошибок, вызываемых данным модулем. Используется системой контроля внутренних ошибок и для показа пользователю. Тип возвращаемого значения - <span style="font-weight: bold;">хеш.</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;</span></p>
+
+</td></tr></table>
+
+</body>
+</html>

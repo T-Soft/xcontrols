@@ -1,0 +1,66 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>file. Загрузка файла</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <style type="text/css">
+     body { margin: 0px; background: #FFFFFF; }
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "file.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+
+<!-- Placeholder for topic body. -->
+<table style="width:100%;border:none;border-spacing:0px"><tr style="vertical-align:top"><td style="text-align:left;padding:5px">
+<p class="p_Underlined_red" style="border-top: none; border-right: none; border-left: none;"><span class="f_Underlined_red">file. Загрузка файла</span></p>
+<p>&nbsp;</p>
+<p>Поле для присоединения и отправки файла.</p>
+<p>&nbsp;</p>
+<p><span style="font-style: italic; font-weight: bold;">Корректность введенного значения (совпадение с типом или расширением) проверяется на сервере. В случае ошибки форма возвращается пользователю для исправления.</span></p>
+<p>&nbsp;</p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">control_group</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><span class="f_CodeExample" style="font-weight: bold;">file</span><span class="f_CodeExample" style="color: #0000ff;">&lt;/</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">control_group</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span></p>
+<p style="margin: 14px 0px 0px 0px;"><span style="text-decoration: underline;">Пример.</span><br />
+<span style="text-decoration: underline;">&nbsp;</span></p>
+<p class="p_CodeExample" style="margin: 0px 0px 0px 24px;"><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">control</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><br />
+<span class="f_CodeExample" style="font-weight: bold;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">control_group</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><span class="f_CodeExample" style="font-weight: bold;">file</span><span class="f_CodeExample" style="color: #0000ff;">&lt;/</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">control_group</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><br />
+<span class="f_CodeExample" style="font-weight: bold;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">control_name</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><span class="f_CodeExample" style="font-weight: bold;">tst_file</span><span class="f_CodeExample" style="color: #0000ff;">&lt;/</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">control_name</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><br />
+<span class="f_CodeExample" style="font-weight: bold;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">control_id</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><span class="f_CodeExample" style="font-weight: bold;">file_id</span><span class="f_CodeExample" style="color: #0000ff;">&lt;/</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">control_id</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><br />
+<span class="f_CodeExample" style="font-weight: bold;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">file_ext</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><span class="f_CodeExample" style="font-weight: bold;">file,extensions,comma,separated</span><span class="f_CodeExample" style="color: #0000ff;">&lt;/</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">file_ext</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><br />
+<span class="f_CodeExample" style="font-weight: bold;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">control_classes</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><span class="f_CodeExample" style="font-weight: bold;">foo</span><span class="f_CodeExample" style="color: #0000ff;">&lt;/</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">control_classes</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><br />
+<span class="f_CodeExample" style="color: #0000ff;">&lt;/</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">control</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span></p>
+<p style="margin: 14px 0px 14px 0px;">Элементы<span style="font-family: Batang; font-weight: bold;"> </span><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">control_id</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><span class="f_CodeExample" style="font-weight: bold;"> и </span><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">control_classes</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><span style="font-family: Batang; font-weight: bold;"> </span>являются необязательными.<br />
+&nbsp;<br />
+Контроль файла на соответствие указанному типу осуществляется на стороне сервера. В случае несовпадения расширения с указанными в тэге  <span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">file_ext</span><span class="f_CodeExample" style="color: #0000ff;">&gt; </span>форма возвращается пользователю для исправления. </p>
+<p style="margin: 14px 0px 14px 0px;">Поддерживаемые расширения а также максимально допустимый размер файла (соответствующий максимальному размеру POST-запроса) выводятся под соответствующей полю с файлом поясняющей надписью. </p>
+<p style="margin: 14px 0px 14px 0px;">Сохранение загруженного файла происходит после прохождения форматно-логического контроля. Директория сохранения определяется полем инициализации  <span class="f_CodeExample" style="font-weight: bold;">$.</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">binary_path</span><span class="f_CodeExample" style="font-weight: bold;">[/</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">folder_to_save_files</span><span class="f_CodeExample" style="font-weight: bold;">/] </span></p>
+<p style="margin: 14px 0px 14px 0px;">Указанный каталог создается автоматически и имеет следующую структуру.</p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">$.</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">binary_path</span><span class="f_CodeExample" style="font-weight: bold;">/&nbsp;</span><span style="font-size: 12pt; font-family: 'Times New Roman';">&nbsp;</span><br />
+<span class="f_CodeExample" style="font-weight: bold;">|__&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">control_name</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><span class="f_CodeExample" style="font-weight: bold;">/</span><span style="font-size: 12pt; font-family: 'Times New Roman';">&nbsp;</span><br />
+<span class="f_CodeExample" style="font-weight: bold;">&nbsp;&nbsp;|___index.cfg&nbsp;</span><br />
+<span class="f_CodeExample" style="font-weight: bold;">&nbsp;&nbsp;|___год/&nbsp;</span><br />
+<span class="f_CodeExample" style="font-weight: bold;">&nbsp;&nbsp;&nbsp;&nbsp;|______месяц/&nbsp;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;|_______день/</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|_______&lt;UUID&gt;.filename</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|_______&lt;UUID&gt;.file</span></p>
+<p style="margin: 14px 0px 14px 0px;">Поля ввода типа file имеют встроенный контроль максимального размера. В случае, если суммарный размер всех загруженных файлов превышаем максимальный размер POST, система выдает ошибку и соответствующее сообщение.</p>
+
+</td></tr></table>
+
+</body>
+</html>

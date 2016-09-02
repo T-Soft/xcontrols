@@ -1,0 +1,245 @@
+/* ====================================== CONTROL TYPE SPECIFIC  STYLES*/
+.xc__date{
+	text-align: center;
+}
+
+/* ======================================= CLEAR BUTTON DESIGN CLASSES */
+.add-clear-span a {
+	color:		#999;
+	font-weight:	bold;
+	font-size:	1.4em;
+	padding:	0px 8px 1px 8px;
+}
+.add-clear-span a:hover {
+	background: 	#f65;
+	color:		#fff;
+}
+.add-clear-span input {
+	padding-right:30px;
+}
+/* ==================================================================== */
+
+body {
+	font-family: "Trebuchet MS","Helvetica","Arial","Verdana","sans-serif";
+	/*font-size: 100%;*/
+}
+
+
+table.xcontrols_main_table tr:first-child td:first-child {
+	width : 33%;
+/*	background: #f00 */
+}
+/* ======================================= FILE INPUT DISPLAY CLASSES */
+table.uploaded_file_props_table {
+	margin-top:	5px;
+	width:		auto;
+	font-size:	x-small;
+}
+table.uploaded_file_props_table tr td {
+	white-space:	nowrap;
+	padding:	3px 1em;
+	width:		auto !important;
+}
+
+.file_info{
+	font-size: 90%;
+	margin-bottom : 10px;
+}
+
+/* ======================================= SIGNATURE MODULE UI STYLES */
+#tar_view {
+	width:50%;
+	height:300px;
+}
+
+#tar_doc_to_sign {
+	display:none;
+}
+
+#inp_cert_thumb {
+    	width: 692px;
+
+}
+
+#sel_certificate {
+	width: 735px;
+}
+.sha_thumbprint {
+	margin-bottom: 15px;
+	display : none;
+}
+.hiddenObjectsContainer {
+	float:right;
+	width: 0px;
+	height: 0px;
+}
+object.hiddenObject {
+        visibility: hidden;
+        width: 0px;
+        height: 0px;
+        margin: 0px;
+        padding: 0px;
+        border-style: none;
+        border-width: 0px;
+        max-width: 0px;
+	max-height: 0px;
+}
+
+/* ======================================= SIGNATURE MODULE UI STYLES END*/
+
+.job_total {
+	float:left;
+	width : 40%;
+	margin-top:20px;
+}
+
+input[readonly]{
+	text-align : center;
+	color: #1f1f1f;
+}
+
+input[disabled]{
+	text-align : center;
+	color: #1f1f1f;
+}
+
+select {
+	width : 200px;
+}
+
+.select_country {
+	width : 428px;
+}
+
+input[type=text], textarea { width:	70%; }
+
+.align_right {
+	text-align: right;
+}
+.align_left {
+	text-align: left;
+}
+
+/* === decor_* простые интуитивно ясные стили для <decor> ===*/
+
+.decor_right	{	text-align:		right;		}
+.decor_left	{	text-align:		left;		}
+.decor_bold,
+.decor_b	{	font-weight:		bold;		}
+.decor_italic,
+.decor_i	{	font-style:		italic;		}
+.decor_underline,
+.decor_u	{	text-decoration:	underline;	}
+
+/* === decor_* простые интуитивно ясные стили для <decor> ===*/
+
+/* ======================================= REQUIRED, ERROR, WARNING, INFO COLOR SELECTION CLASSES */
+.required{
+	border:2px solid #6D92EF;
+}
+
+input[type=radio].required + label {
+	background: #dbe5ff;
+	/*ccdaff*/
+}
+
+.required_text{
+	font-size: 80%;
+}
+
+.error{
+	border:2px solid #FF8083;
+}
+
+/* ======================================================================== OUT OF BOUNDS CLASSES */
+.oob_error{
+	border:2px solid #FF8083;
+}
+
+.oob_warning{
+	border:2px solid #FFBE7D;
+}
+
+.oob_info{
+/*
+	border:2px solid #A4FDA2;
+*/
+}
+
+.error_text{
+	font-size: 80%;
+}
+
+.out_of_bounds{
+	font-size: 80%;
+}
+
+/* ======================================================================== ON SUBMIT DIV CLASSES */
+.upload_hidden{
+	display:none;
+}
+
+.upload_processing{
+	cursor: wait
+}
+
+.upload_shown{
+	display:block;
+	width: 50%;
+	margin: 10px;
+	padding: 10px;
+	border-style : solid;
+}
+
+/* ===================================================================== AJAX FILE DIALOG CLASSES */
+fieldset { padding:0; border:0; margin-top:25px; }
+
+/* ===================================================================== DEFAULT VIEW TABLE CLASS */
+
+table.xc_table_view_default {
+        width: 100%;
+        border-collapse: collapse;
+}
+
+table.xc_table_view_default thead{
+        padding: 3px 7px 2px 7px;
+        font-weight: bold;
+        border: 1px solid #717BFF;
+        text-align: left;
+        background-color: #AFB4FE;
+}
+
+table.xc_table_view_default thead td{
+        border: 1px solid #717BFF;
+	padding: 3px 7px 2px 7px;
+}
+
+table.xc_table_view_default tbody td {
+	border: 1px solid #717BFF;
+	padding: 3px 7px 2px 7px;
+}
+
+table.xc_table_view_default tbody tr:nth-child(even) {
+	background-color: #E1E3FF;
+}
+
+/* ======================================================================== TEXTAREA REDONLY BLUR */
+
+.readonly_blur{
+	background: #F2F2F2 none repeat scroll 0 0;
+	border : 1px dotted #C6C6C6;
+}
+.display_none{
+	display:		none;
+}
+
+/* ========================================================================= XCFILE DISABLED BLUR */
+.xc__xfile_disabled{
+	background: #F2F2F2 none repeat scroll 0 0;
+	border : 1px dotted #C6C6C6;
+/*	display:		none;*/
+}
+
+.xc__xfile_checkbox_disabled{
+/*	display:	none;*/
+}

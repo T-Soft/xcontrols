@@ -1,0 +1,273 @@
+﻿<!DOCTYPE HTML>
+<html><head>
+   <title>xControls 2.6</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+   <!-- This line includes the general project style sheet (not required) -->
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+   <!-- This block defines the styles of the TOC headings, change them as needed -->
+   <style type="text/css">
+       body { background:#FFF; }
+       .navbar   { font-size: 120%; }
+
+       .heading1 { font-family: Arial,Helvetica; font-weight: normal; font-size: 10pt; color: #000000; text-decoration: none; }
+       .heading2 { font-family: Arial,Helvetica; font-weight: normal; font-size: 10pt; color: #000000; text-decoration: none; }
+       .heading3 { font-family: Arial,Helvetica; font-weight: normal; font-size: 10pt; color: #000000; text-decoration: none; }
+       .heading4 { font-family: Arial,Helvetica; font-weight: normal; font-size: 10pt; color: #000000; text-decoration: none; }
+       .heading5 { font-family: Arial,Helvetica; font-weight: normal; font-size: 10pt; color: #000000; text-decoration: none; }
+       .heading6 { font-family: Arial,Helvetica; font-weight: normal; font-size: 10pt; color: #000000; text-decoration: none; }
+
+       .hilight1 { font-family: Arial,Helvetica; font-weight: normal; font-size: 10pt; color: #FFFFFF; background: #002682; text-decoration: none; }
+       .hilight2 { font-family: Arial,Helvetica; font-weight: normal; font-size: 10pt; color: #FFFFFF; background: #002682; text-decoration: none; }
+       .hilight3 { font-family: Arial,Helvetica; font-weight: normal; font-size: 10pt; color: #FFFFFF; background: #002682; text-decoration: none; }
+       .hilight4 { font-family: Arial,Helvetica; font-weight: normal; font-size: 10pt; color: #FFFFFF; background: #002682; text-decoration: none; }
+       .hilight5 { font-family: Arial,Helvetica; font-weight: normal; font-size: 10pt; color: #FFFFFF; background: #002682; text-decoration: none; }
+       .hilight6 { font-family: Arial,Helvetica; font-weight: normal; font-size: 10pt; color: #FFFFFF; background: #002682; text-decoration: none; }
+
+       /* TOC LIST CSS */
+       #toc    { padding: 0; margin: 0; }
+       #toc li { margin-top: 2px; }
+       #toc ul { padding-left:0; padding-right:0 }
+       /* TOC LIST CSS */
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript">
+     var parentScope = (parent.hmNavigationFrame);
+     if (!parentScope) {
+		      var s = document.createElement("script");
+		      s.setAttribute("type","text/javascript");
+		      s.setAttribute("src", "helpman_navigation.js");
+		      document.getElementsByTagName("head")[0].appendChild(s);
+	    }
+     else {
+       if (initialtocstate != "expandall") parent.hmAddCss(document, "#toc li ul { display: none }");
+     }
+     function loadicons() { var icons = new Array(); for (i=0; i<arguments.length; i++) { icons[i] = new Image(); icons[i].src = arguments[i]; } }
+     function loadtoc() { if (parentScope) parent.loadstate(document.getElementById("toc")); else loadstate(document.getElementById("toc")); }
+     function savetoc() { if (parentScope) parent.savestate(document.getElementById("toc")); else savestate(document.getElementById("toc")); }
+     function clicked(node, event) { deselect(); if (parentScope) parent.hmNodeClicked(node, event); else hmNodeClicked(node, event); }
+     function dblclicked(node) { if (parentScope) parent.hmNodeDblclicked(node); else hmNodeDblclicked(node); }
+     function deselect() { if (window.getSelection) window.getSelection().removeAllRanges(); else if (document.selection) document.selection.empty(); }
+     $(document).ready(function(){
+       loadtoc();
+       $(window).onunload = savetoc;
+     });
+   </script>
+</head>
+<body>
+<p class="navbar"><b>Contents</b>
+ | <a href="xcontrols_kwindex.htm">Index</a>
+ | <a href="xcontrols_ftsearch.htm">Search</a>
+</p>
+<hr/>
+
+
+  <!-- Place holder for the TOC - this variable is REQUIRED! -->
+  <ul id="toc" style="list-style-type:none;display:block;padding-left:0">
+<li class="heading1" id="i1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a1" href="i%F0ei%FFoua_iaicia%F7aie%FF.htm" target="hmcontent"><span class="heading1" id="s1">Принятые обозначения</span></a>
+</li>
+<li class="heading1" id="i2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a2" href="catalog_structure.htm" target="hmcontent"><span class="heading1" id="s2">Структура каталогов</span></a>
+</li>
+<li class="heading1" id="i3" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a3" href="eeann_xcontrols.htm" target="hmcontent"><span class="heading1" id="s3" ondblclick="return dblclicked(this)">Класс xСontrols</span></a>
+<ul id="ul3" style="list-style-type:none">
+<li class="heading2" id="i3.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.1" href="automatic_db_control.htm" target="hmcontent"><span class="heading2" id="s3.1">Контроль БД и данных</span></a>
+</li>
+<li class="heading2" id="i3.2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.2" href="browser_version_control.htm" target="hmcontent"><span class="heading2" id="s3.2">Контроль версии браузера</span></a>
+</li>
+</ul>
+</li>
+<li class="heading1" id="i4" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a4" href="static_methods.htm" target="hmcontent"><span class="heading1" id="s4" ondblclick="return dblclicked(this)">Статические методы</span></a>
+<ul id="ul4" style="list-style-type:none">
+<li class="heading2" id="i4.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a4.1" href="header_nicaaiea_caaieiaeia.htm" target="hmcontent"><span class="heading2" id="s4.1">header. Создание заголовков</span></a>
+</li>
+<li class="heading2" id="i4.2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a4.2" href="init.htm" target="hmcontent"><span class="heading2" id="s4.2">form_init. Инициализация модуля создания форм</span></a>
+</li>
+<li class="heading2" id="i4.3" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a4.3" href="create_controls____.htm" target="hmcontent"><span class="heading2" id="s4.3">create_controls. Созадние отдельных элементов</span></a>
+</li>
+<li class="heading2" id="i4.4" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a4.4" href="create_form.htm" target="hmcontent"><span class="heading2" id="s4.4">create_form. Создание формы</span></a>
+</li>
+<li class="heading2" id="i4.5" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a4.5" href="edit_form.htm" target="hmcontent"><span class="heading2" id="s4.5">edit_form. Редактирование содержимого формы</span></a>
+</li>
+<li class="heading2" id="i4.6" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a4.6" href="store_data.htm" target="hmcontent"><span class="heading2" id="s4.6">store_data. Сохранение данных на сервере.</span></a>
+</li>
+<li class="heading2" id="i4.7" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a4.7" href="update_entry.htm" target="hmcontent"><span class="heading2" id="s4.7">update_entry. Изменение данных на сервере.</span></a>
+</li>
+<li class="heading2" id="i4.8" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a4.8" href="get_info_______2.htm" target="hmcontent"><span class="heading2" id="s4.8">get_info. Получение информации о поле._2</span></a>
+</li>
+<li class="heading2" id="i4.9" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a4.9" href="file_info.htm" target="hmcontent"><span class="heading2" id="s4.9">file_info. Получение информации о файле.</span></a>
+</li>
+<li class="heading2" id="i4.10" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a4.10" href="get_info______.htm" target="hmcontent"><span class="heading2" id="s4.10">print_info. Вывод на экран информации о поле.</span></a>
+</li>
+<li class="heading2" id="i4.11" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a4.11" href="generate_initfile_template____.htm" target="hmcontent"><span class="heading2" id="s4.11">generate_initfile_template. Генерация шаблона инициализирующего файла</span></a>
+</li>
+<li class="heading2" id="i4.12" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a4.12" href="view_init____.htm" target="hmcontent"><span class="heading2" id="s4.12">view_init. Инициализация модуля отображения.</span></a>
+</li>
+<li class="heading2" id="i4.13" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a4.13" href="view.htm" target="hmcontent"><span class="heading2" id="s4.13">view. Табличное отображение данных.</span></a>
+</li>
+</ul>
+</li>
+<li class="heading1" id="i5" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a5" href="control_elements.htm" target="hmcontent"><span class="heading1" id="s5" ondblclick="return dblclicked(this)">Элементы управления &lt;control&gt;</span></a>
+<ul id="ul5" style="list-style-type:none">
+<li class="heading2" id="i5.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a5.1" href="address.htm" target="hmcontent"><span class="heading2" id="s5.1">address. Данные об адресе&nbsp;</span></a>
+</li>
+<li class="heading2" id="i5.2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a5.2" href="address_region.htm" target="hmcontent"><span class="heading2" id="s5.2">address_region. Данные об адресе и регионе</span></a>
+</li>
+<li class="heading2" id="i5.3" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a5.3" href="person.htm" target="hmcontent"><span class="heading2" id="s5.3">person. Личные данные</span></a>
+</li>
+<li class="heading2" id="i5.4" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a5.4" href="ogrn.htm" target="hmcontent"><span class="heading2" id="s5.4">ogrn. ОГРН</span></a>
+</li>
+<li class="heading2" id="i5.5" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a5.5" href="inn.htm" target="hmcontent"><span class="heading2" id="s5.5">inn. ИНН</span></a>
+</li>
+<li class="heading2" id="i5.6" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a5.6" href="tnved.htm" target="hmcontent"><span class="heading2" id="s5.6">tnved. ТНВЕД</span></a>
+</li>
+<li class="heading2" id="i5.7" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a5.7" href="input.htm" target="hmcontent"><span class="heading2" id="s5.7">input. Однострочное поле ввода</span></a>
+</li>
+<li class="heading2" id="i5.8" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a5.8" href="textarea.htm" target="hmcontent"><span class="heading2" id="s5.8">textarea. Многострочное поле ввода</span></a>
+</li>
+<li class="heading2" id="i5.9" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a5.9" href="date___.htm" target="hmcontent"><span class="heading2" id="s5.9">date. Выбор даты</span></a>
+</li>
+<li class="heading2" id="i5.10" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a5.10" href="button.htm" target="hmcontent"><span class="heading2" id="s5.10">button. Кнопка</span></a>
+</li>
+<li class="heading2" id="i5.11" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a5.11" href="button_close.htm" target="hmcontent"><span class="heading2" id="s5.11">button_close. Кнопка отмены редактирования</span></a>
+</li>
+<li class="heading2" id="i5.12" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a5.12" href="select.htm" target="hmcontent"><span class="heading2" id="s5.12">select. Выпадающий список</span></a>
+</li>
+<li class="heading2" id="i5.13" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a5.13" href="checkbox.htm" target="hmcontent"><span class="heading2" id="s5.13">checkbox. Элементы выбора</span></a>
+</li>
+<li class="heading2" id="i5.14" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a5.14" href="radio.htm" target="hmcontent"><span class="heading2" id="s5.14">radio. Переключатели</span></a>
+</li>
+<li class="heading2" id="i5.15" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a5.15" href="text.htm" target="hmcontent"><span class="heading2" id="s5.15">text. Простой текст</span></a>
+</li>
+<li class="heading2" id="i5.16" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a5.16" href="markup(hr_br).htm" target="hmcontent"><span class="heading2" id="s5.16">Элементы разметки (hr &amp; br)</span></a>
+</li>
+<li class="heading2" id="i5.17" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a5.17" href="int.htm" target="hmcontent"><span class="heading2" id="s5.17">int. Целочисленное значение</span></a>
+</li>
+<li class="heading2" id="i5.18" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a5.18" href="float.htm" target="hmcontent"><span class="heading2" id="s5.18">float. Дробное значение</span></a>
+</li>
+<li class="heading2" id="i5.19" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a5.19" href="file.htm" target="hmcontent"><span class="heading2" id="s5.19">file. Загрузка файла</span></a>
+</li>
+<li class="heading2" id="i5.20" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a5.20" href="xfile___.htm" target="hmcontent"><span class="heading2" id="s5.20">xfile. Загрузка файла</span></a>
+</li>
+<li class="heading2" id="i5.21" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a5.21" href="file_chunked.htm" target="hmcontent"><span class="heading2" id="s5.21">file_ajax. Загрузка файла по частям</span></a>
+</li>
+</ul>
+</li>
+<li class="heading1" id="i6" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a6" href=javascript:void(0);><span class="heading1" id="s6" ondblclick="return dblclicked(this)">Модуль FORM</span></a>
+<ul id="ul6" style="list-style-type:none">
+<li class="heading2" id="i6.1" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a6.1" href="xml_structure.htm" target="hmcontent"><span class="heading2" id="s6.1" ondblclick="return dblclicked(this)">Описательный XML</span></a>
+<ul id="ul6.1" style="list-style-type:none">
+<li class="heading3" id="i6.1.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a6.1.1" href="database_tag.htm" target="hmcontent"><span class="heading3" id="s6.1.1">&lt;database&gt; Описание базы данных</span></a>
+</li>
+<li class="heading3" id="i6.1.2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a6.1.2" href="control_tag.htm" target="hmcontent"><span class="heading3" id="s6.1.2">&lt;control&gt; Описание элемента управления</span></a>
+</li>
+<li class="heading3" id="i6.1.3" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a6.1.3" href="xml_consume.htm" target="hmcontent"><span class="heading3" id="s6.1.3">&lt;include_xml&gt; Включение XML из внешнего файла</span></a>
+</li>
+<li class="heading3" id="i6.1.4" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a6.1.4" href="form_xml_example.htm" target="hmcontent"><span class="heading3" id="s6.1.4">Пример XML описания формы form.xml</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i6.2" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a6.2" href="fields_control.htm" target="hmcontent"><span class="heading2" id="s6.2" ondblclick="return dblclicked(this)">Контроль полей формы</span></a>
+<ul id="ul6.2" style="list-style-type:none">
+<li class="heading3" id="i6.2.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a6.2.1" href="client_control.htm" target="hmcontent"><span class="heading3" id="s6.2.1">Контроль : клиент</span></a>
+</li>
+<li class="heading3" id="i6.2.2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a6.2.2" href="server_control.htm" target="hmcontent"><span class="heading3" id="s6.2.2">Контроль : сервер</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i6.3" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a6.3" href="error_handling.htm" target="hmcontent"><span class="heading2" id="s6.3" ondblclick="return dblclicked(this)">Контроль внутренних ошибок</span></a>
+<ul id="ul6.3" style="list-style-type:none">
+<li class="heading3" id="i6.3.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a6.3.1" href="module_error_handling.htm" target="hmcontent"><span class="heading3" id="s6.3.1">Ошибки модулей</span></a>
+</li>
+<li class="heading3" id="i6.3.2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a6.3.2" href="core_error_handling.htm" target="hmcontent"><span class="heading3" id="s6.3.2">Ошибки ядра</span></a>
+</li>
+<li class="heading3" id="i6.3.3" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a6.3.3" href="crash_error_handling.htm" target="hmcontent"><span class="heading3" id="s6.3.3">Критические ошибки ядра</span></a>
+</li>
+<li class="heading3" id="i6.3.4" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a6.3.4" href="invoke_error.htm" target="hmcontent"><span class="heading3" id="s6.3.4">Вызов ошибок invoke</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i6.4" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a6.4" href="bounds.htm" target="hmcontent"><span class="heading2" id="s6.4">Ограничение вводимого значения</span></a>
+</li>
+<li class="heading2" id="i6.5" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a6.5" href="initfile.htm" target="hmcontent"><span class="heading2" id="s6.5">Инициализирующий файл</span></a>
+</li>
+</ul>
+</li>
+<li class="heading1" id="i7" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a7" href="_view.htm" target="hmcontent"><span class="heading1" id="s7" ondblclick="return dblclicked(this)">Модуль VIEW</span></a>
+<ul id="ul7" style="list-style-type:none">
+<li class="heading2" id="i7.1" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a7.1" href="view_xml.htm" target="hmcontent"><span class="heading2" id="s7.1" ondblclick="return dblclicked(this)">Описательный XML</span></a>
+<ul id="ul7.1" style="list-style-type:none">
+<li class="heading3" id="i7.1.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a7.1.1" href="view_database.htm" target="hmcontent"><span class="heading3" id="s7.1.1">&lt;database&gt; Описание базы данных</span></a>
+</li>
+<li class="heading3" id="i7.1.2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a7.1.2" href="textblock_view.htm" target="hmcontent"><span class="heading3" id="s7.1.2">&lt;textblock&gt; Блок текста вне таблицы</span></a>
+</li>
+<li class="heading3" id="i7.1.3" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a7.1.3" href="table_view.htm" target="hmcontent"><span class="heading3" id="s7.1.3">&lt;table&gt; Описание таблицы отображения</span></a>
+</li>
+<li class="heading3" id="i7.1.4" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a7.1.4" href="additional____.htm" target="hmcontent"><span class="heading3" id="s7.1.4">&lt;additional&gt; Дополнительные поля в выборке</span></a>
+</li>
+<li class="heading3" id="i7.1.5" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a7.1.5" href="xml_consume__xml_form.htm" target="hmcontent"><span class="heading3" id="s7.1.5">&lt;include_xml&gt; Включение XML из внешнего файла</span></a>
+</li>
+<li class="heading3" id="i7.1.6" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a7.1.6" href="style_view.htm" target="hmcontent"><span class="heading3" id="s7.1.6">&lt;style&gt; Описание стилей родительского элемента</span></a>
+</li>
+<li class="heading3" id="i7.1.7" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a7.1.7" href="data_row_view.htm" target="hmcontent"><span class="heading3" id="s7.1.7">&lt;data_row&gt; Описание ряда данных</span></a>
+</li>
+<li class="heading3" id="i7.1.8" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a7.1.8" href="header_row___.htm" target="hmcontent"><span class="heading3" id="s7.1.8">&lt;header_row&gt; Дополнительный заголовок таблицы</span></a>
+</li>
+<li class="heading3" id="i7.1.9" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a7.1.9" href="row_view.htm" target="hmcontent"><span class="heading3" id="s7.1.9">&lt;row&gt; Описание ряда таблицы</span></a>
+</li>
+<li class="heading3" id="i7.1.10" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a7.1.10" href="cell_view.htm" target="hmcontent"><span class="heading3" id="s7.1.10">&lt;cell&gt; Описание ячейки таблицы</span></a>
+</li>
+<li class="heading3" id="i7.1.11" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a7.1.11" href="block_view.htm" target="hmcontent"><span class="heading3" id="s7.1.11">&lt;block&gt; Описание блока ячейки таблицы</span></a>
+</li>
+<li class="heading3" id="i7.1.12" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a7.1.12" href="xc_view_templates.htm" target="hmcontent"><span class="heading3" id="s7.1.12">&lt;template&gt; Шаблон отображения данных</span></a>
+</li>
+<li class="heading3" id="i7.1.13" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a7.1.13" href="xc_view_formats.htm" target="hmcontent"><span class="heading3" id="s7.1.13">&lt;format&gt; Форматы отображения данных</span></a>
+</li>
+<li class="heading3" id="i7.1.14" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a7.1.14" href="view_xml_example.htm" target="hmcontent"><span class="heading3" id="s7.1.14">Пример XML описания отображения view.xml</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="heading1" id="i8" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a8" href="preprocessor.htm" target="hmcontent"><span class="heading1" id="s8" ondblclick="return dblclicked(this)">Препроцессор</span></a>
+<ul id="ul8" style="list-style-type:none">
+<li class="heading2" id="i8.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a8.1" href="preprocessor_html_entity_subst.htm" target="hmcontent"><span class="heading2" id="s8.1">Замена HTML сущностей</span></a>
+</li>
+<li class="heading2" id="i8.2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a8.2" href="preprocessor_html_tag_subst.htm" target="hmcontent"><span class="heading2" id="s8.2">Замена HTML форматирования</span></a>
+</li>
+<li class="heading2" id="i8.3" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a8.3" href="preprocessor_quick_subst.htm" target="hmcontent"><span class="heading2" id="s8.3">Быстрые последовательности</span></a>
+</li>
+</ul>
+</li>
+<li class="heading1" id="i9" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a9" href="macros.htm" target="hmcontent"><span class="heading1" id="s9" ondblclick="return dblclicked(this)">Макросы</span></a>
+<ul id="ul9" style="list-style-type:none">
+<li class="heading2" id="i9.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a9.1" href="macro_now.htm" target="hmcontent"><span class="heading2" id="s9.1">now. Дата и время</span></a>
+</li>
+<li class="heading2" id="i9.2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a9.2" href="macro_number.htm" target="hmcontent"><span class="heading2" id="s9.2">number. Вывод номеров строк таблиц</span></a>
+</li>
+<li class="heading2" id="i9.3" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a9.3" href="form_____.htm" target="hmcontent"><span class="heading2" id="s9.3">form. Получение значения поля формы</span></a>
+</li>
+<li class="heading2" id="i9.4" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a9.4" href="sql_macros.htm" target="hmcontent"><span class="heading2" id="s9.4">sql. Получение строки из базы данных</span></a>
+</li>
+</ul>
+</li>
+<li class="heading1" id="i10" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a10" href="module_architecture.htm" target="hmcontent"><span class="heading1" id="s10" ondblclick="return dblclicked(this)">Модульная архитектура</span></a>
+<ul id="ul10" style="list-style-type:none">
+<li class="heading2" id="i10.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a10.1" href="user_defined_controls.htm" target="hmcontent"><span class="heading2" id="s10.1">Пользовательские элементы</span></a>
+</li>
+<li class="heading2" id="i10.2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a10.2" href="two-layer_controls.htm" target="hmcontent"><span class="heading2" id="s10.2">Составные типы</span></a>
+</li>
+<li class="heading2" id="i10.3" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a10.3" href="user_js_modules.htm" target="hmcontent"><span class="heading2" id="s10.3">Пользовательские сценарии</span></a>
+</li>
+<li class="heading2" id="i10.4" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a10.4" href="user_view_formatters.htm" target="hmcontent"><span class="heading2" id="s10.4">Пользовательское форматирование данных</span></a>
+</li>
+</ul>
+</li>
+</ul>
+<script type="text/javascript">loadicons('cicon9.gif','cicon2.gif','cicon1.gif');</script>
+
+
+</body>
+</html>

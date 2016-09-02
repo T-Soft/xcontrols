@@ -1,0 +1,47 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>Препроцессор</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <style type="text/css">
+     body { margin: 0px; background: #FFFFFF; }
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "preprocessor.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+
+<!-- Placeholder for topic body. -->
+<table style="width:100%;border:none;border-spacing:0px"><tr style="vertical-align:top"><td style="text-align:left;padding:5px">
+<p class="p_Underlined_red" style="border-top: none; border-right: none; border-left: none;"><span class="f_Underlined_red">Препроцессор</span></p>
+<p>&nbsp;</p>
+<p>Прежде чем начать интерпретацию XML документа, система <span style="font-weight: bold;">xControls</span> проводит его предварительные преобразования и компиляцию посредством препроцессора.</p>
+<p>&nbsp;</p>
+<p>В задачи препроцессора входит удаление комментариев, включение содержимого дополнительных XML документов, исполнение макросов, </p>
+<p>вызов нативных функций из XML а также замена специальных управляющих символов на их предустановленные значения, валидные для </p>
+<p>последующего преобразования в HTML</p>
+<p>&nbsp;</p>
+<p>Последовательность действий препроцессора такова:</p>
+<p>&nbsp;</p>
+<p style="text-align: left; padding: 0px 0px 0px 16px; margin: 0px 0px 0px 24px;"><span style="font-size:11pt; font-family: 'Arial';color:#000000;display:inline-block;width:16px;margin-left:-16px">1.</span>Удаление комментариев</p><p style="text-align: left; padding: 0px 0px 0px 16px; margin: 0px 0px 0px 24px;"><span style="font-size:11pt; font-family: 'Arial';color:#000000;display:inline-block;width:16px;margin-left:-16px">2.</span>Включение содержимого из дополнительных XML (обработка элемента <span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">include_xml</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span>)</p><p style="text-align: left; padding: 0px 0px 0px 16px; margin: 0px 0px 0px 24px;"><span style="font-size:11pt; font-family: 'Arial';color:#000000;display:inline-block;width:16px;margin-left:-16px">3.</span>Исполнение макросов и вызов функций языка Parser 3</p><p style="text-align: left; padding: 0px 0px 0px 16px; margin: 0px 0px 0px 24px;"><span style="font-size:11pt; font-family: 'Arial';color:#000000;display:inline-block;width:16px;margin-left:-16px">4.</span>Замена специальных управляющих символов на их значения, валидные для последующего преобразования в HTML. [<span style="font-weight: bold;">2.6</span>]</p><p style="text-align: left; padding: 0px 0px 0px 16px; margin: 0px 0px 0px 24px;"><span style="font-size:11pt; font-family: 'Arial';color:#000000;display:inline-block;width:16px;margin-left:-16px">5.</span>Замена всех табуляций пробелами</p><p>&nbsp;</p>
+<p>&nbsp;</p>
+
+</td></tr></table>
+
+</body>
+</html>

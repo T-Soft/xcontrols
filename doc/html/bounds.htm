@@ -1,0 +1,80 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>Ограничение вводимого значения</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <style type="text/css">
+     body { margin: 0px; background: #FFFFFF; }
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "bounds.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+
+<!-- Placeholder for topic body. -->
+<table style="width:100%;border:none;border-spacing:0px"><tr style="vertical-align:top"><td style="text-align:left;padding:5px">
+<p class="p_Underlined_red" style="border-top: none; border-right: none; border-left: none;"><span class="f_Underlined_red">Ограничение вводимого значения</span></p>
+<p>&nbsp;</p>
+<p>В описательном XML для некоторых полей возможно указание границ вводимых значений.</p>
+<p style="margin: 14px 0px 0px 0px;">Границы служат для сообщения пользователю в реальном времени о логической корректности (или некорректности) вводимого значения.</p>
+<p>При попадании в заданный интервал для данного поля будет выведено сообщение.</p>
+<p style="margin: 14px 0px 0px 0px;">Границы задаются тегом <span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">bounds</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="color: #800000;">min</span><span class="f_CodeExample" style="color: #0000ff;">=&quot;&quot;</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="color: #800000;">max</span><span class="f_CodeExample" style="color: #0000ff;">=&quot;&quot;</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="color: #800000;">type</span><span class="f_CodeExample" style="color: #0000ff;">=&quot;&quot;</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="color: #800000;">message</span><span class="f_CodeExample" style="color: #0000ff;">=&quot;&quot;/&gt;</span></p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table style="width:50%; border:solid 2px #000000; border-spacing:0px; border-collapse:collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:middle; width:138px; padding:3px; border:solid 1px #000000;"><p> <span style="font-family: Batang; font-weight: bold;">min</span></p>
+</td>
+<td style="vertical-align:middle; width:749px; padding:3px; border:solid 1px #000000;"><p> - значение левой границы диапазона значений</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:middle; width:138px; padding:3px; border:solid 1px #000000;"><p> <span style="font-family: Batang; font-weight: bold;">max</span></p>
+</td>
+<td style="vertical-align:middle; width:749px; padding:3px; border:solid 1px #000000;"><p> - значение правой границы диапазона значений </p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:middle; width:138px; padding:3px; border:solid 1px #000000;"><p> <span style="font-family: Batang; font-weight: bold;">type</span></p>
+</td>
+<td style="vertical-align:middle; width:749px; padding:3px; border:solid 1px #000000;"><p> - тип ошибки при попадании в диапазон</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:middle; width:138px; padding:3px; border:solid 1px #000000;"><p> <span style="font-family: Batang; font-weight: bold;">message</span></p>
+</td>
+<td style="vertical-align:middle; width:749px; padding:3px; border:solid 1px #000000;"><p> - сообщение, выводимое при попадании в диапазон</p>
+</td>
+</tr>
+</table>
+</div>
+<p style="margin: 14px 0px 0px 0px;">По умолчанию границы диапазона включаются в сам диапазон. Чтобы исключить границу из диапазона, после значения ставится символ нижнего подчеркивания <span style="font-weight: bold;">&quot;</span><span style="font-family: Batang; font-weight: bold;">_</span><span style="font-weight: bold;">&quot;</span></p>
+<p style="margin: 14px 0px 0px 0px;">Например.</p>
+<p style="margin: 14px 0px 0px 0px;"><span style="font-family: Batang; font-weight: bold;"> &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample" style="font-weight: bold;">max=&quot;12&quot;</span>  &nbsp; &nbsp; &nbsp; &nbsp;- включаем границу</p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold;">max=&quot;12_&quot;</span><span style="font-family: Batang; font-weight: bold;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>-&nbsp;не&nbsp;включаем&nbsp;границу</p>
+<p style="margin: 14px 0px 0px 0px;">Атрибут <span style="font-family: Batang; font-weight: bold;">type</span> определяет тип границы и может принимать одно из следующих значений.</p>
+<p style="text-align: left; padding: 0px 0px 0px 13px; margin: 0px 0px 0px 22px;"><span style="font-size:11pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span style="font-weight: bold;">info</span> - служит для сообщения пользователю некритичной информации о вводимом значении. <span style="font-weight: bold;">Не вызывает остановку отправки формы.</span></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 0px 0px 0px 22px;"><span style="font-size:11pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span style="font-weight: bold;">warning</span> - служит для сообщения пользователю о возможной ошибке ввода. <span style="font-weight: bold;">Не вызывает остановку отправки формы.</span></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 0px 0px 0px 22px;"><span style="font-size:11pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span style="font-weight: bold;">error</span> - служит для сообщения пользователю об ошибке ввода. <span style="font-weight: bold;">Вызывает остановку отправки формы.</span></p><p style="margin: 14px 0px 0px 0px;">В зависимости от типа границы меняется выделение контролируемого поля.</p>
+<p style="margin: 14px 0px 0px 0px;">Тегов <span style="font-family: Batang; font-weight: bold;">&lt;bounds&gt;</span> может быть столько, сколько диапазонов требуется описать. Каждый тэг соответствует своему диапазону.</p>
+<p style="margin: 14px 0px 0px 0px;"><span style="text-decoration: underline;">Пример.</span></p>
+<p style="margin: 14px 0px 0px 0px;"><span style="font-family: Batang; font-weight: bold;"> &nbsp; &nbsp;  </span><span class="f_CodeExample" style="font-weight: bold;">  </span><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">bounds</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="color: #800000;">min</span><span class="f_CodeExample" style="color: #0000ff;">=&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #000080;">0_</span><span class="f_CodeExample" style="color: #0000ff;">&quot;</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="color: #800000;">type</span><span class="f_CodeExample" style="color: #0000ff;">=&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #000080;">error</span><span class="f_CodeExample" style="color: #0000ff;">&quot;</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="color: #800000;">message</span><span class="f_CodeExample" style="color: #0000ff;">=&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #000080;">Количество партий должно быть больше 0</span><span class="f_CodeExample" style="color: #0000ff;">&quot;/&gt;</span><br />
+<span class="f_CodeExample" style="font-weight: bold;"> &nbsp; &nbsp;  </span><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">bounds</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="color: #800000;">min</span><span class="f_CodeExample" style="color: #0000ff;">=&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #000080;">0</span><span class="f_CodeExample" style="color: #0000ff;">&quot;</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="color: #800000;">max</span><span class="f_CodeExample" style="color: #0000ff;">=&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #000080;">99</span><span class="f_CodeExample" style="color: #0000ff;">&quot;</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="color: #800000;">type</span><span class="f_CodeExample" style="color: #0000ff;">=&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #000080;">info</span><span class="f_CodeExample" style="color: #0000ff;">&quot;</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="color: #800000;">message</span><span class="f_CodeExample" style="color: #0000ff;">=&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #000080;">Введено корректное количество партий</span><span class="f_CodeExample" style="color: #0000ff;">&quot;/&gt;</span><br />
+<span class="f_CodeExample" style="font-weight: bold;"> &nbsp; &nbsp;  </span><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">bounds</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="color: #800000;">max</span><span class="f_CodeExample" style="color: #0000ff;">=&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #000080;">100_</span><span class="f_CodeExample" style="color: #0000ff;">&quot;</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="color: #800000;">type</span><span class="f_CodeExample" style="color: #0000ff;">=&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #000080;">warning</span><span class="f_CodeExample" style="color: #0000ff;">&quot;</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="color: #800000;">message</span><span class="f_CodeExample" style="color: #0000ff;">=&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #000080;">Количество партий достаточно велико, Вы уверены в корректности данного значения</span><span class="f_CodeExample" style="color: #0000ff;">&quot;/&gt;</span></p>
+
+</td></tr></table>
+
+</body>
+</html>

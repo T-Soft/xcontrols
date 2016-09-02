@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+	<form>
+<!-- ==================================================================================== region -->
+		<control>
+			<control_group>input</control_group>
+			<control_type>text</control_type>
+			<control_name>region</control_name>
+			<control_id>region</control_id>
+			<control_label>Область</control_label>
+			<control_default_value></control_default_value>
+			<control_properties></control_properties>
+			<control_classes></control_classes>
+		</control>	
+<!-- ====================================================================================== city -->
+		<control>
+			<control_group>input</control_group>
+			<control_type>text</control_type>
+			<control_name>city</control_name>
+			<control_id>city</control_id>
+			<control_label>Город</control_label>
+			<control_default_value></control_default_value>
+			<control_properties></control_properties>
+			<control_classes></control_classes>
+		</control>	
+		
+<!-- ==================================================================================== street -->
+		<control>
+			<control_group>input</control_group>
+			<control_type>text</control_type>
+			<control_name>street</control_name>
+			<control_id>street</control_id>
+			<control_label>Улица</control_label>
+			<control_default_value></control_default_value>
+			<control_properties></control_properties>
+			<control_classes></control_classes>
+		</control>	
+		
+<!-- ===================================================================================== house -->
+		<control>
+			<control_group>input</control_group>
+			<control_type>text</control_type>
+			<control_name>house</control_name>
+			<control_id>house</control_id>
+			<control_label>Дом</control_label>
+			<control_default_value></control_default_value>
+			<control_properties></control_properties>
+			<control_classes></control_classes>
+		</control>	
+		
+<!-- ================================================================================= apartment -->
+		<control>
+			<control_group>input</control_group>
+			<control_type>text</control_type>
+			<control_name>apartment</control_name>
+			<control_id>apartment</control_id>
+			<control_label>Квартира</control_label>
+			<control_default_value></control_default_value>
+			<control_properties></control_properties>
+			<control_classes></control_classes>
+		</control>	
+	</form> 
+</document>

@@ -1,0 +1,123 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>&lt;template&gt; Шаблон отображения данных</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <style type="text/css">
+     body { margin: 0px; background: #FFFFFF; }
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "xc_view_templates.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+
+<!-- Placeholder for topic body. -->
+<table style="width:100%;border:none;border-spacing:0px"><tr style="vertical-align:top"><td style="text-align:left;padding:5px">
+<p class="p_Underlined_red" style="border-top: none; border-right: none; border-left: none;"><span class="f_Underlined_red">&lt;template&gt; Шаблон отображения данных</span></p>
+<p style="margin: 14px 0px 0px 0px;">Для каждого значения, выводимого в таблицу возможно указание шаблона, который будет наложен на <br />
+отоформатированные данные или информации, которая будет выведена в случае, если данные отсутствуют.</p>
+<p style="margin: 14px 0px 0px 0px;">Отформатированные данные будут вставлены в шаблон на место следующей директивы:</p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">&nbsp;&nbsp;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold;">Шаблон</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold;">%</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">VALUE</span><span class="f_CodeExample" style="font-weight: bold;">[значение&nbsp;по&nbsp;умолчанию]%&nbsp;продолжение&nbsp;шаблона</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_CodeExample">Где:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 24px;"><table style="width:70%; border:solid 2px #000000; border-spacing:0px; border-collapse:collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:171px; padding:3px; border:solid 1px #000000;"><p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">Шаблон</span></p>
+</td>
+<td style="vertical-align:top; width:688px; padding:3px; border:solid 1px #000000;"><p> - любая строка.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:171px; padding:3px; border:solid 1px #000000;"><p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">%</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">VALUE</span><span class="f_CodeExample" style="font-weight: bold;">[значение&nbsp;по&nbsp;умолчанию]%</span></p>
+</td>
+<td style="vertical-align:top; width:688px; padding:3px; border:solid 1px #000000;"><p> - ссылка на отформатированные данные. Можно передавать в <span class="f_CodeExample" style="font-weight: bold;">%</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">PARSER</span><span class="f_CodeExample" style="font-weight: bold;">{}%</span> и <span class="f_CodeExample" style="font-weight: bold;">%</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">MACRO</span><span class="f_CodeExample" style="font-weight: bold;">{}%</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:171px; padding:3px; border:solid 1px #000000;"><p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">значение&nbsp;по&nbsp;умолчанию</span></p>
+</td>
+<td style="vertical-align:top; width:688px; padding:3px; border:solid 1px #000000;"><p> - значение указываемое в шаблоне в случае отсутствия данных в базе.</p>
+</td>
+</tr>
+</table>
+</div>
+<p style="margin: 14px 0px 0px 0px;">&nbsp;</p>
+<p style="margin: 14px 0px 0px 0px;"><span style="text-decoration: underline;">Элемент</span> <span class="f_CodeExample" style="font-weight: bold;">%</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">VALUE</span><span class="f_CodeExample" style="font-weight: bold;">[]%:</span></p>
+<p style="margin: 14px 0px 0px 0px;"><span style="width:48px">&nbsp;</span>Пусть используется стандартное форматирование данных элемента и шаблон <span class="f_CodeExample" style="font-weight: bold;">Значение: %</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">VALUE</span><span class="f_CodeExample" style="font-weight: bold;">[]%.</span> В зависимости от наличия данных (<span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">val</span>) и значения по умолчанию (<span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">default</span>) возможны случаи:</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 14px 0px 0px 24px;"><table style="width:65%; border:solid 2px #000000; border-spacing:0px; border-collapse:collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:129px; background-color:#c0c0c0; padding:3px; border:solid 1px #000000;"><p><span style="font-weight: bold;">Данные (</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">val</span><span style="font-weight: bold;">)</span></p>
+</td>
+<td style="vertical-align:top; width:290px; background-color:#c0c0c0; padding:3px; border:solid 1px #000000;"><p><span style="font-weight: bold;">Значение по умолчанию (</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">default</span><span style="font-weight: bold;">)</span></p>
+</td>
+<td style="vertical-align:top; width:369px; background-color:#c0c0c0; padding:3px; border:solid 1px #000000;"><p><span style="font-weight: bold;">Вывод на экран</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:129px; padding:3px; border:solid 1px #000000;"><p><span style="font-weight: bold;">Есть</span></p>
+</td>
+<td style="vertical-align:top; width:290px; padding:3px; border:solid 1px #000000;"><p>Нет (квадратные скобки пусты <span class="f_CodeExample" style="font-weight: bold;">[]</span>)</p>
+</td>
+<td style="vertical-align:top; width:369px; padding:3px; border:solid 1px #000000;"><p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">Значение:&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">val</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:129px; padding:3px; border:solid 1px #000000;"><p>Нет</p>
+</td>
+<td style="vertical-align:top; width:290px; padding:3px; border:solid 1px #000000;"><p><span style="font-weight: bold;">Есть</span></p>
+</td>
+<td style="vertical-align:top; width:369px; padding:3px; border:solid 1px #000000;"><p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">Значение:&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">default</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:129px; padding:3px; border:solid 1px #000000;"><p><span style="font-weight: bold;">Есть</span></p>
+</td>
+<td style="vertical-align:top; width:290px; padding:3px; border:solid 1px #000000;"><p><span style="font-weight: bold;">Есть</span></p>
+</td>
+<td style="vertical-align:top; width:369px; padding:3px; border:solid 1px #000000;"><p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">Значение:&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">val</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:129px; padding:3px; border:solid 1px #000000;"><p>Нет</p>
+</td>
+<td style="vertical-align:top; width:290px; padding:3px; border:solid 1px #000000;"><p>Нет (квадратные скобки пусты <span class="f_CodeExample" style="font-weight: bold;">[]</span>)</p>
+</td>
+<td style="vertical-align:top; width:369px; padding:3px; border:solid 1px #000000;"><p class="p_CodeExample"><span class="f_CodeExample">&nbsp;</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p style="margin: 14px 0px 0px 0px;">&nbsp;</p>
+<p class="p_CodeExample"><span style="text-decoration: underline;">Указание&nbsp;шаблона&nbsp;отображения:</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">block</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #800000;">type</span><span class="f_CodeExample" style="color: #0000ff;">=&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #000080;">data</span><span class="f_CodeExample" style="color: #0000ff;">&quot;&gt;</span><br />
+<span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">source_name</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><span class="f_CodeExample" style="font-weight: bold;">file_test</span><span class="f_CodeExample" style="color: #0000ff;">&lt;/</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">source_name</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><br />
+<span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">control_group</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><span class="f_CodeExample" style="font-weight: bold;">file</span><span class="f_CodeExample" style="color: #0000ff;">&lt;/</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">control_group</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><br />
+<span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">label</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><span class="f_CodeExample" style="font-weight: bold;">Загруженный&nbsp;файл&nbsp;1</span><span class="f_CodeExample" style="color: #0000ff;">&lt;/</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">label</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><br />
+<span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">format</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><span class="f_CodeExample" style="font-weight: bold;">name_size</span><span class="f_CodeExample" style="color: #0000ff;">&lt;/</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">format</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><br />
+<span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">template</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><span class="f_CodeExample" style="font-weight: bold;">Файл&nbsp;:&nbsp;%VALUE[нет&nbsp;файла]%</span><span class="f_CodeExample" style="color: #0000ff;">&lt;/</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">template</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><br />
+<span style="width:48px">&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">&lt;/</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">block</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span></p>
+<p style="margin: 14px 0px 0px 0px;">В случае отсутствия данных выведет в соответствующее поле таблицы <span class="f_CodeExample" style="font-weight: bold;">нет файла</span>.</p>
+<p style="margin: 14px 0px 0px 0px;">Начиная с версии <span style="font-weight: bold;">2.2</span> данный блок поддерживает использование макросов (См. <a href="macros.htm" class="topiclink">Макросы</a>)</p>
+
+</td></tr></table>
+
+</body>
+</html>

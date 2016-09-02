@@ -1,0 +1,112 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>Элементы управления &lt;control&gt;</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <style type="text/css">
+     body { margin: 0px; background: #FFFFFF; }
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "control_elements.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+
+<!-- Placeholder for topic body. -->
+<table style="width:100%;border:none;border-spacing:0px"><tr style="vertical-align:top"><td style="text-align:left;padding:5px">
+<p class="p_Underlined_red" style="border-top: none; border-right: none; border-left: none;"><span class="f_Underlined_red">Элементы управления &lt;control&gt;</span></p>
+<p>&nbsp;</p>
+<p>Основной единицей описательного XML является элемент управления.</p>
+<p>&nbsp;</p>
+<p>Элементы управления делятся на группы</p>
+<p style="margin: 14px 0px 0px 0px;"><span style="text-decoration: underline;">Классы элементов управления</span></p>
+<p style="text-align: left; padding: 0px 0px 0px 13px; margin: 0px 0px 0px 22px;"><span style="font-size:11pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span style="font-weight: bold;">Значащие</span></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 0px 0px 0px 22px;"><span style="font-size:11pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span style="font-weight: bold;">Незначащие</span></p><p style="margin: 14px 0px 0px 0px;"><span style="font-weight: bold;">Значащие</span> элементы управления передают данные из поля <span style="font-weight: bold;">value</span> &nbsp;на сервер.</p>
+<p style="margin: 14px 0px 0px 0px;"><span style="font-weight: bold;">Незначащие</span> элементы никакого значения не передают и служат лишь для удобства работы со скриптами и формой, а также для визуального оформления - для таких элементов невозможно установление значения по умолчанию.</p>
+<p style="margin: 14px 0px 0px 0px;"><span style="font-weight: bold;">Значащие</span> элементы, в свою очередь, делятся на <span style="font-weight: bold;">простые</span> и <span style="font-weight: bold;">составные</span>.</p>
+<p style="margin: 14px 0px 0px 0px;"> &nbsp;  <span style="font-weight: bold;">Простые </span>элементы управления представляют собой одно поле ввода из соответствующей группы.</p>
+<p style="margin: 14px 0px 0px 0px;"> &nbsp;  <span style="font-weight: bold;">Составные </span>элементы управления представляет собой комплект полей, описанный в описательном XML составного типа. Такой XML аналогичен по структуре главному описательному XML, находится рядом с <span style="font-weight: bold;">*.p</span> обработчиком данного типа и имеет то же имя <span style="text-decoration: underline;">(!)</span>, что и обработчик. Установка значений по умолчанию для составных осуществляется в описательном XML составного типа. Подробнее см. раздел &quot;Составные модули&quot;.</p>
+<p style="margin: 14px 0px 0px 0px;"><span style="text-decoration: underline;">Обязательность полей.</span></p>
+<p style="margin: 14px 0px 0px 0px;">Для любого <span style="font-weight: bold;">значащего </span>элемента управления может быть задан тэг<span style="font-family: Batang; font-weight: bold;"> </span><span class="f_CodeExample" style="color: #0000ff;">&lt;/</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">required</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><span style="font-family: Batang;"> </span>сообщающий системе контроля данных о том, что поле обязательно к заполнению. В случае отсутствия данных отправка формы отменяется.</p>
+<p style="margin: 0px 0px 14px 0px;"><span style="text-decoration: underline;">(!)</span> Для составных типов тэг указывается в описательном XML составного типа.</p>
+<hr style="height:1px; color:#000000; border-width:0px; background-color:#000000;" /><p>&nbsp;</p>
+<p>С версии <span style="font-weight: bold;">2.5</span> доступно добавление собственных элементов управления, специфичных для проекта.</p>
+<p>&nbsp;</p>
+<p>Для этого необходимо поместить <span style="font-weight: bold;">*.p</span> код элемента управления в директорию <span style="font-weight: bold;">./xcontrols_files/controls_p/</span> , а его <span style="font-weight: bold;">*.js</span> обработчик в директорию <span style="font-weight: bold;">./xcontrols_files/controls_js/</span> .</p>
+<p>&nbsp;</p>
+<p>При этом необходимо реализовать следующий набор методов, где <span class="f_CodeExample" style="font-weight: bold;">%</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">control_name</span><span class="f_CodeExample" style="font-weight: bold;">%</span> - имя элемента управления, по которому он будет вызван.</p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table style="width:80%; border:solid 2px #000000; border-spacing:0px; border-collapse:collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:454px; background-color:#c0c0c0; padding:3px; border:solid 1px #000000;"><p><span style="font-weight: bold;">Метод</span></p>
+</td>
+<td style="vertical-align:top; width:326px; background-color:#c0c0c0; padding:3px; border:solid 1px #000000;"><p><span style="font-weight: bold;">Обязателен для использования в модулях</span></p>
+</td>
+<td style="vertical-align:top; width:391px; background-color:#c0c0c0; padding:3px; border:solid 1px #000000;"><p><span style="font-weight: bold;">Назначение</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:454px; padding:3px; border:solid 1px #000000;"><p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">@</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">create_</span><span class="f_CodeExample" style="font-weight: bold;">%</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">control_name</span><span class="f_CodeExample" style="font-weight: bold;">%[</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">hData</span><span class="f_CodeExample" style="font-weight: bold;">]</span></p>
+</td>
+<td style="vertical-align:top; width:326px; padding:3px; border:solid 1px #000000;"><p><span style="font-weight: bold;">form, view</span></p>
+</td>
+<td style="vertical-align:top; width:391px; padding:3px; border:solid 1px #000000;"><p>Конструктор элемента управления</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:454px; padding:3px; border:solid 1px #000000;"><p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">@</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">fieldnames_table_</span><span class="f_CodeExample" style="font-weight: bold;">%</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">control_name</span><span class="f_CodeExample" style="font-weight: bold;">%[</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">name</span><span class="f_CodeExample" style="font-weight: bold;">]</span></p>
+</td>
+<td style="vertical-align:top; width:326px; padding:3px; border:solid 1px #000000;"><p><span style="font-weight: bold;">form, view</span></p>
+</td>
+<td style="vertical-align:top; width:391px; padding:3px; border:solid 1px #000000;"><p>Возврат набора полей элемента управления в случае, если он составной.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:454px; padding:3px; border:solid 1px #000000;"><p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">@</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">db_preprocess_</span><span class="f_CodeExample" style="font-weight: bold;">%</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">control_name</span><span class="f_CodeExample" style="font-weight: bold;">%[</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">value</span><span class="f_CodeExample" style="font-weight: bold;">]</span></p>
+</td>
+<td style="vertical-align:top; width:326px; padding:3px; border:solid 1px #000000;"><p><span style="font-weight: bold;">form, view</span></p>
+</td>
+<td style="vertical-align:top; width:391px; padding:3px; border:solid 1px #000000;"><p>Предобработка до внесения данных из элемента в базу данных.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:454px; padding:3px; border:solid 1px #000000;"><p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">@</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">edit_preprocess_</span><span class="f_CodeExample" style="font-weight: bold;">%</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">control_name</span><span class="f_CodeExample" style="font-weight: bold;">%[</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">init</span><span class="f_CodeExample" style="font-weight: bold;">;</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">hParsed_xml</span><span class="f_CodeExample" style="font-weight: bold;">]</span></p>
+</td>
+<td style="vertical-align:top; width:326px; padding:3px; border:solid 1px #000000;"><p><span style="font-weight: bold;">form, view</span></p>
+</td>
+<td style="vertical-align:top; width:391px; padding:3px; border:solid 1px #000000;"><p>Предобработка после извлечения данных из базы для редактирования.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:454px; padding:3px; border:solid 1px #000000;"><p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">@</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">raw_data_</span><span class="f_CodeExample" style="font-weight: bold;">%</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">control_name</span><span class="f_CodeExample" style="font-weight: bold;">%[</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">fieldName</span><span class="f_CodeExample" style="font-weight: bold;">;</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">tDataRow</span><span class="f_CodeExample" style="font-weight: bold;">]</span></p>
+</td>
+<td style="vertical-align:top; width:326px; padding:3px; border:solid 1px #000000;"><p><span style="font-weight: bold;">view</span></p>
+</td>
+<td style="vertical-align:top; width:391px; padding:3px; border:solid 1px #000000;"><p>Получение сырых данных из базы для передачи форматтеру модуля <span style="font-weight: bold;">view</span>.</p>
+</td>
+</tr>
+</table>
+</div>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+</td></tr></table>
+
+</body>
+</html>

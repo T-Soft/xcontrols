@@ -1,0 +1,160 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>Контроль : сервер</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <style type="text/css">
+     body { margin: 0px; background: #FFFFFF; }
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "server_control.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+
+<!-- Placeholder for topic body. -->
+<table style="width:100%;border:none;border-spacing:0px"><tr style="vertical-align:top"><td style="text-align:left;padding:5px">
+<p class="p_Underlined_red" style="border-top: none; border-right: none; border-left: none;"><span class="f_Underlined_red">Контроль : сервер</span></p>
+<p>&nbsp;</p>
+<p>На стороне сервера, перед сохранением или изменением данных в базе, для каждого значащего элемента управления вызывается метод</p>
+<p>&nbsp;</p>
+<p><span style="width:48px">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold;">^</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">xcontrols</span><span class="f_CodeExample" style="font-weight: bold;">:</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">db_preprocess_</span><span class="f_CodeExample" style="font-weight: bold;">$</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">sControl_group</span><span class="f_CodeExample" style="font-weight: bold;">[</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">value</span><span class="f_CodeExample" style="font-weight: bold;">]</span><span style="font-weight: bold; color: #0000ff;">.</span></p>
+<p>&nbsp;</p>
+<p>В данном методе может быть реализован форматно-логический контроль переданного значения и возвращена служебная информация о внесении изменений в базу или ошибках.</p>
+<p>&nbsp;</p>
+<p>Методы, вызывающие контроль:</p>
+<p><span style="width:48px">&nbsp;</span></p>
+<p><span style="width:48px">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold;">^</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">xcontrols</span><span class="f_CodeExample" style="font-weight: bold;">:</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">store_data</span><span class="f_CodeExample" style="font-weight: bold;">[]</span></p>
+<p>&nbsp;</p>
+<p><span style="width:48px">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold;">^</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">xcontrols</span><span class="f_CodeExample" style="font-weight: bold;">:</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">update_entry</span><span class="f_CodeExample" style="font-weight: bold;">[]</span></p>
+<p>&nbsp;</p>
+<p class="p_CodeExample"><span style="text-decoration: underline;">В&nbsp;случае&nbsp;успешного&nbsp;внесения&nbsp;в&nbsp;базу&nbsp;или&nbsp;изменения&nbsp;записи,&nbsp;возвращают&nbsp;хеш:</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">$</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">h</span><span class="f_CodeExample" style="font-weight: bold;">[</span><br />
+<span class="f_CodeExample" style="font-weight: bold;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$.</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">cnt_err</span><span class="f_CodeExample" style="font-weight: bold;">(</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">0</span><span class="f_CodeExample" style="font-weight: bold;">)</span><br />
+<span class="f_CodeExample" style="font-weight: bold;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$.</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">hErr</span><span class="f_CodeExample" style="font-weight: bold;">[]</span><br />
+<span class="f_CodeExample" style="font-weight: bold;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$.</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">id</span><span class="f_CodeExample" style="font-weight: bold;">(</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">12</span><span class="f_CodeExample" style="font-weight: bold;">)</span><br />
+<span class="f_CodeExample" style="font-weight: bold;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$.</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">uuid</span><span class="f_CodeExample" style="font-weight: bold;">[</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">DF2C94CD</span><span class="f_CodeExample" style="font-weight: bold;">-</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">2712</span><span class="f_CodeExample" style="font-weight: bold;">-</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">4160</span><span class="f_CodeExample" style="font-weight: bold;">-</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">8BF0</span><span class="f_CodeExample" style="font-weight: bold;">-</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">EA06F25A2E92</span><span class="f_CodeExample" style="font-weight: bold;">]</span><br />
+<span class="f_CodeExample" style="font-weight: bold;">]</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">Где:</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table style="width:65%; border:solid 2px #000000; border-spacing:0px; border-collapse:collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:146px; padding:3px; border:solid 1px #000000;"><p><span class="f_CodeExample" style="font-weight: bold;">$.</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">cnt_err</span><span class="f_CodeExample" style="font-weight: bold;">(</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">0</span><span class="f_CodeExample" style="font-weight: bold;">)</span></p>
+</td>
+<td style="vertical-align:top; width:742px; padding:3px; border:solid 1px #000000;"><p>- количество ошибок. В случае успешного внесения в базу - 0</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:146px; padding:3px; border:solid 1px #000000;"><p><span class="f_CodeExample" style="font-weight: bold;">$.</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">hErr</span><span class="f_CodeExample" style="font-weight: bold;">[]</span></p>
+</td>
+<td style="vertical-align:top; width:742px; padding:3px; border:solid 1px #000000;"><p>- хеш с развернутой информацией об ошибках. В случае успешного внесения в базу пуст.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:146px; padding:3px; border:solid 1px #000000;"><p><span class="f_CodeExample" style="font-weight: bold;">$.</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">id</span><span class="f_CodeExample" style="font-weight: bold;">(</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">12)</span></p>
+</td>
+<td style="vertical-align:top; width:742px; padding:3px; border:solid 1px #000000;"><p>- идентификатор только что внесенной записи.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:146px; padding:3px; border:solid 1px #000000;"><p><span class="f_CodeExample" style="font-weight: bold;">$.</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">uuid</span><span class="f_CodeExample" style="font-weight: bold;">[]</span></p>
+</td>
+<td style="vertical-align:top; width:742px; padding:3px; border:solid 1px #000000;"><p>- uuid только что внесенной записи.</p>
+</td>
+</tr>
+</table>
+</div>
+<p>&nbsp;</p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-family: Arial; font-style: italic; text-decoration: underline;">Важно&nbsp;(!):</span><span class="f_CodeExample" style="font-family: Arial; font-weight: bold;">&nbsp;</span><span class="f_CodeExample" style="font-family: Arial;">ключи&nbsp;хеша&nbsp;имеют&nbsp;именно&nbsp;такие&nbsp;имена.</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_CodeExample"><span style="text-decoration: underline;">В&nbsp;случае&nbsp;возникновения&nbsp;ошибок&nbsp;внесения&nbsp;в&nbsp;базу&nbsp;или&nbsp;изменения&nbsp;записи,&nbsp;возвращают&nbsp;хеш:</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;</span><br />
+<span class="f_CodeExample" style="font-weight: bold;">$</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">h</span><span class="f_CodeExample" style="font-weight: bold;">[</span><br />
+<span class="f_CodeExample" style="font-weight: bold;">&nbsp;&nbsp;&nbsp;$.</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">cnt_err</span><span class="f_CodeExample" style="font-weight: bold;">(</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">2</span><span class="f_CodeExample" style="font-weight: bold;">)</span><br />
+<span class="f_CodeExample" style="font-weight: bold;">&nbsp;&nbsp;&nbsp;$.</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">hErr</span><span class="f_CodeExample" style="font-weight: bold;">[</span><br />
+<span class="f_CodeExample" style="font-weight: bold;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$.</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">1</span><span class="f_CodeExample" style="font-weight: bold;">[</span><br />
+<span class="f_CodeExample" style="font-weight: bold;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$.</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">err_fieldname</span><span class="f_CodeExample" style="font-weight: bold;">[</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">file_test</span><span class="f_CodeExample" style="font-weight: bold;">]</span><br />
+<span class="f_CodeExample" style="font-weight: bold;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$.</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">message</span><span class="f_CodeExample" style="font-weight: bold;">[</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">FILE</span><span class="f_CodeExample" style="font-weight: bold;">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">VALUE</span><span class="f_CodeExample" style="font-weight: bold;">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">TYPE</span><span class="f_CodeExample" style="font-weight: bold;">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">OR</span><span class="f_CodeExample" style="font-weight: bold;">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">EXTENSION</span><span class="f_CodeExample" style="font-weight: bold;">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">MISMATCH</span><span class="f_CodeExample" style="font-weight: bold;">]</span><br />
+<span class="f_CodeExample" style="font-weight: bold;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$.</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">err_module</span><span class="f_CodeExample" style="font-weight: bold;">[</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">FILE</span><span class="f_CodeExample" style="font-weight: bold;">.</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">TYPE_MISMATCH</span><span class="f_CodeExample" style="font-weight: bold;">]</span><br />
+<span class="f_CodeExample" style="font-weight: bold;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$.</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">err_main</span><span class="f_CodeExample" style="font-weight: bold;">[</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">MAIN</span><span class="f_CodeExample" style="font-weight: bold;">.</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">INVALID_VALUE</span><span class="f_CodeExample" style="font-weight: bold;">]</span><br />
+<span class="f_CodeExample" style="font-weight: bold;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]</span><br />
+<span class="f_CodeExample" style="font-weight: bold;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$.</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">2</span><span class="f_CodeExample" style="font-weight: bold;">[</span><br />
+<span class="f_CodeExample" style="font-weight: bold;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$.</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">err_fieldname</span><span class="f_CodeExample" style="font-weight: bold;">[</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">file_test_2</span><span class="f_CodeExample" style="font-weight: bold;">]</span><br />
+<span class="f_CodeExample" style="font-weight: bold;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$.</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">message</span><span class="f_CodeExample" style="font-weight: bold;">[</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">FILE</span><span class="f_CodeExample" style="font-weight: bold;">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">VALUE</span><span class="f_CodeExample" style="font-weight: bold;">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">TYPE</span><span class="f_CodeExample" style="font-weight: bold;">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">OR</span><span class="f_CodeExample" style="font-weight: bold;">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">EXTENSION</span><span class="f_CodeExample" style="font-weight: bold;">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">MISMATCH</span><span class="f_CodeExample" style="font-weight: bold;">]</span><br />
+<span class="f_CodeExample" style="font-weight: bold;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$.</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">err_module</span><span class="f_CodeExample" style="font-weight: bold;">[</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">FILE</span><span class="f_CodeExample" style="font-weight: bold;">.</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">TYPE_MISMATCH</span><span class="f_CodeExample" style="font-weight: bold;">]</span><br />
+<span class="f_CodeExample" style="font-weight: bold;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$.</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">err_main</span><span class="f_CodeExample" style="font-weight: bold;">[</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">MAIN</span><span class="f_CodeExample" style="font-weight: bold;">.</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">INVALID_VALUE</span><span class="f_CodeExample" style="font-weight: bold;">]</span><br />
+<span class="f_CodeExample" style="font-weight: bold;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]</span><br />
+<span class="f_CodeExample" style="font-weight: bold;">&nbsp;&nbsp;&nbsp;]</span><br />
+<span class="f_CodeExample" style="font-weight: bold;">&nbsp;&nbsp;&nbsp;$.</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">failed_id</span><span class="f_CodeExample" style="font-weight: bold;">[</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">B795CD36</span><span class="f_CodeExample" style="font-weight: bold;">-</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">126A</span><span class="f_CodeExample" style="font-weight: bold;">-</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">4E29</span><span class="f_CodeExample" style="font-weight: bold;">-</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">AE11</span><span class="f_CodeExample" style="font-weight: bold;">-</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">407C79C6D91A</span><span class="f_CodeExample" style="font-weight: bold;">]</span><br />
+<span class="f_CodeExample" style="font-weight: bold;">]</span><br />
+<span class="f_CodeExample" style="font-weight: bold;">&nbsp;</span><br />
+<span class="f_CodeExample">Где: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:146px; padding:3px;"><p><span class="f_CodeExample" style="font-weight: bold;">$.</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">cnt_err</span><span class="f_CodeExample" style="font-weight: bold;">(</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">0</span><span class="f_CodeExample" style="font-weight: bold;">)</span></p>
+</td>
+<td style="vertical-align:top; width:744px; padding:3px;"><p>- количество ошибок.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:146px; padding:3px;"><p><span class="f_CodeExample" style="font-weight: bold;">$.</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">hErr</span><span class="f_CodeExample" style="font-weight: bold;">[]</span></p>
+</td>
+<td style="vertical-align:top; width:744px; padding:3px;"><p>- хеш с развернутой информацией об ошибках. Ключи хеша - порядковые номера ошибок, начиная с 1. Значения - хеши.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:146px; padding:3px;"><p><span class="f_CodeExample" style="font-weight: bold;">$.</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">err_fieldname</span></p>
+</td>
+<td style="vertical-align:top; width:744px; padding:3px;"><p>- имя поля, в котором обнаружена ошибка.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:146px; padding:3px;"><p><span class="f_CodeExample" style="font-weight: bold;">$.</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">message</span></p>
+</td>
+<td style="vertical-align:top; width:744px; padding:3px;"><p>- развернутое сообщение об ошибке.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:146px; padding:3px;"><p><span class="f_CodeExample" style="font-weight: bold;">$.</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">err_main</span></p>
+</td>
+<td style="vertical-align:top; width:744px; padding:3px;"><p>- сообщение об ошибке, исходящее от ядра системы. (см. <a href="core_error_handling.htm" class="topiclink">Ошибки ядра</a>)</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:146px; padding:3px;"><p><span class="f_CodeExample" style="font-weight: bold;">$.</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">err_module</span></p>
+</td>
+<td style="vertical-align:top; width:744px; padding:3px;"><p>- сообщение об ошибке, исходящее от соответствующего модуля. (см. <a href="module_error_handling.htm" class="topiclink">Ошибки модулей</a>). Более подробное, чем <span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">err_main.</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:146px; padding:3px;"><p><span class="f_CodeExample" style="font-weight: bold;">$.</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">failed_id</span></p>
+</td>
+<td style="vertical-align:top; width:744px; padding:3px;"><p>- идентификатор временного файла сериализации формы.</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-family: Arial; font-style: italic; text-decoration: underline;">Важно&nbsp;(!):</span><span class="f_CodeExample" style="font-family: Arial; font-weight: bold;">&nbsp;</span><span class="f_CodeExample" style="font-family: Arial;">ключи&nbsp;хеша&nbsp;имеют&nbsp;именно&nbsp;такие&nbsp;имена.</span></p>
+
+</td></tr></table>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>generate_initfile_template. Генерация шаблона инициализирующего файла</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <style type="text/css">
+     body { margin: 0px; background: #FFFFFF; }
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "generate_initfile_template____.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+
+<!-- Placeholder for topic body. -->
+<table style="width:100%;border:none;border-spacing:0px"><tr style="vertical-align:top"><td style="text-align:left;padding:5px">
+<p class="p_Underlined_red" style="border-top: none; border-right: none; border-left: none;"><span class="f_Underlined_red">generate_initfile_template. Генерация шаблона инициализирующего файла</span></p>
+<p>&nbsp;</p>
+<p>Для генерации шаблона инициализирующего файла (см. <a href="initfile.htm" class="topiclink">Инициализирующий файл</a>) на основе полей описательного XML , помеченных тэгом <span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">accept_inifile</span><span class="f_CodeExample" style="color: #0000ff;">/&gt;</span> используется метод :</p>
+<p>&nbsp;</p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold;">^</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">generate_initfile_template</span><span class="f_CodeExample" style="font-weight: bold;">[</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">form_id</span><span class="f_CodeExample" style="font-weight: bold;">;</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">save_path;filename</span><span class="f_CodeExample" style="font-weight: bold;">]</span></p>
+<p>&nbsp;</p>
+<p>Где:</p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 24px;"><table style="width:60%; border:solid 2px #000000; border-spacing:0px; border-collapse:collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:139px; padding:3px; border:solid 1px #000000;"><p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">form_id</span></p>
+</td>
+<td style="vertical-align:top; width:760px; padding:3px; border:solid 1px #000000;"><p> - имя формы, для которой происходит генерация шаблона.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:139px; padding:3px; border:solid 1px #000000;"><p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">save_path</span></p>
+</td>
+<td style="vertical-align:top; width:760px; padding:3px; border:solid 1px #000000;"><p> - путь, по которому следует сохранить шаблон. По умолчанию равен <span class="f_CodeExample" style="font-weight: bold;">$.</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">temp_path</span> из метода <span class="f_CodeExample" style="font-weight: bold;">^</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">init</span><span class="f_CodeExample" style="font-weight: bold;">[]</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:139px; padding:3px; border:solid 1px #000000;"><p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">filename</span></p>
+</td>
+<td style="vertical-align:top; width:760px; padding:3px; border:solid 1px #000000;"><p> - имя шаблона. По умолчанию равно &quot;<span style="font-weight: bold;">initfile_template</span>&quot;</p>
+</td>
+</tr>
+</table>
+</div>
+<p>&nbsp;</p>
+<p>Шаблон имеет кодировку UTF-8. Структура шаблона аналогична структуре &nbsp;описательного XML.</p>
+
+</td></tr></table>
+
+</body>
+</html>

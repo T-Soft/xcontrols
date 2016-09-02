@@ -1,0 +1,76 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>&lt;additional&gt; Дополнительные поля в выборке</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <style type="text/css">
+     body { margin: 0px; background: #FFFFFF; }
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "additional____.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+
+<!-- Placeholder for topic body. -->
+<table style="width:100%;border:none;border-spacing:0px"><tr style="vertical-align:top"><td style="text-align:left;padding:5px">
+<p class="p_Underlined_red" style="border-top: none; border-right: none; border-left: none;"><span class="f_Underlined_red">&lt;additional&gt; Дополнительные поля в выборке</span></p>
+<p>&nbsp;</p>
+<p class="p_CodeExample">Начиная&nbsp;с&nbsp;версии&nbsp;<span style="font-weight: bold;">2.2</span>&nbsp;поддерживается&nbsp;возможность&nbsp;включать&nbsp;в&nbsp;&nbsp;набор&nbsp;полей,&nbsp;генерируемый&nbsp;при&nbsp;анализе&nbsp;<span style="font-weight: bold;">view.xml</span>&nbsp;дополнительные&nbsp;поля,&nbsp;</p>
+<p class="p_CodeExample">не&nbsp;участвующие&nbsp;в&nbsp;показе,&nbsp;нужные&nbsp;для&nbsp;служебных&nbsp;целей.</p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_CodeExample">Структура&nbsp;элемента&nbsp;описания&nbsp;дополнительных&nbsp;полей:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">additional</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><br />
+<span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">field</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">source_name</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><span class="f_CodeExample" style="font-weight: bold;">имя&nbsp;дополнительного&nbsp;поля&nbsp;1</span><span class="f_CodeExample" style="color: #0000ff;">&lt;/</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">source_name</span><span class="f_CodeExample" style="color: #0000ff;">&gt; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample" style="color: #0000ff;">&lt;/</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">field</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample" style="color: #0000ff;">...</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">field</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">source_name</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><span class="f_CodeExample" style="font-weight: bold;">имя&nbsp;дополнительного&nbsp;поля&nbsp;n</span><span class="f_CodeExample" style="color: #0000ff;">&lt;/</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">source_name</span><span class="f_CodeExample" style="color: #0000ff;">&gt; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample" style="color: #0000ff;">&lt;/</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">field</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><br />
+<span style="width:48px">&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">&lt;/</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">additional</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span></p>
+<p style="margin: 14px 0px 0px 0px;">Тэг <span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">field</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span> используется столько раз, сколько полей необходимо добавить.</p>
+<p style="margin: 14px 0px 0px 0px;"><span style="text-decoration: underline;">Составляющие:</span><br />
+<span style="text-decoration: underline;">&nbsp;</span><br />
+<span style="text-decoration: underline;">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 26px;"><table style="width:75%; background-color:#ffffff; border:solid 2px #000000; border-spacing:0px; border-collapse:collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:141px; height:18px; background-color:#c0c0c0; padding:3px; border:solid 1px #000000;"><p style="margin: 0px 0px 0px 2px;"><span style="font-weight: bold;">Элемент</span></p>
+</td>
+<td style="vertical-align:top; width:15%; height:18px; background-color:#c0c0c0; padding:3px; border:solid 1px #000000;"><p style="margin: 0px 0px 0px 2px;"><span style="font-weight: bold;">Обязательность</span></p>
+</td>
+<td style="vertical-align:top; width:754px; height:18px; background-color:#c0c0c0; padding:3px; border:solid 1px #000000;"><p style="margin: 0px 0px 0px 2px;"><span style="font-weight: bold;">Описание</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:middle; width:141px; padding:3px; border:solid 1px #000000;"><p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">source_name</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span></p>
+</td>
+<td style="vertical-align:middle; width:15%; padding:3px; border:solid 1px #000000;"><p style="margin: 0px 0px 0px 2px;"> да</p>
+</td>
+<td style="vertical-align:middle; width:754px; padding:3px; border:solid 1px #000000;"><p style="margin: 0px 0px 0px 2px;"> Имя столбца таблицы базы данных, данные из которого нужно включить в выборку.</p>
+</td>
+</tr>
+</table>
+</div>
+<p style="margin: 0px 0px 0px 2px;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 2px;">&nbsp;</p>
+
+</td></tr></table>
+
+</body>
+</html>

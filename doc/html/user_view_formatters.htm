@@ -1,0 +1,121 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>Пользовательское форматирование данных</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <style type="text/css">
+     body { margin: 0px; background: #FFFFFF; }
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "user_view_formatters.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+
+<!-- Placeholder for topic body. -->
+<table style="width:100%;border:none;border-spacing:0px"><tr style="vertical-align:top"><td style="text-align:left;padding:5px">
+<p class="p_Underlined_red" style="border-top: none; border-right: none; border-left: none;"><span class="f_Underlined_red">Пользовательское форматирование данных</span></p>
+<p>&nbsp;</p>
+<p>В случае необходимости собственного преобразования &quot;сырых&quot; данных из БД перед выводом их на экран возможно подключение соответствующего модуля.</p>
+<p>&nbsp;</p>
+<p>Для того, чтобы модуль (форматтер) был определен системой <span style="font-weight: bold;">xcontrols</span> необходимо:</p>
+<p>&nbsp;</p>
+<p><span style="width:48px">&nbsp;</span>1) Расположение форматтера в директории <span class="f_CodeExample" style="font-weight: bold;">/</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">format</span><span class="f_CodeExample" style="font-weight: bold;">/</span> рядом с директорией <span class="f_CodeExample" style="font-weight: bold;">/</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">view</span><span class="f_CodeExample" style="font-weight: bold;">/</span> из <span class="f_CodeExample" style="font-weight: bold;">$.</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">user_view_folder_path</span> </p>
+<p><span style="width:48px">&nbsp;</span>2) Совпадение имени файла форматтера и формата который он реализует. Т.е. содержимое элемента <span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">format</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span> и имя форматтера должны совпадать.</p>
+<p><span style="width:48px">&nbsp;</span>3) Следующая структура форматтера: </p>
+<p><span style="width:48px">&nbsp;</span><br />
+<span class="f_CodeExample" style="font-weight: bold;"> &nbsp; &nbsp;   &nbsp; &nbsp; &nbsp; &nbsp;@</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">CLASS</span><br />
+<span style="width:48px">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold;"> &nbsp; &nbsp;  </span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">xcontrols</span><br />
+<span style="width:48px">&nbsp;</span><br />
+<span class="f_CodeExample" style="font-weight: bold;"> &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;@</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">OPTIONS</span><br />
+<span style="width:48px">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold;"> &nbsp; &nbsp;  </span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">static</span><br />
+<span style="width:48px">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold;"> &nbsp; &nbsp;  </span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">partial</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">&nbsp;</span><br />
+<span class="f_CodeExample" style="font-weight: bold;"> &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;@</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">format_</span><span class="f_CodeExample" style="font-weight: bold;">%имя форматирования%[</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">hRawControlData</span><span class="f_CodeExample" style="font-weight: bold;">;</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">fieldGroup</span><span class="f_CodeExample" style="font-weight: bold;">;</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">tDataRow</span><span class="f_CodeExample" style="font-weight: bold;">;</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">format</span><span class="f_CodeExample" style="font-weight: bold;">]</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample" style="font-family: Arial;">Где:</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 120px;"><table style="border:solid 2px #000000; border-spacing:0px; border-collapse:collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:223px; padding:3px; border:solid 1px #000000;"><p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">%имя&nbsp;форматирования%</span></p>
+</td>
+<td style="vertical-align:top; width:642px; padding:3px; border:solid 1px #000000;"><p>Содержимое элемента <span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">format</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span> для вызова данного форматирования.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:223px; padding:3px; border:solid 1px #000000;"><p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">hRawControlData</span></p>
+</td>
+<td style="vertical-align:top; width:642px; padding:3px; border:solid 1px #000000;"><p><span style="font-weight: bold;">Хеш</span> - &quot;сырые&quot; данные из базы данных.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:223px; padding:3px; border:solid 1px #000000;"><p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">fieldGroup</span></p>
+</td>
+<td style="vertical-align:top; width:642px; padding:3px; border:solid 1px #000000;"><p><span style="font-weight: bold;">Строка</span> - Имя группы системы xcontrols к которой принадлежит данное поле. <span style="font-style: italic; font-weight: bold;">Например</span> : <span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">input</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:223px; padding:3px; border:solid 1px #000000;"><p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">tDataRow</span></p>
+</td>
+<td style="vertical-align:top; width:642px; padding:3px; border:solid 1px #000000;"><p><span style="font-weight: bold;">Таблица</span> - ряд данных БД, из соответствующей колонки которого берется информация для отображения.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:223px; padding:3px; border:solid 1px #000000;"><p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">format</span></p>
+</td>
+<td style="vertical-align:top; width:642px; padding:3px; border:solid 1px #000000;"><p><span style="font-weight: bold;">Строка</span> - имя форматирования.</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_CodeExample" style="margin: 0px 0px 0px 120px;"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_CodeExample" style="margin: 0px 0px 0px 120px;"><span style="text-decoration: underline;">Параметр</span>&nbsp;<span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">hRawControlData</span>&nbsp;:</p>
+<p class="p_CodeExample" style="margin: 0px 0px 0px 120px;"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_CodeExample" style="margin: 0px 0px 0px 120px;"><span style="width:24px">&nbsp;</span>Данный&nbsp;хеш&nbsp;имеет&nbsp;следующую&nbsp;структуру:</p>
+<p class="p_CodeExample" style="margin: 0px 0px 0px 120px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;</p>
+<p class="p_CodeExample" style="margin: 0px 0px 0px 120px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">hRawControlData</span><span class="f_CodeExample" style="font-weight: bold;">[</span><br />
+<span class="f_CodeExample" style="font-weight: bold;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;$._value[value]</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample" style="font-weight: bold;">$.fieldname_1[value_1]</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample" style="font-weight: bold;">$.fieldname_2[value_1]</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample" style="font-weight: bold;">...</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample" style="font-weight: bold;">$.fieldname_n[value_n]</span><br />
+<span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample" style="font-weight: bold;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;]</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;В&nbsp;случае,&nbsp;если&nbsp;элемент&nbsp;управления&nbsp;представлен&nbsp;одним&nbsp;полем&nbsp;базы&nbsp;данных,&nbsp;в&nbsp;хеше&nbsp;будет&nbsp;содержаться&nbsp;только&nbsp;один&nbsp;ключ&nbsp;<span class="f_CodeExample" style="font-weight: bold;">$.</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">_value</span>.</p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;В&nbsp;случае&nbsp;представления&nbsp;элемента&nbsp;несколькими&nbsp;полями,&nbsp;их&nbsp;значения&nbsp;будут&nbsp;выведены&nbsp;в&nbsp;виде&nbsp;<span class="f_CodeExample" style="font-weight: bold;">$.имя</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">_</span><span class="f_CodeExample" style="font-weight: bold;">поля</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">_1</span><span class="f_CodeExample" style="font-weight: bold;">[значение</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">1</span><span class="f_CodeExample" style="font-weight: bold;">]</span>&nbsp;...&nbsp;и&nbsp;т.д.</p>
+<p class="p_CodeExample" style="margin: 0px 0px 0px 120px;"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_CodeExample"><span style="text-decoration: underline;">Пример</span>&nbsp;:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_CodeExample" style="margin: 0px 0px 0px 24px;"><span class="f_CodeExample" style="font-weight: bold;">@</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">CLASS</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">xcontrols</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">&nbsp;</span><br />
+<span class="f_CodeExample" style="font-weight: bold;">@</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">OPTIONS</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">static</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">partial</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">&nbsp;</span><br />
+<span class="f_CodeExample" style="font-weight: bold;">@</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">format_uuid_url</span><span class="f_CodeExample" style="font-weight: bold;">[</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">hRawControlData</span><span class="f_CodeExample" style="font-weight: bold;">;</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">fieldGroup</span><span class="f_CodeExample" style="font-weight: bold;">;</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">tDataRow</span><span class="f_CodeExample" style="font-weight: bold;">;</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">format</span><span class="f_CodeExample" style="font-weight: bold;">][</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">sRet</span><span class="f_CodeExample" style="font-weight: bold;">]</span><br />
+<span class="f_CodeExample" style="font-weight: bold;">&nbsp;&nbsp;&nbsp;</span><br />
+<span class="f_CodeExample" style="font-weight: bold;">&nbsp;&nbsp;&nbsp;$</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">sRet</span><span class="f_CodeExample" style="font-weight: bold;">[&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">a</span><span class="f_CodeExample" style="font-weight: bold;">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">href</span><span class="f_CodeExample" style="font-weight: bold;">=&quot;/</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">edit</span><span class="f_CodeExample" style="font-weight: bold;">/?</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">uuid</span><span class="f_CodeExample" style="font-weight: bold;">=$</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">hRawControlData</span><span class="f_CodeExample" style="font-weight: bold;">.</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">_value</span><span class="f_CodeExample" style="font-weight: bold;">&quot;&gt;$</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">hRawControlData</span><span class="f_CodeExample" style="font-weight: bold;">.</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">_value</span><span class="f_CodeExample" style="font-weight: bold;">&lt;/</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">a</span><span class="f_CodeExample" style="font-weight: bold;">&gt;]</span><br />
+<span class="f_CodeExample" style="font-weight: bold;">&nbsp;&nbsp;&nbsp;</span><br />
+<span class="f_CodeExample" style="font-weight: bold;">&nbsp;&nbsp;&nbsp;$</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">result</span><span class="f_CodeExample" style="font-weight: bold;">[$</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">sRet</span><span class="f_CodeExample" style="font-weight: bold;">]</span></p>
+
+</td></tr></table>
+
+</body>
+</html>

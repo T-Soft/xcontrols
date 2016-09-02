@@ -1,0 +1,41 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>Модульная архитектура</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <style type="text/css">
+     body { margin: 0px; background: #FFFFFF; }
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "module_architecture.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+
+<!-- Placeholder for topic body. -->
+<table style="width:100%;border:none;border-spacing:0px"><tr style="vertical-align:top"><td style="text-align:left;padding:5px">
+<p class="p_Underlined_red" style="border-top: none; border-right: none; border-left: none;"><span class="f_Underlined_red">Модульная архитектура</span></p>
+<p>&nbsp;</p>
+<p>Каждый элемент управления обрабатывается соответствующим ему модулем на языке Parser3. Также возможно подключение соответствующего элементу управления файла JavaScript со специфичным для поля кодом.</p>
+<p style="margin: 14px 0px 0px 0px;">Путь до директории с обработчиками элементов управления передается классу <span style="font-weight: bold;">xcontrols </span>при инициализации, и модули обработки, находящиеся вне данной директории, использованы не будут и попытка их вызова приведет к исключению.</p>
+<p style="margin: 14px 0px 0px 0px;"><span style="text-decoration: underline;">Важно!</span></p>
+<p style="margin: 14px 0px 14px 0px;">Имена модулей-обработчиков должны совпадать с содержимым тэга <span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">control_group</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span> соответствующего раздела описательного XML.</p>
+
+</td></tr></table>
+
+</body>
+</html>

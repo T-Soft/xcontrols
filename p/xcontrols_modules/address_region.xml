@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+	<form>
+<!-- ====================================================================================== name -->
+		<control>
+			<control_group>input</control_group>
+			<control_type>text</control_type>
+			<control_name>name</control_name>
+			<control_label>Название</control_label>
+		</control>	
+<!-- ====================================================================================== address -->
+		<control>
+			<control_group>input</control_group>
+			<control_type>text</control_type>
+			<control_name>address</control_name>
+			<control_label>Адрес</control_label>
+		</control>	
+<!-- ==================================================================================== region -->
+		<control>
+			<control_group>select</control_group>
+			<control_name>region</control_name>
+			<control_label>Регион</control_label>
+			<control_sql>SELECT `name`,`code_region` FROM `kw_gsen_code_region` ORDER BY `code_region` ASC</control_sql>
+		</control>	
+		
+<!-- ======================================================================================= inn -->
+		<control>
+			<control_group>inn</control_group>
+			<control_name>inn</control_name>
+			<control_label>ИНН</control_label>
+		</control>	
+		
+<!-- ====================================================================================== ogrn -->
+		<control>
+			<control_group>ogrn</control_group>
+			<control_name>ogrn</control_name>
+			<control_label>ОГРН</control_label>
+		</control>	
+	</form> 
+</document>

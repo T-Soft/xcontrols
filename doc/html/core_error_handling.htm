@@ -1,0 +1,100 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>Ошибки ядра</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <style type="text/css">
+     body { margin: 0px; background: #FFFFFF; }
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "core_error_handling.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+
+<!-- Placeholder for topic body. -->
+<table style="width:100%;border:none;border-spacing:0px"><tr style="vertical-align:top"><td style="text-align:left;padding:5px">
+<p class="p_Underlined_red" style="border-top: none; border-right: none; border-left: none;"><span class="f_Underlined_red">Ошибки ядра</span></p>
+<p>&nbsp;</p>
+<p>К ошибкам ядра относятся все некритические ошибки модулей, не обрабатываемые соответствующим методом, а также некритические ошибки самого ядра, описанные в его методе <span class="f_CodeExample" style="font-weight: bold;">@</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">ErrorList_$module_name$</span><span class="f_CodeExample" style="font-weight: bold;">[</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">invoke</span><span class="f_CodeExample" style="font-weight: bold;">]</span>.</p>
+<p>&nbsp;</p>
+<p>Список некритических ошибок ядра:</p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table style="width:85%; border:solid 2px #000000; border-spacing:0px; border-collapse:collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:218px; background-color:#c0c0c0; padding:3px; border:solid 1px #000000;"><p><span style="font-weight: bold;">Имя</span></p>
+</td>
+<td style="vertical-align:top; width:553px; background-color:#c0c0c0; padding:3px; border:solid 1px #000000;"><p><span style="font-weight: bold;">Описание</span></p>
+</td>
+<td style="vertical-align:top; width:421px; background-color:#c0c0c0; padding:3px; border:solid 1px #000000;"><p><span style="font-weight: bold;">Сообщение</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:218px; padding:3px; border:solid 1px #000000;"><p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">INVALID_VALUE</span></p>
+</td>
+<td style="vertical-align:top; width:553px; padding:3px; border:solid 1px #000000;"><p>Обнаружено неверное значение</p>
+</td>
+<td style="vertical-align:top; width:421px; padding:3px; border:solid 1px #000000;"><p>Неверный тип или значение в поле ввода или загрузки файла</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:218px; padding:3px; border:solid 1px #000000;"><p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">UNKNOWN_ERROR</span></p>
+</td>
+<td style="vertical-align:top; width:553px; padding:3px; border:solid 1px #000000;"><p>Неизвестная некритическая ошибка ядра</p>
+</td>
+<td style="vertical-align:top; width:421px; padding:3px; border:solid 1px #000000;"><p>Неизвестная ошибка ядра xControls</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:218px; padding:3px; border:solid 1px #000000;"><p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">UNKNOWN_FIELD</span></p>
+</td>
+<td style="vertical-align:top; width:553px; padding:3px; border:solid 1px #000000;"><p>Попытка обратиться к несуществующему полю формы</p>
+</td>
+<td style="vertical-align:top; width:421px; padding:3px; border:solid 1px #000000;"><p>Неизвестное системе поле ввода</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:218px; padding:3px; border:solid 1px #000000;"><p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">UNKNOWN_INITFILE_FIELD</span></p>
+</td>
+<td style="vertical-align:top; width:553px; padding:3px; border:solid 1px #000000;"><p>В инициализирующем фале обнаружено неизвестное поле </p>
+</td>
+<td style="vertical-align:top; width:421px; padding:3px; border:solid 1px #000000;"><p>Неизвестное системе поле ввода в инициализирующем файле</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:218px; padding:3px; border:solid 1px #000000;"><p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">INVALID_INTFILE_FORMAT</span></p>
+</td>
+<td style="vertical-align:top; width:553px; padding:3px; border:solid 1px #000000;"><p>Попытка загрузить неверный инициализирующий файл</p>
+</td>
+<td style="vertical-align:top; width:421px; padding:3px; border:solid 1px #000000;"><p>Недопустимый формат инициализирующего файла</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:218px; padding:3px; border:solid 1px #000000;"><p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">CONSUME_FILE_NOT_FOUND</span></p>
+</td>
+<td style="vertical-align:top; width:553px; padding:3px; border:solid 1px #000000;"><p>Попытка поглотить несуществующий документ элементом <span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">xml_consume</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:421px; padding:3px; border:solid 1px #000000;"><p>Файл для поглощения не найден по заданному пути</p>
+</td>
+</tr>
+</table>
+</div>
+
+</td></tr></table>
+
+</body>
+</html>

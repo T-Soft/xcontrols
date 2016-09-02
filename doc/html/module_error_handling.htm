@@ -1,0 +1,59 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>Ошибки модулей</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <style type="text/css">
+     body { margin: 0px; background: #FFFFFF; }
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "module_error_handling.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+
+<!-- Placeholder for topic body. -->
+<table style="width:100%;border:none;border-spacing:0px"><tr style="vertical-align:top"><td style="text-align:left;padding:5px">
+<p class="p_Underlined_red" style="border-top: none; border-right: none; border-left: none;"><span class="f_Underlined_red">Ошибки модулей</span></p>
+<p>&nbsp;</p>
+<p>К ошибка модулей относится любой неверный ввод, контролируемый модулем на стороне сервера а также специфические для конкретного модуля ошибки. </p>
+<p>&nbsp;</p>
+<p>В каждом модуле <span style="font-weight: bold;">не valueless</span> элемента управления <span style="font-weight: bold;">&lt;control&gt;</span> должен быть реализован метод  <span class="f_CodeExample" style="font-weight: bold;">@</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">ErrorList_$module_name$</span><span class="f_CodeExample" style="font-weight: bold;">[</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">invoke</span><span class="f_CodeExample" style="font-weight: bold;">]</span>, отвечающий за вызов и локализацию сообщений об ошибках. Где <span class="f_CodeExample" style="font-weight: bold;">$</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">module_name</span><span class="f_CodeExample" style="font-weight: bold;">$</span> - имя соответствующего модуля, совпадающее с фалом обработчиком <span style="font-weight: bold;">*.p</span>.</p>
+<p>&nbsp;</p>
+<p>Пример такого метода для модуля <span style="font-weight: bold;">file.p</span></p>
+<p>&nbsp;</p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">@</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">ErrorList_file</span><span class="f_CodeExample" style="font-weight: bold;">[</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">invoke</span><span class="f_CodeExample" style="font-weight: bold;">]</span><br />
+<span class="f_CodeExample" style="font-weight: bold;">&nbsp;&nbsp;&nbsp;$</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">hErrList</span><span class="f_CodeExample" style="font-weight: bold;">[^</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">hash</span><span class="f_CodeExample" style="font-weight: bold;">::</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">create</span><span class="f_CodeExample" style="font-weight: bold;">[]]&nbsp;&nbsp;&nbsp;</span><br />
+<span class="f_CodeExample" style="font-weight: bold;">&nbsp;&nbsp;&nbsp;</span><br />
+<span class="f_CodeExample" style="font-weight: bold;">&nbsp;&nbsp;&nbsp;$</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">hErrList</span><span class="f_CodeExample" style="font-weight: bold;">[</span><br />
+<span class="f_CodeExample" style="font-weight: bold;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$.</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">TYPE_MISMATCH</span><span class="f_CodeExample" style="font-weight: bold;">[Неверный&nbsp;тип&nbsp;данных&nbsp;загруженного&nbsp;файла]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br />
+<span class="f_CodeExample" style="font-weight: bold;">&nbsp;&nbsp;&nbsp;]</span><br />
+<span class="f_CodeExample" style="font-weight: bold;">&nbsp;&nbsp;&nbsp;</span><br />
+<span class="f_CodeExample" style="font-weight: bold;">&nbsp;&nbsp;&nbsp;^</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">if</span><span class="f_CodeExample" style="font-weight: bold;">(</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">def</span><span class="f_CodeExample" style="font-weight: bold;">&nbsp;$</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">invoke</span><span class="f_CodeExample" style="font-weight: bold;">&nbsp;&amp;&amp;&nbsp;^</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">hErrList</span><span class="f_CodeExample" style="font-weight: bold;">.</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">contains</span><span class="f_CodeExample" style="font-weight: bold;">[$</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">invoke</span><span class="f_CodeExample" style="font-weight: bold;">]){</span><br />
+<span class="f_CodeExample" style="font-weight: bold;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">result</span><span class="f_CodeExample" style="font-weight: bold;">[$</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">hErrList</span><span class="f_CodeExample" style="font-weight: bold;">.$</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">invoke</span><span class="f_CodeExample" style="font-weight: bold;">]</span><br />
+<span class="f_CodeExample" style="font-weight: bold;">&nbsp;&nbsp;&nbsp;}{</span><br />
+<span class="f_CodeExample" style="font-weight: bold;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">result</span><span class="f_CodeExample" style="font-weight: bold;">[$</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">hErrList</span><span class="f_CodeExample" style="font-weight: bold;">]</span><br />
+<span class="f_CodeExample" style="font-weight: bold;">&nbsp;&nbsp;&nbsp;}</span><br />
+<span class="f_CodeExample" style="font-weight: bold;">&nbsp;&nbsp;&nbsp;</span><br />
+<span class="f_CodeExample" style="font-weight: bold;">&nbsp;&nbsp;&nbsp;$</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">result</span><span class="f_CodeExample" style="font-weight: bold;">[$</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">hErrList</span><span class="f_CodeExample" style="font-weight: bold;">]</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;</span></p>
+<p>Сообщение об ошибке модуля будет выведено на экран в верхней части страницы с конструируемой формой с указанием поля, в котором возникла ошибка.</p>
+
+</td></tr></table>
+
+</body>
+</html>

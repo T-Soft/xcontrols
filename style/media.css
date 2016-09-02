@@ -1,0 +1,15 @@
+@media print {
+	.no_print,
+	.no-print,
+	.noprint {
+		display:	none;
+	}
+}
+
+@media screen, handheld, projection, tv {
+	.no_screen,
+	.no-screen,
+	.noscreen {
+		display:	none;
+	}
+}

@@ -1,0 +1,163 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>Статические методы</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <style type="text/css">
+     body { margin: 0px; background: #FFFFFF; }
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "static_methods.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+
+<!-- Placeholder for topic body. -->
+<table style="width:100%;border:none;border-spacing:0px"><tr style="vertical-align:top"><td style="text-align:left;padding:5px">
+<p class="p_Underlined_red" style="border-top: none; border-right: none; border-left: none;"><span class="f_Underlined_red">Статические методы</span></p>
+<p>&nbsp;</p>
+<p>В классе xcontrols реализованы следующие статические методы.</p>
+<p>&nbsp;</p>
+<p style="text-align: left; padding: 0px 0px 0px 13px; margin: 0px 0px 0px 22px;"><span style="font-size:11pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">header</span><span class="f_CodeExample" style="font-weight: bold;">[</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">hHeader_args</span><span class="f_CodeExample" style="font-weight: bold;">]</span> - Создание заголовков HTML страницы с путями к <span style="font-weight: bold;">*.js</span> и <span style="font-weight: bold;">*.css</span> файлам.</p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 0px 0px 0px 22px;"><span style="font-size:11pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">form_init</span><span class="f_CodeExample" style="font-weight: bold;">[</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">hArgs</span><span class="f_CodeExample" style="font-weight: bold;">]</span> - инициализация статического класса.</p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 0px 0px 0px 22px;"><span style="font-size:11pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">create_controls</span><span class="f_CodeExample" style="font-weight: bold;">[</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">sForm_id</span><span class="f_CodeExample" style="font-weight: bold;">;</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">sPrefix_name</span><span class="f_CodeExample" style="font-weight: bold;">;</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">sCustom_class</span><span class="f_CodeExample" style="font-weight: bold;">;</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">hInit</span><span class="f_CodeExample" style="font-weight: bold;">]</span> - создание элементов управления без создания оборачивающего тэга <span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">form</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span>. Т.е. создание отдельных элементов упарвления.</p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 0px 0px 0px 22px;"><span style="font-size:11pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">create_form</span><span class="f_CodeExample" style="font-weight: bold;">[</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">sForm_id</span><span class="f_CodeExample" style="font-weight: bold;">;</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">hHidden_fields</span><span class="f_CodeExample" style="font-weight: bold;">;</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">hInit</span><span class="f_CodeExample" style="font-weight: bold;">]</span> - создание элементов управления в оборачивающем тэге <span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">form</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span>. Т.е. создание формы целиком. </p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 0px 0px 0px 22px;"><span style="font-size:11pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">edit_form</span><span class="f_CodeExample" style="font-weight: bold;">[</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">sForm_id</span><span class="f_CodeExample" style="font-weight: bold;">;</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">sEntry_uuid</span><span class="f_CodeExample" style="font-weight: bold;">]</span> - редактирование введенных пользователем ранее данных через раннее сконструированную xControls форму ввода.</p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 0px 0px 0px 22px;"><span style="font-size:11pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">store_data</span><span class="f_CodeExample" style="font-weight: bold;">[</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">hHidden_fields</span><span class="f_CodeExample" style="font-weight: bold;">]</span>- сохранение данных <span style="font-weight: bold;">текущей формы</span> в базу данных на основе описательного XML.</p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 0px 0px 0px 22px;"><span style="font-size:11pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">update_entry</span><span class="f_CodeExample" style="font-weight: bold;">[</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">hHidden_fields</span><span class="f_CodeExample" style="font-weight: bold;">;</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">hParam</span><span class="f_CodeExample" style="font-weight: bold;">]</span>- обновление даннх <span style="font-weight: bold;">текущей формы</span> в базе данных по <span style="font-weight: bold;">uuid</span> записи.</p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 0px 0px 0px 22px;"><span style="font-size:11pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">get_info</span><span class="f_CodeExample" style="font-weight: bold;">[</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">uuid</span><span class="f_CodeExample" style="font-weight: bold;">;</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">fieldname</span><span class="f_CodeExample" style="font-weight: bold;">]</span>- получение параметров поля базы данных.</p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 0px 0px 0px 22px;"><span style="font-size:11pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">print_info</span><span class="f_CodeExample" style="font-weight: bold;">[</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">uuid</span><span class="f_CodeExample" style="font-weight: bold;">;</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">fieldname;separator</span><span class="f_CodeExample" style="font-weight: bold;">]</span>- вывод на экран параметров поля базы данных.</p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 0px 0px 0px 22px;"><span style="font-size:11pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">file_info</span><span class="f_CodeExample" style="font-weight: bold;">[</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">rawData</span><span class="f_CodeExample" style="font-weight: bold;">]</span>- получение информации о файле на основе строки из базы данных.</p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 0px 0px 0px 22px;"><span style="font-size:11pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">generate_initfile_template</span><span class="f_CodeExample" style="font-weight: bold;">[</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">sForm_id</span><span class="f_CodeExample" style="font-weight: bold;">;</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">save_path;filename</span><span class="f_CodeExample" style="font-weight: bold;">]</span>- генерация шаблона инициализирующего файла.</p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 0px 0px 0px 22px;"><span style="font-size:11pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">view_init</span><span class="f_CodeExample" style="font-weight: bold;">[</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">hArgs</span><span class="f_CodeExample" style="font-weight: bold;">]</span> - инициализация модуля отображения данных.</p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 0px 0px 0px 22px;"><span style="font-size:11pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">view</span><span class="f_CodeExample" style="font-weight: bold;">[</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">sProject_nick</span><span class="f_CodeExample" style="font-weight: bold;">;</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">sWhere_statement</span><span class="f_CodeExample" style="font-weight: bold;">;</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">sSort_statement</span><span class="f_CodeExample" style="font-weight: bold;">]</span>- Отображение таблицы с данными из БД.</p><p style="text-indent: -13px; margin: 0px 0px 0px 35px;">&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 1px;"><table style="width:80%; border:solid 2px #000000; border-spacing:0px; border-collapse:collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:156px; background-color:#c0c0c0; padding:3px; border:solid 1px #000000;"><p><span style="font-weight: bold;"> Параметр</span></p>
+</td>
+<td style="vertical-align:top; width:131px; background-color:#c0c0c0; padding:3px; border:solid 1px #000000;"><p> <span style="font-weight: bold;">Обязательность</span></p>
+</td>
+<td style="vertical-align:top; width:698px; background-color:#c0c0c0; padding:3px; border:solid 1px #000000;"><p> <span style="font-weight: bold;">Описание</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:middle; width:156px; padding:3px; border:solid 1px #000000;"><p> <span style="font-family: 'Courier New'; font-weight: bold; color: #0000ff;">hArgs</span></p>
+</td>
+<td style="vertical-align:middle; width:131px; padding:3px; border:solid 1px #000000;"><p> да</p>
+</td>
+<td style="vertical-align:middle; width:698px; padding:3px; border:solid 1px #000000;"><p> Хеш инициализирующих параметров. См. Инициализация.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:middle; width:156px; padding:3px; border:solid 1px #000000;"><p> <span style="font-family: 'Courier New'; font-weight: bold; color: #0000ff;">sForm_id</span></p>
+</td>
+<td style="vertical-align:middle; width:131px; padding:3px; border:solid 1px #000000;"><p> да</p>
+</td>
+<td style="vertical-align:middle; width:698px; padding:3px; border:solid 1px #000000;"><p> Идентификатор формы (от же ник проекта). Совпадает с директорией хранения описательного XML.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:middle; width:156px; padding:3px; border:solid 1px #000000;"><p> <span style="font-family: 'Courier New'; font-weight: bold; color: #0000ff;">sPrefix_name</span></p>
+</td>
+<td style="vertical-align:middle; width:131px; padding:3px; border:solid 1px #000000;"><p> нет</p>
+</td>
+<td style="vertical-align:middle; width:698px; padding:3px; border:solid 1px #000000;"><p> Служебное поле. Служит для обработки элементов управления составных типов.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:middle; width:156px; padding:3px; border:solid 1px #000000;"><p> <span style="font-family: 'Courier New'; font-weight: bold; color: #0000ff;">sCustom_class</span></p>
+</td>
+<td style="vertical-align:middle; width:131px; padding:3px; border:solid 1px #000000;"><p> нет</p>
+</td>
+<td style="vertical-align:middle; width:698px; padding:3px; border:solid 1px #000000;"><p> Служебное поле. Служит для обработки элементов управления составных типов.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:middle; width:156px; padding:3px; border:solid 1px #000000;"><p> <span style="font-family: 'Courier New'; font-weight: bold; color: #0000ff;">hHidden_fields</span></p>
+</td>
+<td style="vertical-align:middle; width:131px; padding:3px; border:solid 1px #000000;"><p> нет</p>
+</td>
+<td style="vertical-align:middle; width:698px; padding:3px; border:solid 1px #000000;"><p> Хеш со списком скрытых полей формы.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:middle; width:156px; padding:3px; border:solid 1px #000000;"><p> <span style="font-family: 'Courier New'; font-weight: bold; color: #0000ff;">hInit</span></p>
+</td>
+<td style="vertical-align:middle; width:131px; padding:3px; border:solid 1px #000000;"><p> нет</p>
+</td>
+<td style="vertical-align:middle; width:698px; padding:3px; border:solid 1px #000000;"><p> Хеш инициализирующих значений полей формы.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:middle; width:156px; padding:3px; border:solid 1px #000000;"><p> <span style="font-family: 'Courier New'; font-weight: bold; color: #0000ff;">sEntry_uuid</span></p>
+</td>
+<td style="vertical-align:middle; width:131px; padding:3px; border:solid 1px #000000;"><p> да</p>
+</td>
+<td style="vertical-align:middle; width:698px; padding:3px; border:solid 1px #000000;"><p> Уникальный идентификатор редактируемой записи в БД.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:middle; width:156px; padding:3px; border:solid 1px #000000;"><p> <span style="font-family: 'Courier New'; font-weight: bold; color: #0000ff;">hHeader_args</span></p>
+</td>
+<td style="vertical-align:middle; width:131px; padding:3px; border:solid 1px #000000;"><p> нет</p>
+</td>
+<td style="vertical-align:middle; width:698px; padding:3px; border:solid 1px #000000;"><p> Хеш параметров заголовков. (См. <a href="header_nicaaiea_caaieiaeia.htm" class="topiclink">Создание заголовков</a>).</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:middle; width:156px; padding:3px; border:solid 1px #000000;"><p> <span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">hParam</span></p>
+</td>
+<td style="vertical-align:middle; width:131px; padding:3px; border:solid 1px #000000;"><p> нет</p>
+</td>
+<td style="vertical-align:middle; width:698px; padding:3px; border:solid 1px #000000;"><p> Хеш параметров вызова.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:middle; width:156px; padding:3px; border:solid 1px #000000;"><p> <span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">uuid</span></p>
+</td>
+<td style="vertical-align:middle; width:131px; padding:3px; border:solid 1px #000000;"><p> да</p>
+</td>
+<td style="vertical-align:middle; width:698px; padding:3px; border:solid 1px #000000;"><p> Идентификатор записи в данной таблице.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:middle; width:156px; padding:3px; border:solid 1px #000000;"><p> <span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">fieldname</span></p>
+</td>
+<td style="vertical-align:middle; width:131px; padding:3px; border:solid 1px #000000;"><p> да</p>
+</td>
+<td style="vertical-align:middle; width:698px; padding:3px; border:solid 1px #000000;"><p><span style="font-size: 10pt;"> </span>Имя поля, информацию о котором необходимо получить.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:middle; width:156px; padding:3px; border:solid 1px #000000;"><p> <span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">separator</span></p>
+</td>
+<td style="vertical-align:middle; width:131px; padding:3px; border:solid 1px #000000;"><p> да</p>
+</td>
+<td style="vertical-align:middle; width:698px; padding:3px; border:solid 1px #000000;"><p><span style="font-size: 10pt;"> </span>Разделитель поясняющей строки и данных.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:middle; width:156px; padding:3px; border:solid 1px #000000;"><p> <span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">save_path</span></p>
+</td>
+<td style="vertical-align:middle; width:131px; padding:3px; border:solid 1px #000000;"><p> нет</p>
+</td>
+<td style="vertical-align:middle; width:698px; padding:3px; border:solid 1px #000000;"><p><span style="font-size: 10pt;"> </span>Путь, по которому следует сохранить шаблон. </p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:middle; width:156px; padding:3px; border:solid 1px #000000;"><p> <span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">filename</span></p>
+</td>
+<td style="vertical-align:middle; width:131px; padding:3px; border:solid 1px #000000;"><p> нет</p>
+</td>
+<td style="vertical-align:middle; width:698px; padding:3px; border:solid 1px #000000;"><p><span style="font-size: 10pt;"> </span>Имя шаблона.</p>
+</td>
+</tr>
+</table>
+</div>
+
+</td></tr></table>
+
+</body>
+</html>

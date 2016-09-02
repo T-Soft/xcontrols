@@ -1,0 +1,1404 @@
+
+2015-11-02 14:24:36. JS error. Data: server	xcontrols.dev
+
+uri	/add/?failed_id=8D69B708-19DC-4F7D-9DBE-5CFCCBEAC1B4
+
+ip	127.0.0.1
+
+prdm.login	
+
+id_user		
+
+id_org		
+
+code_region	
+
+	Original message: ""
+
+2015-11-02 14:25:47. JS error. Data: server	xcontrols.dev
+
+uri	/add/store.html
+
+ip	127.0.0.1
+
+prdm.login	
+
+id_user		
+
+id_org		
+
+code_region	
+
+	Original message: ""
+
+2015-11-03 13:09:07. JS error. Data: 
+server	xcontrols.dev
+
+uri	/add/store.html
+
+ip	127.0.0.1
+
+prdm.login	
+
+id_user		
+
+id_org		
+
+code_region	
+
+	Original message: ""
+
+2015-11-03 13:11:28. JS error. Data: 
+server	xcontrols.dev
+
+uri	/add/store.html
+
+ip	127.0.0.1
+
+prdm.login	
+
+id_user		
+
+id_org		
+
+code_region	
+
+	Original message: ""
+
+2015-11-03 13:11:48. JS error. Data: 
+server	xcontrols.dev
+
+uri	/add/store.html
+
+ip	127.0.0.1
+
+prdm.login	
+
+id_user		
+
+id_org		
+
+code_region	
+
+	Original message: ""
+
+2015-11-03 15:00:34. JS error. Data: 
+server	xcontrols.dev
+
+uri	/add/store.html
+
+ip	127.0.0.1
+
+prdm.login	
+
+id_user		
+
+id_org		
+
+code_region	
+
+	Original message: ""
+
+2015-11-03 15:00:45. JS error. Data: 
+server	xcontrols.dev
+
+uri	/add/store.html
+
+ip	127.0.0.1
+
+prdm.login	
+
+id_user		
+
+id_org		
+
+code_region	
+
+	Original message: ""
+
+2015-11-03 15:00:57. JS error. Data: 
+server	xcontrols.dev
+
+uri	/add/store.html
+
+ip	127.0.0.1
+
+prdm.login	
+
+id_user		
+
+id_org		
+
+code_region	
+
+	Original message: ""
+
+2015-11-03 15:01:22. JS error. Data: 
+server	xcontrols.dev
+
+uri	/add/store.html
+
+ip	127.0.0.1
+
+prdm.login	
+
+id_user		
+
+id_org		
+
+code_region	
+
+	Original message: ""
+
+2015-11-03 15:01:27. JS error. Data: 
+server	xcontrols.dev
+
+uri	/add/store.html
+
+ip	127.0.0.1
+
+prdm.login	
+
+id_user		
+
+id_org		
+
+code_region	
+
+	Original message: ""
+
+2015-11-03 15:02:40. JS error. Data: 
+server	xcontrols.dev
+
+uri	/add/store.html
+
+ip	127.0.0.1
+
+prdm.login	
+
+id_user		
+
+id_org		
+
+code_region	
+
+	Original message: ""
+
+2015-11-03 15:02:48. JS error. Data: 
+server	xcontrols.dev
+
+uri	/add/store.html
+
+ip	127.0.0.1
+
+prdm.login	
+
+id_user		
+
+id_org		
+
+code_region	
+
+	Original message: ""
+
+2015-11-03 15:03:19. JS error. Data: 
+server	xcontrols.dev
+
+uri	/add/store.html
+
+ip	127.0.0.1
+
+prdm.login	
+
+id_user		
+
+id_org		
+
+code_region	
+
+	Original message: ""
+
+2015-11-03 15:03:37. JS error. Data: 
+server	xcontrols.dev
+
+uri	/add/store.html
+
+ip	127.0.0.1
+
+prdm.login	
+
+id_user		
+
+id_org		
+
+code_region	
+
+	Original message: ""
+
+2015-11-03 15:03:42. JS error. Data: 
+server	xcontrols.dev
+
+uri	/add/store.html
+
+ip	127.0.0.1
+
+prdm.login	
+
+id_user		
+
+id_org		
+
+code_region	
+
+	Original message: ""
+
+2015-11-03 15:04:20. JS error. Data: 
+server	xcontrols.dev
+
+uri	/add/store.html
+
+ip	127.0.0.1
+
+prdm.login	
+
+id_user		
+
+id_org		
+
+code_region	
+
+	Original message: ""
+
+2015-11-03 15:09:40. JS error. Data: 
+server	xcontrols.dev
+
+uri	/add/store.html
+
+ip	127.0.0.1
+
+prdm.login	
+
+id_user		
+
+id_org		
+
+code_region	
+
+	Original message: ""
+
+2015-11-03 15:10:07. JS error. Data: 
+server	xcontrols.dev
+
+uri	/add/store.html
+
+ip	127.0.0.1
+
+prdm.login	
+
+id_user		
+
+id_org		
+
+code_region	
+
+	Original message: ""
+
+2015-11-03 15:10:24. JS error. Data: 
+server	xcontrols.dev
+
+uri	/edit/store.html
+
+ip	127.0.0.1
+
+prdm.login	
+
+id_user		
+
+id_org		
+
+code_region	
+
+	Original message: ""
+
+2015-11-03 15:10:46. JS error. Data: 
+server	xcontrols.dev
+
+uri	/edit/store.html
+
+ip	127.0.0.1
+
+prdm.login	
+
+id_user		
+
+id_org		
+
+code_region	
+
+	Original message: ""
+
+2015-11-03 15:11:10. JS error. Data: 
+server	xcontrols.dev
+
+uri	/edit/store.html
+
+ip	127.0.0.1
+
+prdm.login	
+
+id_user		
+
+id_org		
+
+code_region	
+
+	Original message: ""
+
+2015-11-03 15:11:28. JS error. Data: 
+server	xcontrols.dev
+
+uri	/add/store.html
+
+ip	127.0.0.1
+
+prdm.login	
+
+id_user		
+
+id_org		
+
+code_region	
+
+	Original message: ""
+
+2015-11-03 15:12:11. JS error. Data: 
+server	xcontrols.dev
+
+uri	/add/store.html
+
+ip	127.0.0.1
+
+prdm.login	
+
+id_user		
+
+id_org		
+
+code_region	
+
+	Original message: ""
+
+2015-11-03 15:12:28. JS error. Data: 
+server	xcontrols.dev
+
+uri	/edit/store.html
+
+ip	127.0.0.1
+
+prdm.login	
+
+id_user		
+
+id_org		
+
+code_region	
+
+	Original message: ""
+
+2015-11-03 15:12:44. JS error. Data: 
+server	xcontrols.dev
+
+uri	/edit/store.html
+
+ip	127.0.0.1
+
+prdm.login	
+
+id_user		
+
+id_org		
+
+code_region	
+
+	Original message: ""
+
+2015-11-03 15:12:58. JS error. Data: 
+server	xcontrols.dev
+
+uri	/edit/store.html
+
+ip	127.0.0.1
+
+prdm.login	
+
+id_user		
+
+id_org		
+
+code_region	
+
+	Original message: ""
+
+2015-11-03 15:13:04. JS error. Data: 
+server	xcontrols.dev
+
+uri	/add/store.html
+
+ip	127.0.0.1
+
+prdm.login	
+
+id_user		
+
+id_org		
+
+code_region	
+
+	Original message: ""
+
+2015-11-03 15:15:10. JS error. Data: 
+server	xcontrols.dev
+
+uri	/edit/store.html
+
+ip	127.0.0.1
+
+prdm.login	
+
+id_user		
+
+id_org		
+
+code_region	
+
+	Original message: ""
+
+2015-11-03 15:16:34. JS error. Data: 
+server	xcontrols.dev
+
+uri	/edit/store.html
+
+ip	127.0.0.1
+
+prdm.login	
+
+id_user		
+
+id_org		
+
+code_region	
+
+	Original message: ""
+
+2015-11-03 15:16:44. JS error. Data: 
+server	xcontrols.dev
+
+uri	/edit/store.html
+
+ip	127.0.0.1
+
+prdm.login	
+
+id_user		
+
+id_org		
+
+code_region	
+
+	Original message: ""
+
+2015-11-03 15:17:26. JS error. Data: 
+server	xcontrols.dev
+
+uri	/edit/store.html
+
+ip	127.0.0.1
+
+prdm.login	
+
+id_user		
+
+id_org		
+
+code_region	
+
+	Original message: ""
+
+2015-11-03 15:18:04. JS error. Data: 
+server	xcontrols.dev
+
+uri	/edit/store.html
+
+ip	127.0.0.1
+
+prdm.login	
+
+id_user		
+
+id_org		
+
+code_region	
+
+	Original message: ""
+
+2015-11-03 15:19:09. JS error. Data: 
+server	xcontrols.dev
+
+uri	/add/store.html
+
+ip	127.0.0.1
+
+prdm.login	
+
+id_user		
+
+id_org		
+
+code_region	
+
+	Original message: ""
+
+2015-11-03 15:19:16. JS error. Data: 
+server	xcontrols.dev
+
+uri	/add/store.html
+
+ip	127.0.0.1
+
+prdm.login	
+
+id_user		
+
+id_org		
+
+code_region	
+
+	Original message: ""
+
+2015-11-03 15:19:42. JS error. Data: 
+server	xcontrols.dev
+
+uri	/add/store.html
+
+ip	127.0.0.1
+
+prdm.login	
+
+id_user		
+
+id_org		
+
+code_region	
+
+	Original message: ""
+
+2015-11-03 15:20:10. JS error. Data: 
+server	xcontrols.dev
+
+uri	/add/store.html
+
+ip	127.0.0.1
+
+prdm.login	
+
+id_user		
+
+id_org		
+
+code_region	
+
+	Original message: ""
+
+2015-11-03 15:20:46. JS error. Data: 
+server	xcontrols.dev
+
+uri	/add/store.html
+
+ip	127.0.0.1
+
+prdm.login	
+
+id_user		
+
+id_org		
+
+code_region	
+
+	Original message: ""
+
+2015-11-03 15:21:18. JS error. Data: 
+server	xcontrols.dev
+
+uri	/add/store.html
+
+ip	127.0.0.1
+
+prdm.login	
+
+id_user		
+
+id_org		
+
+code_region	
+
+	Original message: ""
+
+2015-11-03 15:23:52. JS error. Data: 
+server	xcontrols.dev
+
+uri	/add/store.html
+
+ip	127.0.0.1
+
+prdm.login	
+
+id_user		
+
+id_org		
+
+code_region	
+
+	Original message: ""
+
+2015-11-03 15:24:07. JS error. Data: 
+server	xcontrols.dev
+
+uri	/add/store.html
+
+ip	127.0.0.1
+
+prdm.login	
+
+id_user		
+
+id_org		
+
+code_region	
+
+	Original message: ""
+
+2015-11-03 15:24:54. JS error. Data: 
+server	xcontrols.dev
+
+uri	/add/store.html
+
+ip	127.0.0.1
+
+prdm.login	
+
+id_user		
+
+id_org		
+
+code_region	
+
+	Original message: ""
+
+2015-11-03 15:25:34. JS error. Data: 
+server	xcontrols.dev
+
+uri	/add/store.html
+
+ip	127.0.0.1
+
+prdm.login	
+
+id_user		
+
+id_org		
+
+code_region	
+
+	Original message: ""
+
+2015-11-03 15:25:53. JS error. Data: 
+server	xcontrols.dev
+
+uri	/add/store.html
+
+ip	127.0.0.1
+
+prdm.login	
+
+id_user		
+
+id_org		
+
+code_region	
+
+	Original message: ""
+
+2015-11-03 15:26:24. JS error. Data: 
+server	xcontrols.dev
+
+uri	/add/store.html
+
+ip	127.0.0.1
+
+prdm.login	
+
+id_user		
+
+id_org		
+
+code_region	
+
+	Original message: ""
+
+2015-11-03 15:27:24. JS error. Data: 
+server	xcontrols.dev
+
+uri	/add/store.html
+
+ip	127.0.0.1
+
+prdm.login	
+
+id_user		
+
+id_org		
+
+code_region	
+
+	Original message: ""
+
+2015-11-03 15:28:30. JS error. Data: 
+server	xcontrols.dev
+
+uri	/add/store.html
+
+ip	127.0.0.1
+
+prdm.login	
+
+id_user		
+
+id_org		
+
+code_region	
+
+	Original message: ""
+
+2015-11-03 15:28:55. JS error. Data: 
+server	xcontrols.dev
+
+uri	/add/store.html
+
+ip	127.0.0.1
+
+prdm.login	
+
+id_user		
+
+id_org		
+
+code_region	
+
+	Original message: ""
+
+2015-11-03 15:29:28. JS error. Data: 
+server	xcontrols.dev
+
+uri	/add/store.html
+
+ip	127.0.0.1
+
+prdm.login	
+
+id_user		
+
+id_org		
+
+code_region	
+
+	Original message: ""
+
+2015-11-03 15:29:39. JS error. Data: 
+server	xcontrols.dev
+
+uri	/add/store.html
+
+ip	127.0.0.1
+
+prdm.login	
+
+id_user		
+
+id_org		
+
+code_region	
+
+	Original message: ""
+
+2015-11-03 15:30:23. JS error. Data: 
+server	xcontrols.dev
+
+uri	/add/store.html
+
+ip	127.0.0.1
+
+prdm.login	
+
+id_user		
+
+id_org		
+
+code_region	
+
+	Original message: ""
+
+2015-11-03 15:30:56. JS error. Data: 
+server	xcontrols.dev
+
+uri	/add/store.html
+
+ip	127.0.0.1
+
+prdm.login	
+
+id_user		
+
+id_org		
+
+code_region	
+
+	Original message: ""
+
+2015-11-03 15:31:04. JS error. Data: 
+server	xcontrols.dev
+
+uri	/add/store.html
+
+ip	127.0.0.1
+
+prdm.login	
+
+id_user		
+
+id_org		
+
+code_region	
+
+	Original message: ""
+
+2015-11-03 15:31:22. JS error. Data: 
+server	xcontrols.dev
+
+uri	/add/store.html
+
+ip	127.0.0.1
+
+prdm.login	
+
+id_user		
+
+id_org		
+
+code_region	
+
+	Original message: ""
+
+2015-11-03 15:31:34. JS error. Data: 
+server	xcontrols.dev
+
+uri	/add/store.html
+
+ip	127.0.0.1
+
+prdm.login	
+
+id_user		
+
+id_org		
+
+code_region	
+
+	Original message: ""
+
+2015-11-03 15:41:55. JS error. Data: 
+server	xcontrols.dev
+
+uri	/add/store.html
+
+ip	127.0.0.1
+
+prdm.login	
+
+id_user		
+
+id_org		
+
+code_region	
+
+	Original message: ""
+
+2015-11-03 15:42:09. JS error. Data: 
+server	xcontrols.dev
+
+uri	/add/store.html
+
+ip	127.0.0.1
+
+prdm.login	
+
+id_user		
+
+id_org		
+
+code_region	
+
+	Original message: ""
+
+2015-11-03 15:57:09. JS error. Data: 
+server	xcontrols.dev
+
+uri	/add/store.html
+
+ip	127.0.0.1
+
+prdm.login	
+
+id_user		
+
+id_org		
+
+code_region	
+
+	Original message: ""
+
+2015-11-03 15:58:58. JS error. Data: 
+server	xcontrols.dev
+
+uri	/add/store.html
+
+ip	127.0.0.1
+
+prdm.login	
+
+id_user		
+
+id_org		
+
+code_region	
+
+	Original message: ""
+
+2015-11-03 16:03:27. JS error. Data: 
+server	xcontrols.dev
+
+uri	/add/store.html
+
+ip	127.0.0.1
+
+prdm.login	
+
+id_user		
+
+id_org		
+
+code_region	
+
+	Original message: ""
+
+2015-11-03 16:16:00. JS error. Data: 
+server	xcontrols.dev
+
+uri	/add/store.html
+
+ip	127.0.0.1
+
+prdm.login	
+
+id_user		
+
+id_org		
+
+code_region	
+
+	Original message: ""
+
+2015-11-03 16:16:14. JS error. Data: 
+server	xcontrols.dev
+
+uri	/add/store.html
+
+ip	127.0.0.1
+
+prdm.login	
+
+id_user		
+
+id_org		
+
+code_region	
+
+	Original message: ""
+
+2015-11-03 16:16:34. JS error. Data: 
+server	xcontrols.dev
+
+uri	/add/store.html
+
+ip	127.0.0.1
+
+prdm.login	
+
+id_user		
+
+id_org		
+
+code_region	
+
+	Original message: ""
+
+2015-11-03 16:28:17. JS error. Data: 
+server	xcontrols.dev
+
+uri	/add/store.html
+
+ip	127.0.0.1
+
+prdm.login	
+
+id_user		
+
+id_org		
+
+code_region	
+
+	Original message: ""
+
+2015-11-03 16:28:35. JS error. Data: 
+server	xcontrols.dev
+
+uri	/add/store.html
+
+ip	127.0.0.1
+
+prdm.login	
+
+id_user		
+
+id_org		
+
+code_region	
+
+	Original message: ""
+
+2015-11-03 16:29:32. JS error. Data: 
+server	xcontrols.dev
+
+uri	/add/store.html
+
+ip	127.0.0.1
+
+prdm.login	
+
+id_user		
+
+id_org		
+
+code_region	
+
+	Original message: ""
+
+2015-11-03 16:30:04. JS error. Data: 
+server	xcontrols.dev
+
+uri	/edit/store.html
+
+ip	127.0.0.1
+
+prdm.login	
+
+id_user		
+
+id_org		
+
+code_region	
+
+	Original message: ""
+
+2015-11-03 16:33:07. JS error. Data: 
+server	xcontrols.dev
+
+uri	/edit/store.html
+
+ip	127.0.0.1
+
+prdm.login	
+
+id_user		
+
+id_org		
+
+code_region	
+
+	Original message: ""
+
+2015-11-03 16:33:39. JS error. Data: 
+server	xcontrols.dev
+
+uri	/edit/store.html
+
+ip	127.0.0.1
+
+prdm.login	
+
+id_user		
+
+id_org		
+
+code_region	
+
+	Original message: ""
+
+2015-11-03 16:33:44. JS error. Data: 
+server	xcontrols.dev
+
+uri	/edit/store.html
+
+ip	127.0.0.1
+
+prdm.login	
+
+id_user		
+
+id_org		
+
+code_region	
+
+	Original message: ""
+
+2015-11-03 16:34:06. JS error. Data: 
+server	xcontrols.dev
+
+uri	/edit/store.html
+
+ip	127.0.0.1
+
+prdm.login	
+
+id_user		
+
+id_org		
+
+code_region	
+
+	Original message: ""
+
+2015-11-03 16:34:27. JS error. Data: 
+server	xcontrols.dev
+
+uri	/edit/store.html
+
+ip	127.0.0.1
+
+prdm.login	
+
+id_user		
+
+id_org		
+
+code_region	
+
+	Original message: ""
+
+2015-11-03 16:34:45. JS error. Data: 
+server	xcontrols.dev
+
+uri	/edit/store.html
+
+ip	127.0.0.1
+
+prdm.login	
+
+id_user		
+
+id_org		
+
+code_region	
+
+	Original message: ""
+
+2015-11-03 16:35:03. JS error. Data: 
+server	xcontrols.dev
+
+uri	/edit/store.html
+
+ip	127.0.0.1
+
+prdm.login	
+
+id_user		
+
+id_org		
+
+code_region	
+
+	Original message: ""
+
+2015-11-03 16:35:19. JS error. Data: 
+server	xcontrols.dev
+
+uri	/edit/store.html
+
+ip	127.0.0.1
+
+prdm.login	
+
+id_user		
+
+id_org		
+
+code_region	
+
+	Original message: ""
+
+2015-11-03 16:35:51. JS error. Data: 
+server	xcontrols.dev
+
+uri	/edit/store.html
+
+ip	127.0.0.1
+
+prdm.login	
+
+id_user		
+
+id_org		
+
+code_region	
+
+	Original message: ""
+
+2015-11-03 16:35:57. JS error. Data: 
+server	xcontrols.dev
+
+uri	/edit/store.html
+
+ip	127.0.0.1
+
+prdm.login	
+
+id_user		
+
+id_org		
+
+code_region	
+
+	Original message: ""
+
+2015-11-03 16:36:08. JS error. Data: 
+server	xcontrols.dev
+
+uri	/edit/store.html
+
+ip	127.0.0.1
+
+prdm.login	
+
+id_user		
+
+id_org		
+
+code_region	
+
+	Original message: ""
+
+2015-11-03 16:36:12. JS error. Data: 
+server	xcontrols.dev
+
+uri	/edit/store.html
+
+ip	127.0.0.1
+
+prdm.login	
+
+id_user		
+
+id_org		
+
+code_region	
+
+	Original message: ""
+
+2015-11-03 16:36:42. JS error. Data: 
+server	xcontrols.dev
+
+uri	/edit/store.html
+
+ip	127.0.0.1
+
+prdm.login	
+
+id_user		
+
+id_org		
+
+code_region	
+
+	Original message: ""
+
+2015-11-03 16:36:59. JS error. Data: 
+server	xcontrols.dev
+
+uri	/edit/store.html
+
+ip	127.0.0.1
+
+prdm.login	
+
+id_user		
+
+id_org		
+
+code_region	
+
+	Original message: ""
+
+2015-11-03 16:39:19. JS error. Data: 
+server	xcontrols.dev
+
+uri	/edit/store.html
+
+ip	127.0.0.1
+
+prdm.login	
+
+id_user		
+
+id_org		
+
+code_region	
+
+	Original message: ""
+
+2015-11-03 16:39:34. JS error. Data: 
+server	xcontrols.dev
+
+uri	/edit/store.html
+
+ip	127.0.0.1
+
+prdm.login	
+
+id_user		
+
+id_org		
+
+code_region	
+
+	Original message: ""
+
+				2015-11-23 13:44:38. ERROR in SQL query for entry : '2f78c7a9-91cf-11e5-ac24-f07959621681'. Query:
+				INSERT INTO `skk_results_archive`
+							(`dt_update`,`uuid`,`id`,`xfile_test`,`id_user_edit`,`fio_user_edit`,`login_user_edit`,`dt_create`,`id_user`,`fio_user`,`login_user`,`id_org`,`code_region`,`id_kpp`,`name_kpp`,`dt_user_lastedit`,`file_test`,`date_skk`,`prodnm`,`tnved`,`firmsend_country`,`firmsend`,`firmmade_country`,`firmmade`,`firmget`,`firmget_addr`,`firmget_inn`,`firmget_ogrn`,`prod_partya`,`prod_volume`,`reject_decree`,`reject_incomplete`,`reject_transport`,`reject_rad`,`reject_tr_secur`,`reject_tr_label`,`reject_expdate`,`reject_proddate`,`reject_lab`,`is_reject`,`address_name_region`,`address_name_city`,`address_name_street`,`address_name_house`,`address_name_apartment`,`file_test_2`,`is_archive`,`is_del`,`is_del_test`,`is_del_test_2`,`test`,`test_0`,`adreg_name`,`adreg_address`,`adreg_region`,`adreg_inn`,`adreg_ogrn`,`is_reject_2`,`test_textarea`,`tt_file_tt`,`tt_int_tt`,`tt2_file_tt2`,`tt2_int_tt2`,`macros_2`,`macros`,`file_tt2`,`int_tt2`,`btn_close`,`macros3`,`bounds`,`float`,`int`,`inn`,`ogrn`,`tt_int_tt2`,`chemistry_switch`,`chemistry_found`,`chemistry_documents`,`test_radio`,`chemistry_is_found`,`chemistry_norm`,`_dt_create`)
+						SELECT
+							`dt_update`,`uuid`,`id`,`xfile_test`,`id_user_edit`,`fio_user_edit`,`login_user_edit`,`dt_create` ,`id_user`,`fio_user`,`login_user`,`id_org`,`code_region`,`id_kpp`,`name_kpp`,`dt_user_lastedit`,`file_test`,`date_skk`,`prodnm`,`tnved`,`firmsend_country`,`firmsend`,`firmmade_country`,`firmmade`,`firmget`,`firmget_addr`,`firmget_inn`,`firmget_ogrn`,`prod_partya`,`prod_volume`,`reject_decree`,`reject_incomplete`,`reject_transport`,`reject_rad`,`reject_tr_secur`,`reject_tr_label`,`reject_expdate`,`reject_proddate`,`reject_lab`,`is_reject`,`address_name_region`,`address_name_city`,`address_name_street`,`address_name_house`,`address_name_apartment`,`file_test_2`,`is_archive`,`is_del`,`is_del_test`,`is_del_test_2`,`test`,`test_0`,`adreg_name`,`adreg_address`,`adreg_region`,`adreg_inn`,`adreg_ogrn`,`is_reject_2`,`test_textarea`,`tt_file_tt`,`tt_int_tt`,`tt2_file_tt2`,`tt2_int_tt2`,`macros_2`,`macros`,`file_tt2`,`int_tt2`,`btn_close`,`macros3`,`bounds`,`float`,`int`,`inn`,`ogrn`,`tt_int_tt2`,`chemistry_switch`,`chemistry_found`,`chemistry_documents`,`test_radio`,`chemistry_is_found`,`chemistry_norm` ,'2015-11-23 13:44:38' AS `_dt_create`
+						FROM
+							`skk_results`
+						WHERE
+							`uuid` = '2f78c7a9-91cf-11e5-ac24-f07959621681'
+				
+			

@@ -1,0 +1,64 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>sql. Получение строки из базы данных</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <style type="text/css">
+     body { margin: 0px; background: #FFFFFF; }
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "sql_macros.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+
+<!-- Placeholder for topic body. -->
+<table style="width:100%;border:none;border-spacing:0px"><tr style="vertical-align:top"><td style="text-align:left;padding:5px">
+<p class="p_Underlined_red" style="border-top: none; border-right: none; border-left: none;"><span class="f_Underlined_red">sql. Получение строки из базы данных</span></p>
+<p style="margin: 14px 0px 0px 0px;">Для получения строки из базы данных по выполнению запроса используется макрос : <span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">sql</span><span class="f_CodeExample" style="font-weight: bold;">( </span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">query </span><span class="f_CodeExample" style="font-weight: bold;">) </span></p>
+<p style="margin: 14px 0px 0px 0px;">Где, в качестве параметра <span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">query</span> передается SQL-запрос, который должен вернуть <span style="font-weight: bold;">одну</span> строку. </p>
+<p style="margin: 14px 0px 0px 0px;"><span style="text-decoration: underline;">Пример</span><br />
+<span style="text-decoration: underline;">&nbsp;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold;">%</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">MACRO</span><span class="f_CodeExample" style="font-weight: bold;">{</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">sql</span><span class="f_CodeExample" style="font-weight: bold;">(</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">SELECT</span><span class="f_CodeExample" style="font-weight: bold;">&nbsp;`</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">file_test</span><span class="f_CodeExample" style="font-weight: bold;">`&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">FROM</span><span class="f_CodeExample" style="font-weight: bold;">&nbsp;`</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">skk_results</span><span class="f_CodeExample" style="font-weight: bold;">`&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">WHERE</span><span class="f_CodeExample" style="font-weight: bold;">&nbsp;`</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">uuid</span><span class="f_CodeExample" style="font-weight: bold;">`=</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">'466EF12D-DBC2-4E52-9E19-4DAE202D80F4'</span><span class="f_CodeExample" style="font-weight: bold;">)}</span></p>
+<p style="margin: 14px 0px 0px 0px;">Вернет имя фйала для данного uuid.</p>
+<p style="margin: 14px 0px 14px 0px;"><span style="text-decoration: underline;">Доступность макроса:</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 14px 0px 0px 24px;"><table style="width:30%; border:solid 2px #000000; border-spacing:0px; border-collapse:collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:157px; background-color:#c0c0c0; padding:3px; border:solid 1px #000000;"><p><span style="font-weight: bold;">Модуль</span></p>
+</td>
+<td style="vertical-align:top; width:192px; background-color:#c0c0c0; padding:3px; border:solid 1px #000000;"><p><span style="font-weight: bold;">Доступность</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:157px; padding:3px; border:solid 1px #000000;"><p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">form</span></p>
+</td>
+<td style="vertical-align:top; width:192px; padding:3px; border:solid 1px #000000;"><p><span style="font-weight: bold;">Да</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:157px; padding:3px; border:solid 1px #000000;"><p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">view</span></p>
+</td>
+<td style="vertical-align:top; width:192px; padding:3px; border:solid 1px #000000;"><p><span style="font-weight: bold;">Да</span></p>
+</td>
+</tr>
+</table>
+</div>
+
+</td></tr></table>
+
+</body>
+</html>

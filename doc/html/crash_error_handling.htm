@@ -1,0 +1,118 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>Критические ошибки ядра</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <style type="text/css">
+     body { margin: 0px; background: #FFFFFF; }
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "crash_error_handling.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+
+<!-- Placeholder for topic body. -->
+<table style="width:100%;border:none;border-spacing:0px"><tr style="vertical-align:top"><td style="text-align:left;padding:5px">
+<p class="p_Underlined_red" style="border-top: none; border-right: none; border-left: none;"><span class="f_Underlined_red">Критические ошибки ядра</span></p>
+<p>&nbsp;</p>
+<p>При критической ошибке ядро завершается аварийно с указанием типа критической ошибки. </p>
+<p>&nbsp;</p>
+<p>Список критических ошибок ядра:</p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table style="width:85%; border:solid 2px #000000; border-spacing:0px; border-collapse:collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:259px; background-color:#c0c0c0; padding:3px; border:solid 1px #000000;"><p><span style="font-weight: bold;">Ошибка</span></p>
+</td>
+<td style="vertical-align:top; width:190px; background-color:#c0c0c0; padding:3px; border:solid 1px #000000;"><p><span style="font-weight: bold;">Имя</span></p>
+</td>
+<td style="vertical-align:top; width:417px; background-color:#c0c0c0; padding:3px; border:solid 1px #000000;"><p><span style="font-weight: bold;">Описание</span></p>
+</td>
+<td style="vertical-align:top; width:376px; background-color:#c0c0c0; padding:3px; border:solid 1px #000000;"><p><span style="font-weight: bold;">Сообщение</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:259px; padding:3px; border:solid 1px #000000;"><p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">xcontrols</span><span class="f_CodeExample" style="font-weight: bold;">.</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">crash</span></p>
+</td>
+<td style="vertical-align:top; width:190px; padding:3px; border:solid 1px #000000;"><p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">SYSTEM_CRASH</span></p>
+</td>
+<td style="vertical-align:top; width:417px; padding:3px; border:solid 1px #000000;"><p>Неизвестная критическая ошибка</p>
+</td>
+<td style="vertical-align:top; width:376px; padding:3px; border:solid 1px #000000;"><p>xControls core module -&gt; System crashed</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:259px; padding:3px; border:solid 1px #000000;"><p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">xcontrols</span><span class="f_CodeExample" style="font-weight: bold;">.</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">crash_edit</span></p>
+</td>
+<td style="vertical-align:top; width:190px; padding:3px; border:solid 1px #000000;"><p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">CRASH_EDIT_ENTRY</span></p>
+</td>
+<td style="vertical-align:top; width:417px; padding:3px; border:solid 1px #000000;"><p>Попытка загрузить из базы несуществующую запись</p>
+</td>
+<td style="vertical-align:top; width:376px; padding:3px; border:solid 1px #000000;"><p>xControls core module -&gt; editting non existing entry</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:259px; padding:3px; border:solid 1px #000000;"><p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">xcontrols</span><span class="f_CodeExample" style="font-weight: bold;">.</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">crash_update</span></p>
+</td>
+<td style="vertical-align:top; width:190px; padding:3px; border:solid 1px #000000;"><p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">CRASH_UPDATE_ENTRY</span></p>
+</td>
+<td style="vertical-align:top; width:417px; padding:3px; border:solid 1px #000000;"><p>Попытка обновить в базе несуществующую запись</p>
+</td>
+<td style="vertical-align:top; width:376px; padding:3px; border:solid 1px #000000;"><p>xControls core module -&gt; updating non existing entry</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:259px; padding:3px; border:solid 1px #000000;"><p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">xcontrols.crash_invoke</span></p>
+</td>
+<td style="vertical-align:top; width:190px; padding:3px; border:solid 1px #000000;"><p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">CRASH_INVALID_INVOKE</span></p>
+</td>
+<td style="vertical-align:top; width:417px; padding:3px; border:solid 1px #000000;"><p>Попытка вручную вызвать несуществующий класс ошибки</p>
+</td>
+<td style="vertical-align:top; width:376px; padding:3px; border:solid 1px #000000;"><p>xControls core module -&gt; invoking non existing error</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:259px; padding:3px; border:solid 1px #000000;"><p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">xcontrols.crash_deserialize</span></p>
+</td>
+<td style="vertical-align:top; width:190px; padding:3px; border:solid 1px #000000;"><p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">CRASH_NO_FAILED_ID</span></p>
+</td>
+<td style="vertical-align:top; width:417px; padding:3px; border:solid 1px #000000;"><p>Попытка десериализовать несуществующий файл*</p>
+</td>
+<td style="vertical-align:top; width:376px; padding:3px; border:solid 1px #000000;"><p>xControls core module -&gt; deserializing non existing file</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:259px; padding:3px; border:solid 1px #000000;"><p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">xcontrols.crash_invalid_field</span></p>
+</td>
+<td style="vertical-align:top; width:190px; padding:3px; border:solid 1px #000000;"><p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">CRASH_UNKNOWN_FIELD_INFO</span></p>
+</td>
+<td style="vertical-align:top; width:417px; padding:3px; border:solid 1px #000000;"><p>Попытка получить информацию о неизвестном поле</p>
+</td>
+<td style="vertical-align:top; width:376px; padding:3px; border:solid 1px #000000;"><p>xControls core module -&gt; getting unknown field info</p>
+</td>
+</tr>
+</table>
+</div>
+<p>&nbsp;</p>
+<p>Все критические ошибки содержат в своем имени слово <span style="font-weight: bold;">CRASH</span>.</p>
+<p>&nbsp;</p>
+<p><span style="font-weight: bold;">*</span> - функция десериализации после успешного завершения удаляет временный файл. Попытка обновить страницу приведет к ошибке <span style="font-weight: bold;">CRASH_NO_FAILED_ID</span>.</p>
+
+</td></tr></table>
+
+</body>
+</html>

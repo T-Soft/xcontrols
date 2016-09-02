@@ -1,0 +1,49 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>Составные типы</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <style type="text/css">
+     body { margin: 0px; background: #FFFFFF; }
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "two-layer_controls.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+
+<!-- Placeholder for topic body. -->
+<table style="width:100%;border:none;border-spacing:0px"><tr style="vertical-align:top"><td style="text-align:left;padding:5px">
+<p class="p_Underlined_red" style="border-top: none; border-right: none; border-left: none;"><span class="f_Underlined_red">Составные типы</span></p>
+<p>&nbsp;</p>
+<p>Класс <span style="font-weight: bold;">xc</span> позволяет использование составных типов элементов управления с уровнем вложенности не более 1.</p>
+<p style="margin: 14px 0px 0px 0px;"><span style="text-decoration: underline;">Составной тип</span> - сложное поле ввода (тип) собранное из простых.</p>
+<p style="margin: 14px 0px 0px 0px;">Т.е. имеется поддержка модулей, создающих сложные элементы управления из простых, базовых элементов управления (уже известных классу-обработчику).</p>
+<p style="margin: 14px 0px 0px 0px;">По-умолчанию в классе <span style="font-weight: bold;">xcontrols </span>реализованы три составных элемента управления : <span style="font-weight: bold;">person, address</span> и <span style="font-weight: bold;">address_region.</span></p>
+<p style="margin: 14px 0px 0px 0px;">Создание такого рода элементов также основывается на XML файле той же структуры, что и основной описательный XML. В таком случае конструктор элемента должен вызывать статический метод класса <span style="font-weight: bold;">xcontrols</span> <span class="f_CodeExample" style="font-weight: bold;">^</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">create_controls</span><span class="f_CodeExample" style="font-weight: bold;">[]</span> . Так как модуль-обработчик является членом класса <span style="font-weight: bold;">xcontrols, </span>метод может быть вызван безотносительно объекта.</p>
+<p style="margin: 14px 0px 0px 0px;"><span style="text-decoration: underline;">Пример:</span></p>
+<p style="margin: 14px 0px 0px 0px;">&nbsp;</p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold;">@</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">create_</span><span class="f_CodeExample" style="font-weight: bold;">$</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">name</span><span class="f_CodeExample" style="font-weight: bold;">$[</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">hData</span><span class="f_CodeExample" style="font-weight: bold;">][</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">sBase_class</span><span class="f_CodeExample" style="font-weight: bold;">;</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">sXML_path</span><span class="f_CodeExample" style="font-weight: bold;">]</span><br />
+<span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample" style="font-weight: bold;">$</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">sBase_class</span><span class="f_CodeExample" style="font-weight: bold;">[$</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">hJquery_ui_style</span><span class="f_CodeExample" style="font-weight: bold;">.</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">text</span><span class="f_CodeExample" style="font-weight: bold;">]</span><br />
+<span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample" style="font-weight: bold;">$</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">sXML_path</span><span class="f_CodeExample" style="font-weight: bold;">[$</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">name</span><span class="f_CodeExample" style="font-weight: bold;">$.</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">xml</span><span class="f_CodeExample" style="font-weight: bold;">]</span><br />
+<span class="f_CodeExample" style="font-weight: bold;">&nbsp;</span><br />
+<span style="width:48px">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold;">^</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">create_controls</span><span class="f_CodeExample" style="font-weight: bold;">[$</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">sXML_path</span><span class="f_CodeExample" style="font-weight: bold;">;$</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">hData</span><span class="f_CodeExample" style="font-weight: bold;">.</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">name</span><span class="f_CodeExample" style="font-weight: bold;">;$</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">sBase_class</span><span class="f_CodeExample" style="font-weight: bold;">]</span></p>
+
+</td></tr></table>
+
+</body>
+</html>

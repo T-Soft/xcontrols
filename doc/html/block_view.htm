@@ -1,0 +1,208 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>&lt;block&gt; Описание блока ячейки таблицы</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <style type="text/css">
+     body { margin: 0px; background: #FFFFFF; }
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "block_view.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+
+<!-- Placeholder for topic body. -->
+<table style="width:100%;border:none;border-spacing:0px"><tr style="vertical-align:top"><td style="text-align:left;padding:5px">
+<p class="p_Underlined_red" style="border-top: none; border-right: none; border-left: none;"><span class="f_Underlined_red">&lt;block&gt; Описание блока ячейки таблицы</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">block</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><span class="f_CodeExample" style="font-weight: bold;">...</span><span class="f_CodeExample" style="color: #0000ff;">&lt;/</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">block</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span>&nbsp;-&nbsp;В&nbsp;данный&nbsp;контейнер&nbsp;помещается&nbsp;описание&nbsp;логической&nbsp;ячейки,&nbsp;находящейся&nbsp;внутри&nbsp;физической&nbsp;ячейки&nbsp;таблицы&nbsp;(<span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">td</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span>)</p>
+<p style="margin: 14px 0px 0px 0px;">Блоки делятся на <span style="font-weight: bold;">блоки данных</span> и <span style="font-weight: bold;">блоки разметки</span>. Блоки данных содержат описание внешнего вида вывода одного поля базы данных из одного ряда данных базы. Блоки разметки используются для визуального разделения логических ячеек внутри одной физической ячейки таблицы (<span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">td</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span>).</p>
+<p style="margin: 14px 0px 0px 0px;"><span style="text-decoration: underline;">Блок данных:</span></p>
+<p style="margin: 14px 0px 0px 0px;">&nbsp;</p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">block</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #800000;">type</span><span class="f_CodeExample" style="color: #0000ff;">=&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #000080;">data</span><span class="f_CodeExample" style="color: #0000ff;">&quot;&gt;</span><span class="f_CodeExample" style="font-weight: bold;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br />
+<span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">style</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><span class="f_CodeExample" style="font-weight: bold;">стили&nbsp;и&nbsp;классы&nbsp;логической&nbsp;ячейки</span><span class="f_CodeExample" style="color: #0000ff;">&lt;/</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">style</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><br />
+<span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">source_name</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><span class="f_CodeExample" style="font-weight: bold;">имя&nbsp;поля&nbsp;БД</span><span class="f_CodeExample" style="color: #0000ff;">&lt;/</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">source_name</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><br />
+<span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">control_group</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><span class="f_CodeExample" style="font-weight: bold;">группа&nbsp;элемента&nbsp;управления&nbsp;из&nbsp;доступных&nbsp;xcontrols</span><span class="f_CodeExample" style="color: #0000ff;">&lt;/</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">control_group</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><br />
+<span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">label</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><span class="f_CodeExample" style="font-weight: bold;">заголовок&nbsp;таблицы&nbsp;для&nbsp;данной&nbsp;ячейки</span><span class="f_CodeExample" style="color: #0000ff;">&lt;/</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">label</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><br />
+<span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">format</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><span class="f_CodeExample" style="font-weight: bold;">формат&nbsp;вывода&nbsp;данных</span><span class="f_CodeExample" style="color: #0000ff;">&lt;/</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">format</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><span class="f_CodeExample" style="font-weight: bold;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br />
+<span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">template</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><span class="f_CodeExample" style="font-weight: bold;">шаблон&nbsp;вывода&nbsp;данных</span><span class="f_CodeExample" style="color: #0000ff;">&lt;/</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">template</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><br />
+<span style="width:48px">&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">&lt;/</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">block</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span></p>
+<p style="margin: 14px 0px 0px 24px;"><span style="text-decoration: underline;">Составляющие блока:</span><br />
+<span style="text-decoration: underline;">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 26px;"><table style="width:80%; background-color:#ffffff; border:solid 2px #000000; border-spacing:0px; border-collapse:collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:149px; height:18px; background-color:#c0c0c0; padding:3px; border:solid 1px #000000;"><p style="margin: 0px 0px 0px 2px;"><span style="font-weight: bold;">Элемент</span></p>
+</td>
+<td style="vertical-align:top; width:15%; height:18px; background-color:#c0c0c0; padding:3px; border:solid 1px #000000;"><p style="margin: 0px 0px 0px 2px;"><span style="font-weight: bold;">Обязательность</span></p>
+</td>
+<td style="vertical-align:top; width:754px; height:18px; background-color:#c0c0c0; padding:3px; border:solid 1px #000000;"><p style="margin: 0px 0px 0px 2px;"><span style="font-weight: bold;">Описание</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:middle; width:149px; padding:3px; border:solid 1px #000000;"><p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">style</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span></p>
+</td>
+<td style="vertical-align:middle; width:15%; padding:3px; border:solid 1px #000000;"><p style="margin: 0px 0px 0px 2px;"> нет</p>
+</td>
+<td style="vertical-align:middle; width:754px; padding:3px; border:solid 1px #000000;"><p> Описание стилей и классов, применяемых к родительскому элементу (<span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">span</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span>).</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:middle; width:149px; padding:3px; border:solid 1px #000000;"><p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">source_name</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span></p>
+</td>
+<td style="vertical-align:middle; width:15%; padding:3px; border:solid 1px #000000;"><p style="margin: 0px 0px 0px 2px;"> да</p>
+</td>
+<td style="vertical-align:middle; width:754px; padding:3px; border:solid 1px #000000;"><p style="margin: 0px 0px 0px 2px;"> Имя столбца таблицы базы данных, данные из которого нужно отобразить в данной логической ячейке.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:middle; width:149px; padding:3px; border:solid 1px #000000;"><p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">control_group</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span></p>
+</td>
+<td style="vertical-align:middle; width:15%; padding:3px; border:solid 1px #000000;"><p style="margin: 0px 0px 0px 2px;"> да</p>
+</td>
+<td style="vertical-align:middle; width:754px; padding:3px; border:solid 1px #000000;"><p style="margin: 0px 0px 0px 2px;"> Тип (группа) элемента управления (int, inn, ogrn и т.д.), доступного классу <span style="font-weight: bold;">xcontrols</span>.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:middle; width:149px; height:18px; padding:3px; border:solid 1px #000000;"><p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">label</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span></p>
+</td>
+<td style="vertical-align:middle; width:15%; height:18px; padding:3px; border:solid 1px #000000;"><p style="margin: 0px 0px 0px 2px;"> нет</p>
+</td>
+<td style="vertical-align:middle; width:754px; height:18px; padding:3px; border:solid 1px #000000;"><p style="margin: 0px 0px 0px 2px;"> Строка, помещаемая в заголовок таблицы для соответствующего данной логической ячейке столбца.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:middle; width:149px; padding:3px; border:solid 1px #000000;"><p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">format</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span></p>
+</td>
+<td style="vertical-align:middle; width:15%; padding:3px; border:solid 1px #000000;"><p style="margin: 0px 0px 0px 2px;"> нет</p>
+</td>
+<td style="vertical-align:middle; width:754px; padding:3px; border:solid 1px #000000;"><p style="margin: 0px 0px 0px 2px;"> Формат преобразования &quot;сырых&quot; данных - непосредственного содержимого соответствующей <span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">source_name</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span> ячейки БД. Может влиять на значащую часть данных, отображаемых в логической ячейке. </p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:middle; width:149px; padding:3px; border:solid 1px #000000;"><p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">template</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span></p>
+</td>
+<td style="vertical-align:middle; width:15%; padding:3px; border:solid 1px #000000;"><p style="margin: 0px 0px 0px 2px;"> нет</p>
+</td>
+<td style="vertical-align:middle; width:754px; padding:3px; border:solid 1px #000000;"><p style="margin: 0px 0px 0px 2px;"> Шаблон, накладываемый на данные после их форматирования. </p>
+</td>
+</tr>
+</table>
+</div>
+<p style="margin: 0px 0px 0px 26px;">&nbsp;</p>
+<p style="margin: 14px 0px 0px 24px;"><span style="text-decoration: underline;">Элемент </span><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">format</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span></p>
+<p style="margin: 14px 0px 0px 48px;">Для каждой группы элементов управления, доступных <span style="font-weight: bold;">xcontrols</span> определен минимум один формат преобразования исходных данных из ячейки таблицы к отображаемому виду. (См. <a href="xc_view_formats.htm" class="topiclink">Форматы отображения данных</a>).</p>
+<p style="margin: 14px 0px 0px 48px;">Может быть указано только одно преобразование.</p>
+<p style="margin: 14px 0px 0px 24px;"><span style="text-decoration: underline;">Элемент </span><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">template</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span></p>
+<p style="margin: 14px 0px 0px 48px;">Для каждого значения, выводимого в таблицу возможно указание шаблона, который будет наложен на отоформатированные данные или информации, которая будет выведена в случае, если данные отсутствуют (См. <a href="xc_view_templates.htm" class="topiclink">Шаблон отображения данных</a>).</p>
+<p style="margin: 14px 0px 0px 0px;"><span style="text-decoration: underline;">Блок разметки:</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">block</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #800000;">type</span><span class="f_CodeExample" style="color: #0000ff;">=&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #000080;">layout</span><span class="f_CodeExample" style="color: #0000ff;">&quot;&gt;</span><br />
+<span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">layout_type</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><span class="f_CodeExample" style="font-weight: bold;">hr</span><span class="f_CodeExample" style="color: #0000ff;">&lt;/</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">layout_type</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><br />
+<span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">layout_template</span><span class="f_CodeExample" style="color: #0000ff;">&gt;&lt;/</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">layout_template</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><br />
+<span style="width:48px">&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">&lt;/</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">block</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span></p>
+<p style="margin: 14px 0px 0px 24px;"><span style="text-decoration: underline;">Составляющие блока:</span><br />
+<span style="text-decoration: underline;">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 26px;"><table style="width:75%; background-color:#ffffff; border:solid 2px #000000; border-spacing:0px; border-collapse:collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:249px; background-color:#c0c0c0; padding:3px; border:solid 1px #000000;"><p style="margin: 0px 0px 0px 2px;"><span style="font-weight: bold;">Элемент</span></p>
+</td>
+<td style="vertical-align:top; width:20%; background-color:#c0c0c0; padding:3px; border:solid 1px #000000;"><p style="margin: 0px 0px 0px 2px;"><span style="font-weight: bold;">Обязательность</span></p>
+</td>
+<td style="vertical-align:top; width:754px; background-color:#c0c0c0; padding:3px; border:solid 1px #000000;"><p style="margin: 0px 0px 0px 2px;"><span style="font-weight: bold;">Описание</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:middle; width:249px; padding:3px; border:solid 1px #000000;"><p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">layout_type</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span></p>
+</td>
+<td style="vertical-align:middle; width:20%; padding:3px; border:solid 1px #000000;"><p> да</p>
+</td>
+<td style="vertical-align:middle; width:754px; padding:3px; border:solid 1px #000000;"><p> Тип элемента разметки</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:middle; width:249px; padding:3px; border:solid 1px #000000;"><p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">layout_template</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span></p>
+</td>
+<td style="vertical-align:middle; width:20%; padding:3px; border:solid 1px #000000;"><p> нет</p>
+</td>
+<td style="vertical-align:middle; width:754px; padding:3px; border:solid 1px #000000;"><p> Формат вывода элемента разметки.</p>
+</td>
+</tr>
+</table>
+</div>
+<p style="margin: 14px 0px 0px 24px;"><span style="text-decoration: underline;">Элемент </span><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">layout_type</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span></p>
+<p style="margin: 14px 0px 0px 48px;">Определяет тип элемента разметки.</p>
+<p style="margin: 14px 0px 0px 48px;">На текущий момент существует всего два типа: <span style="font-weight: bold;">hr</span> и <span style="font-weight: bold;">br</span></p>
+<p style="margin: 14px 0px 0px 0px;"><span style="text-decoration: underline;">Блок сокращенной разметки:</span></p>
+<p style="margin: 14px 0px 0px 48px;"><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">block</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="color: #800000;">type</span><span class="f_CodeExample" style="font-weight: bold;">=&quot;hr&quot;</span><span class="f_CodeExample" style="color: #0000ff;">/&gt;</span></p>
+<p style="margin: 14px 0px 0px 48px;"><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">block</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="color: #800000;">type</span><span class="f_CodeExample" style="font-weight: bold;">=&quot;br&quot;</span><span class="f_CodeExample" style="color: #0000ff;">/&gt;</span></p>
+<p style="margin: 14px 0px 0px 48px;">С версии <span style="font-weight: bold;">[2.6]</span> доступны сокращенные блоки разметки. На место этих блоков xControls поместит соответствующие html тэги.</p>
+<p style="margin: 14px 0px 0px 0px;"><span style="text-decoration: underline;">Блок служебных данных:</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">block</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #800000;">type</span><span class="f_CodeExample" style="color: #0000ff;">=&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #000080;">nodata</span><span class="f_CodeExample" style="color: #0000ff;">&quot;&gt;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">style</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><span class="f_CodeExample" style="font-weight: bold;">стили&nbsp;и&nbsp;классы&nbsp;логической&nbsp;ячейки</span><span class="f_CodeExample" style="color: #0000ff;">&lt;/</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">style</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><br />
+<span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">label</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><span class="f_CodeExample" style="font-weight: bold;">заголовок&nbsp;данного&nbsp;элемента</span><span class="f_CodeExample" style="color: #0000ff;">&lt;/</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">label</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><br />
+<span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">template</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><span class="f_CodeExample" style="font-weight: bold;">макросы&nbsp;и&nbsp;шаблоны</span><span class="f_CodeExample" style="color: #0000ff;">&lt;/</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">template</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><br />
+<span style="width:48px">&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">&lt;/</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">block</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span></p>
+<p style="margin: 14px 0px 0px 24px;"><span style="text-decoration: underline;">Составляющие блока:</span><br />
+<span style="text-decoration: underline;">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 26px;"><table style="width:75%; background-color:#ffffff; border:solid 2px #000000; border-spacing:0px; border-collapse:collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:126px; background-color:#c0c0c0; padding:3px; border:solid 1px #000000;"><p style="margin: 0px 0px 0px 2px;"><span style="font-weight: bold;">Элемент</span></p>
+</td>
+<td style="vertical-align:top; width:16%; background-color:#c0c0c0; padding:3px; border:solid 1px #000000;"><p style="margin: 0px 0px 0px 2px;"><span style="font-weight: bold;">Обязательность</span></p>
+</td>
+<td style="vertical-align:top; width:754px; background-color:#c0c0c0; padding:3px; border:solid 1px #000000;"><p style="margin: 0px 0px 0px 2px;"><span style="font-weight: bold;">Описание</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:middle; width:126px; padding:3px; border:solid 1px #000000;"><p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">style</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span></p>
+</td>
+<td style="vertical-align:middle; width:16%; padding:3px; border:solid 1px #000000;"><p> нет</p>
+</td>
+<td style="vertical-align:middle; width:754px; padding:3px; border:solid 1px #000000;"><p> Описание стилей и классов, применяемых к родительскому элементу (<span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">span</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span>).</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:middle; width:126px; padding:3px; border:solid 1px #000000;"><p class="p_CodeExample"><span class="f_CodeExample" style="color: #0000ff;">&nbsp;&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">label</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span></p>
+</td>
+<td style="vertical-align:middle; width:16%; padding:3px; border:solid 1px #000000;"><p> нет</p>
+</td>
+<td style="vertical-align:middle; width:754px; padding:3px; border:solid 1px #000000;"><p> Строка, помещаемая в заголовок таблицы для соответствующего данной логической ячейке столбца.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:middle; width:126px; padding:3px; border:solid 1px #000000;"><p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">template</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span></p>
+</td>
+<td style="vertical-align:middle; width:16%; padding:3px; border:solid 1px #000000;"><p> нет</p>
+</td>
+<td style="vertical-align:middle; width:754px; padding:3px; border:solid 1px #000000;"><p> Шаблон, накладываемый на данные после их форматирования. Может содержать макросы</p>
+</td>
+</tr>
+</table>
+</div>
+<p style="margin: 14px 0px 0px 24px;"><span style="text-decoration: underline;">Элемент </span><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">layout_type</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span></p>
+<p style="margin: 14px 0px 0px 48px;">Определяет тип элемента разметки.</p>
+<p style="margin: 14px 0px 0px 48px;">На текущий момент существует всего два типа: <span style="font-weight: bold;">hr</span> и <span style="font-weight: bold;">br</span></p>
+<p style="margin: 14px 0px 0px 48px;">&nbsp;</p>
+<p style="margin: 14px 0px 0px 0px;">Может быть указано любое количество любых блоков внутри одного элемента <span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">cell</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span></p>
+<p style="margin: 0px 0px 0px 2px;">&nbsp;</p>
+
+</td></tr></table>
+
+</body>
+</html>

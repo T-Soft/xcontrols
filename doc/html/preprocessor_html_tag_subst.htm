@@ -1,0 +1,60 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>Замена HTML форматирования</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <style type="text/css">
+     body { margin: 0px; background: #FFFFFF; }
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "preprocessor_html_tag_subst.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+
+<!-- Placeholder for topic body. -->
+<table style="width:100%;border:none;border-spacing:0px"><tr style="vertical-align:top"><td style="text-align:left;padding:5px">
+<p class="p_Underlined_red" style="border-top: none; border-right: none; border-left: none;"><span class="f_Underlined_red">Замена HTML форматирования</span></p>
+<p>&nbsp;</p>
+<p>Препроцессор позволяет помещать в XML для последующего преобразования в HTML тэги форматирования, такие как выделение курсивом, жирным и т.д.</p>
+<p>&nbsp;</p>
+<p>Для указания препроцессору на необходимость вставки такого тэга используется следующий синтаксис.</p>
+<p>&nbsp;</p>
+<p><span style="width:48px">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold;">~TAG~</span></p>
+<p style="margin: 0px 0px 0px 24px;">&nbsp;</p>
+<p>Где TAG - это имя HTML тэга.</p>
+<p>&nbsp;</p>
+<p><span style="font-style: italic; font-weight: bold;">Важно: для элементов, подразумевающих наличие закрывающего тэга, необходимо указать </span><span class="f_CodeExample" style="font-style: italic; font-weight: bold;">~/TAG~</span></p>
+<p>&nbsp;</p>
+<p>Препроцессор заменит данную последовательность на HTML тэг</p>
+<p><span style="width:48px">&nbsp;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">TAG</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span></p>
+<p>&nbsp;</p>
+<p>Со всеми экранировками, не нарушающими валидацию XML, но позволяющими корректную трансляцию в HTML.</p>
+<p>&nbsp;</p>
+<p><span style="text-decoration: underline;">Пример.</span></p>
+<p>&nbsp;</p>
+<p><span style="width:48px">&nbsp;</span>Тестовая <span class="f_CodeExample" style="font-weight: bold;">~B~</span>фраза<span class="f_CodeExample" style="font-weight: bold;">~/B~</span></p>
+<p>&nbsp;</p>
+<p style="margin: 0px 0px 0px 24px;"><span style="width:24px">&nbsp;</span>После преобразования в HTML будет выглядеть как </p>
+<p style="margin: 0px 0px 0px 24px;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 24px;"><span style="width:24px">&nbsp;</span>Тестовая <span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">B</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span>фраза<span class="f_CodeExample" style="color: #0000ff;">&lt;/</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">B</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span></p>
+
+</td></tr></table>
+
+</body>
+</html>

@@ -1,0 +1,94 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>Макросы</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <style type="text/css">
+     body { margin: 0px; background: #FFFFFF; }
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "macros.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+
+<!-- Placeholder for topic body. -->
+<table style="width:100%;border:none;border-spacing:0px"><tr style="vertical-align:top"><td style="text-align:left;padding:5px">
+<p class="p_Underlined_red" style="border-top: none; border-right: none; border-left: none;"><span class="f_Underlined_red">Макросы</span></p>
+<p>&nbsp;</p>
+<p>В полях описательного XML и XML отображения <span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">control_default_value</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span> и <span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">control_label</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span> доступен вызов функций-макросов.</p>
+<p style="margin: 14px 0px 0px 0px;">Вызов начинается с указания ключевого слова <span style="font-family: Batang; font-weight: bold;">%MACRO{</span> и заканчивается символами  <span style="font-family: Batang; font-weight: bold;">}%</span> . Между ними указывается одна из доступных функций-макросов.</p>
+<p style="margin: 14px 0px 0px 0px;">Общий вид: </p>
+<p style="margin: 14px 0px 0px 0px;"><span style="width:48px">&nbsp;</span><span style="font-family: Batang; font-weight: bold;">%MACRO{$command$($param$)}%</span>  <br />
+&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table style="width:50%; border:solid 2px #000000; border-spacing:0px; border-collapse:collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:middle; width:191px; padding:3px; border:solid 1px #000000;"><p> <span style="font-family: Batang; font-weight: bold;">$command$</span></p>
+</td>
+<td style="vertical-align:middle; width:429px; padding:3px; border:solid 1px #000000;"><p> - имя функции-макроса</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:middle; width:191px; padding:3px; border:solid 1px #000000;"><p> <span style="font-family: Batang; font-weight: bold;">$param$</span></p>
+</td>
+<td style="vertical-align:middle; width:429px; padding:3px; border:solid 1px #000000;"><p> - параметры, передаваемые функции-макросу</p>
+</td>
+</tr>
+</table>
+</div>
+<p style="margin: 14px 0px 0px 0px;"><span style="font-weight: bold; text-decoration: underline;">Важно!</span></p>
+<p style="margin: 14px 0px 0px 0px;"><span style="width:48px">&nbsp;</span>Существует ряд ограничений на использование макросов: не все из них доступны во всех модулях. О доступности см. страницу соответствующего макроса.</p>
+<p style="margin: 14px 0px 0px 0px;"><span style="text-decoration: underline;">Также возможен вызов функций языка Parser3</span></p>
+<p style="margin: 14px 0px 0px 0px;"><span style="width:48px">&nbsp;</span><span style="font-family: Batang; font-weight: bold;">%PARSER{$native_function_call$}%</span>  <br />
+&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table style="width:50%; border:solid 2px #000000; border-spacing:0px; border-collapse:collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:middle; width:192px; padding:3px; border:solid 1px #000000;"><p> <span style="font-family: Batang; font-weight: bold;">$native_function_call$</span></p>
+</td>
+<td style="vertical-align:middle; width:428px; padding:3px; border:solid 1px #000000;"><p> - нативный синтаксис вызова функции языка</p>
+</td>
+</tr>
+</table>
+</div>
+<p style="margin: 14px 0px 0px 0px;"><span style="font-weight: bold; text-decoration: underline;">Важно!</span></p>
+<p style="margin: 14px 0px 0px 0px;"><span style="width:48px">&nbsp;</span>В случае вызова функций и переменных вне класса <span style="font-weight: bold;">xControls</span> необходимо использовать <span class="f_CodeExample" style="font-weight: bold;">$</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">MAIN</span><span class="f_CodeExample" style="font-weight: bold;">:</span> перед их именем.</p>
+<p style="margin: 14px 0px 0px 0px;"><span style="font-weight: bold; text-decoration: underline;">Важно!</span></p>
+<p style="margin: 14px 0px 0px 0px;">С версии <span style="font-weight: bold;">[2.6]</span> в модуле <span style="font-weight: bold;">VIEW</span> в макросы и вставки на языке Parser3 можно передавать текущее значение как переменную с именем <span class="f_CodeExample" style="font-weight: bold;">%</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">VALUE</span><span class="f_CodeExample" style="font-weight: bold;">[]%</span></p>
+<p style="margin: 14px 0px 0px 0px;"><span style="text-decoration: underline;">Пример:</span></p>
+<p>&nbsp;</p>
+<p><span style="width:48px">&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">control_default_value</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><span class="f_CodeExample" style="font-weight: bold;">%</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">PARSER</span><span class="f_CodeExample" style="font-weight: bold;">{^</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">inc</span><span class="f_CodeExample" style="font-weight: bold;">[$</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">MAIN</span><span class="f_CodeExample" style="font-weight: bold;">:</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">LIMITS</span><span class="f_CodeExample" style="font-weight: bold;">.</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">post_max_size</span><span class="f_CodeExample" style="font-weight: bold;">]}%</span><span class="f_CodeExample" style="color: #0000ff;">&lt;/</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">control_default_value</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span></p>
+<p>&nbsp;</p>
+<p><span style="font-weight: bold; text-decoration: underline;">Важно!</span></p>
+<p>&nbsp;</p>
+<p>С версии <span style="font-weight: bold;">[2.6]</span> доступны макросы, вложенные в парсерные вставки а также макросы, вложенные в макросы.</p>
+<p>&nbsp;</p>
+<p><span style="text-decoration: underline;">Пример:</span></p>
+<p>&nbsp;</p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #8000ff;">a</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold;">href=</span><span class="f_CodeExample" style="color: #0080ff;">'<a href="http://yandex.ru/search/?text=%25PARSER%7B" target="_blank" class="weblink">http://yandex.ru/search/?text=%PARSER{</a></span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample" style="color: #0080ff;">^apply-taint[uri][%MACRO{</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample" style="color: #0080ff;">sql(SELECT&nbsp;req_AppData_KppName&nbsp;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample" style="color: #0080ff;">FROM&nbsp;kw_fts_kpp&nbsp;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample" style="color: #0080ff;">WHERE&nbsp;uuid&nbsp;=&nbsp;&quot;%MACRO{form(uuid)}%&quot;)</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample" style="color: #0080ff;">}%&nbsp;-site:www.issa.ru</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample" style="color: #0080ff;">]}%&amp;lr=213'</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold;">target=</span><span class="f_CodeExample" style="color: #0080ff;">'_blank'</span><span class="f_CodeExample" style="font-weight: bold;">&gt;</span><span class="f_CodeExample">найти&nbsp;на&nbsp;Яндексе</span><span class="f_CodeExample" style="font-weight: bold;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #8000ff;">/a</span><span class="f_CodeExample" style="font-weight: bold;">&gt;</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+</td></tr></table>
+
+</body>
+</html>

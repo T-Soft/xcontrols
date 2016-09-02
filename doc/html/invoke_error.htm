@@ -1,0 +1,54 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>Вызов ошибок invoke</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <style type="text/css">
+     body { margin: 0px; background: #FFFFFF; }
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "invoke_error.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+
+<!-- Placeholder for topic body. -->
+<table style="width:100%;border:none;border-spacing:0px"><tr style="vertical-align:top"><td style="text-align:left;padding:5px">
+<p class="p_Underlined_red" style="border-top: none; border-right: none; border-left: none;"><span class="f_Underlined_red">Вызов ошибок invoke</span></p>
+<p>&nbsp;</p>
+<p>В случае, когда необходимо вручную вызвать ту или иную ошибку, можно воспользоваться методом <span class="f_CodeExample" style="font-weight: bold;">@</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">ErrorList_$module_name$</span><span class="f_CodeExample" style="font-weight: bold;">[</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">invoke</span><span class="f_CodeExample" style="font-weight: bold;">]</span> соответствующего модуля, передав в качестве параметра <span class="f_CodeExample" style="font-weight: bold;">$</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">invoke</span><span class="f_CodeExample" style="font-weight: bold;">$</span> имя ошибки, описанное в данном методе для вызываемого модуля.</p>
+<p>&nbsp;</p>
+<p>Сообщение о некритической ошибке будет выведено на экран в верхней части страницы с конструируемой формой без указания поля, в котором возникла ошибка.</p>
+<p>&nbsp;</p>
+<p>Также можно вызывать критические ошибки. При критической ошибке ядро завершится аварийно. (См. <a href="crash_error_handling.htm" class="topiclink">критические ошибки</a>.)</p>
+<p>&nbsp;</p>
+<p>Например при вызове. </p>
+<p>&nbsp;</p>
+<p style="margin: 0px 0px 0px 24px;"><span class="f_CodeExample" style="font-weight: bold;">^</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">ErrorList_file</span><span class="f_CodeExample" style="font-weight: bold;">[</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">TYPE_MISMATCH</span><span class="f_CodeExample" style="font-weight: bold;">]</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;</span></p>
+<p>Будет выведена ошибка модуля <span style="font-weight: bold;">file.p</span> &quot;<span class="f_CodeExample" style="font-weight: bold;">Неверный тип данных загруженного файла&quot;.</span></p>
+<p>&nbsp;</p>
+<p>При вызове</p>
+<p>&nbsp;</p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">&nbsp;&nbsp;&nbsp;^</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">ErrorList_main</span><span class="f_CodeExample" style="font-weight: bold;">[</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">SYSTEM_CRASH</span><span class="f_CodeExample" style="font-weight: bold;">]</span></p>
+<p>&nbsp;</p>
+<p>Ядро завершится аварийно, так как была вызвана критическая ошибка.</p>
+
+</td></tr></table>
+
+</body>
+</html>

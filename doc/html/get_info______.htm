@@ -1,0 +1,77 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>print_info. Вывод на экран информации о поле.</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <style type="text/css">
+     body { margin: 0px; background: #FFFFFF; }
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "get_info______.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+
+<!-- Placeholder for topic body. -->
+<table style="width:100%;border:none;border-spacing:0px"><tr style="vertical-align:top"><td style="text-align:left;padding:5px">
+<p class="p_Underlined_red" style="border-top: none; border-right: none; border-left: none;"><span class="f_Underlined_red">print_info. Вывод на экран информации о поле</span></p>
+<p>&nbsp;</p>
+<p>Существует возможность получить информацию о полях базы данных. Для каждого поля предоставляется своя информация.</p>
+<p>&nbsp;</p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold;">^</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">print_info</span><span class="f_CodeExample" style="font-weight: bold;">[</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">uuid</span><span class="f_CodeExample" style="font-weight: bold;">;</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">fieldname;separator</span><span class="f_CodeExample" style="font-weight: bold;">]</span></p>
+<p>&nbsp;</p>
+<p>Где:</p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 24px;"><table style="width:50%; border:solid 2px #000000; border-spacing:0px; border-collapse:collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:161px; padding:3px; border:solid 1px #000000;"><p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">uuid</span></p>
+</td>
+<td style="vertical-align:top; width:587px; padding:3px; border:solid 1px #000000;"><p> - идентификатор записи в данной таблице</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:161px; padding:3px; border:solid 1px #000000;"><p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">fieldname</span></p>
+</td>
+<td style="vertical-align:top; width:587px; padding:3px; border:solid 1px #000000;"><p> - имя поля, информацию о котором необходимо получить</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:161px; padding:3px; border:solid 1px #000000;"><p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">separator</span></p>
+</td>
+<td style="vertical-align:top; width:587px; padding:3px; border:solid 1px #000000;"><p> - разделитель между пояснительной строкой и значением свойства поля</p>
+</td>
+</tr>
+</table>
+</div>
+<p>&nbsp;</p>
+<p>Метод выводит на экран содержимое <span style="font-weight: bold;">хеша,</span> содержащего поля со специфической для данного типа поля информацией. Локализованные подписи для каждого из информационных полей хеша разделяются со значениями этих полей символом или строкой указанной в параметре <span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">separator</span>.</p>
+<p>&nbsp;</p>
+<p><span style="font-weight: bold;">Данный метод реализован для следующих групп элементов управления:</span></p>
+<p>&nbsp;</p>
+<p style="text-align: left; padding: 0px 0px 0px 13px; margin: 0px 0px 0px 0px;"><span style="font-size:11pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#0000ff;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_CodeExample" style="font-weight: bold; color: #0000ff;">file</span></p><p>&nbsp;</p>
+<p>Например, при вызове данного метода для файла с заданным разделителем <span style="font-weight: bold;">&quot;:&quot;</span>, вывод будет иметь вид:</p>
+<p>&nbsp;</p>
+<p style="margin: 0px 0px 0px 24px;"><span class="f_CodeExample" style="font-weight: bold;">Загруженный файл:&lt;имя файла&gt;</span></p>
+<p style="margin: 0px 0px 0px 24px;"><span class="f_CodeExample" style="font-weight: bold;">Размер:&lt;размер файла&gt;</span></p>
+<p style="margin: 0px 0px 0px 24px;"><span class="f_CodeExample" style="font-weight: bold;">Дата загрузки:&lt;дата загрузки файла&gt;</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+</td></tr></table>
+
+</body>
+</html>

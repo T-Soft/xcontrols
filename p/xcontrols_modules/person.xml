@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+	<form>
+<!-- ======================================================================================= fio -->
+		<control>
+			<control_group>input</control_group>
+			<control_type>text</control_type>
+			<control_name>fio</control_name>
+			<control_id>fio</control_id>
+			<control_label>ФИО</control_label>
+			<control_default_value></control_default_value>
+			<control_properties></control_properties>
+			<control_classes></control_classes>
+		</control>	
+<!-- =================================================================================== id type -->
+		<control>
+			<control_group>input</control_group>
+			<control_type>text</control_type>
+			<control_name>id_type</control_name>
+			<control_id>id_type</control_id>
+			<control_label>Вид документа,удостоверяющего личность</control_label>
+			<control_default_value></control_default_value>
+			<control_properties></control_properties>
+			<control_classes></control_classes>
+		</control>	
+<!-- ================================================================================= id_number -->
+		<control>
+			<control_group>input</control_group>
+			<control_type>text</control_type>
+			<control_name>id_number</control_name>
+			<control_id>id_number</control_id>
+			<control_label>Серия и номер документа</control_label>
+			<control_default_value></control_default_value>
+			<control_properties></control_properties>
+			<control_classes></control_classes>
+		</control>	
+		
+<!-- ================================================================================= id_issuer -->
+		<control>
+			<control_group>input</control_group>
+			<control_type>text</control_type>
+			<control_name>id_issuer</control_name>
+			<control_id>id_issuer</control_id>
+			<control_label>Кем выдан документ</control_label>
+			<control_default_value></control_default_value>
+			<control_properties></control_properties>
+			<control_classes></control_classes>
+		</control>	
+		
+<!-- =================================================================================== d_issue -->
+		<control>
+			<control_group>input</control_group>
+			<control_type>text</control_type>
+			<control_name>d_issue</control_name>
+			<control_id>d_issue</control_id>
+			<control_label>Дата выдачи</control_label>
+			<control_default_value></control_default_value>
+			<control_properties></control_properties>
+			<control_classes></control_classes>
+		</control>
+<!-- ======================================================================================= tel -->
+		<control>
+			<control_group>input</control_group>
+			<control_type>text</control_type>
+			<control_name>tel</control_name>
+			<control_id>tel</control_id>
+			<control_label>Номер телефона</control_label>
+			<control_default_value></control_default_value>
+			<control_properties></control_properties>
+			<control_classes></control_classes>
+		</control>
+<!-- =============================================================================== postal_addr -->
+		<control>
+			<control_group>input</control_group>
+			<control_type>text</control_type>
+			<control_name>postal_addr</control_name>
+			<control_id>postal_addr</control_id>
+			<control_label>Почтовый адрес</control_label>
+			<control_default_value></control_default_value>
+			<control_properties></control_properties>
+			<control_classes></control_classes>
+		</control>
+<!-- ===================================================================================== email -->
+		<control>
+			<control_group>input</control_group>
+			<control_type>text</control_type>
+			<control_name>email</control_name>
+			<control_id>email</control_id>
+			<control_label>E-mail</control_label>
+			<control_default_value></control_default_value>
+			<control_properties></control_properties>
+			<control_classes></control_classes>
+		</control>		
+		
+	</form> 
+</document>

@@ -1,0 +1,41 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN"
+  "http://www.w3.org/TR/html4/frameset.dtd">
+<html>
+<head>
+<title>xControls 2.6</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_navigation.js"></script>
+<script type="text/javascript">
+<!--
+var defaulttopic="eeann_xcontrols.htm";
+if (location.href.lastIndexOf("?") > 0) defaulttopic=location.href.substring(location.href.lastIndexOf("?")+1,location.href.length).replace(/:/g,"");
+document.write('<frameset rows="45,*" frameborder="1" framespacing="1">');
+document.write('<frame name="hmheader" marginwidth="0" marginheight="0" scrolling="No" noresize src="xcontrols_headerframe.htm" title="Header">');
+document.write('<frameset cols="30%,*" frameborder="1" framespacing="1">');
+if (document.getElementById) {
+  document.write('<frame name="hmnavigation" src="xcontrols_content.htm" title="Navigation frame">'); }
+else {
+  document.write('<frame name="hmnavigation" src="xcontrols_content.htm" title="Navigation frame">'); }
+document.write('<frame name="hmcontent" src="' + defaulttopic + '" title="Content frame">');
+document.write('</frameset>');
+document.write('</frameset>');
+//-->
+</script>
+</head>
+<noscript>
+  <frameset rows="45,*" frameborder="1" framespacing="1">
+  <frame name="hmheader" marginwidth="0" marginheight="0" scrolling="No" noresize src="xcontrols_headerframe.htm" title="Header">
+  <frameset cols="30%,*" frameborder="1" framespacing="1">
+    <frame name="hmnavigation" src="xcontrols_content.htm" title="Navigation frame">
+    <frame name="hmcontent" src="eeann_xcontrols.htm" title="Content frame">
+    <noframes>
+      This page requires frames<br><a href="xcontrols_content.htm">Click here to view the table of contents without frames</a>
+    </noframes>
+  </frameset>
+  </frameset>
+</noscript>
+</html>
+
